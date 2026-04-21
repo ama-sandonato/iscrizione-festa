@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌙 Le Mille e Una Notte 2026 ✨</title>
+  <link rel="stylesheet" href="./css/ama-style.css">
+</head>
+<body>
+  <div class="hero-header">
+    <img src="./images/ama-header.png" alt="Le Mille e Una Notte 2026">
+  </div>
+  <form id="regForm">
+    <div id="step1">
+      <div class="grid">
+        <div>
+          <label for="nome">Nome *</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+          <label for="cognome">Cognome *</label>
+          <input type="text" id="cognome" name="cognome" required>
+        </div>
+      </div>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="cf">Codice Fiscale *</label>
+      <input type="text" id="cf" name="cf" required
+             pattern="^[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]$"
+             title="Inserisci un CF valido di 16 caratteri">
+
+      <div class="grid">
+        <div>
+          <label for="adulti">Partecipanti adulti *</label>
+          <input type="number" id="adulti" name="adulti" min="1" value="1" required>
+        </div>
+        <div>
+          <label for="minori">Partecipanti minorenni</label>
+          <input type="number" id="minori" name="minori" min="0" value="0">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <label for="menu1">Menù Tipo 1</label>
+          <input type="number" id="menu1" name="menu1" min="0" value="0">
+        </div>
+        <div>
+          <label for="menu2">Menù Tipo 2</label>
+          <input type="number" id="menu2" name="menu2" min="0" value="0">
+        </div>
+      </div>
+
+      <label for="birre">Birre extra</label>
+      <input type="number" id="birre" name="birre" min="0" value="0" class="full">
+
+      <div class="spacing">
+        Dopo aver cliccato "Avanti", dovrai inserire i dati i tutti i partecipanti, ad esclusione del tuo nominativo.
+      </div>
+
+      <button type="button" id="btnNext">Avanti</button>
+    </div>
+
+    <div id="step2" style="display: none;">
+      <h2>Inserisci i dati dei partecipanti</h2>
+      <div id="partecipanti"></div>
+      <div class="disclaimer">
+        L'associazione AMA quale ente organizzatore dell'evento 
+        e la scuola Maria Ausiliatrice quale proprietaria degli immobili e delle pertinenze nei quali la festa si svolge 
+        non hanno e non assumono alcun onere di vigilanza nei confronti dei soggetti minori partecipanti, siano essi allievi o non allievi della scuola.
+        Nessun onere in tal senso sussiste neppure in capo ai soggetti incaricati di svolgere attività ludico - ricreative nell'ambito della festa.
+        Ogni onere di cura e vigilanza sui minori partecipanti resta integralmente ed esclusivamente a carico del genitore, del tutore o del diverso soggetto maggiorenne accompagnatore individuato dal genitore o da chi ne fa le veci. 
+        Il genitore o il tutore liberano pertanto espressamente sin da ora AMA, la scuola Maria Ausiliatrice e tutti i rispettivi addetti da ogni responsabilità per i danni arrecati a cose e persone dal minore nonché per i danni subiti dal medesimo  ex art. 2048 CC nell'ambito della festa di cui trattasi.
+      </div>
+
+      <div class="check-wrap">
+        <input type="checkbox" id="privacy" name="privacy" required>
+        <label for="privacy">Dichiaro di aver letto il disclaimer e ne accetto integralmente le condizioni *</label>
+      </div>
+
+      <button type="submit" id="btnSubmit">Invia registrazione</button>
+      <button type="button" id="btnBack" class="btn-secondary">Indietro</button>
+    </div>
+
+    <div id="msg"></div>
+  </form>
+  <script src="./js/registrazione.js"></script>
+</body>
+</html>

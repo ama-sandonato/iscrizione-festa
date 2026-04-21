@@ -1,0 +1,225 @@
+:root {
+    --primary-orange: #FF8C32;
+    --deep-blue: #001F3F;
+    --gold: #D4AF37;
+    --cream: #FFF8E7;
+    /* Definiamo una larghezza comune per coerenza */
+    --container-width: 550px; 
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, var(--deep-blue) 0%, #003366 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+
+  /* Header ridimensionato e centrato */
+  .hero-header {
+    width: 100%;
+    max-width: var(--container-width); /* Stessa larghezza del form */
+    border-radius: 15px 15px 0 0; /* Arrotondiamo solo gli angoli superiori */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+
+  .hero-header img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Form sovrapposto all'immagine */
+  form {
+    /* Usiamo un colore RGBA per la trasparenza (l'ultimo valore 0.85 è l'opacità) */
+    background: rgba(255, 248, 231, 0.5); 
+    
+    /* L'effetto magico: sfoca ciò che sta dietro il form */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Per compatibilità Safari */
+
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: var(--container-width);
+    
+    /* Sovrapposizione */
+    margin-top: -100px; /* Aumentato un po' per mostrare meglio l'effetto */
+    position: relative;
+    z-index: 2;
+    
+    /* Bordo superiore leggermente più morbido per la trasparenza */
+    border-top: 5px solid var(--primary-orange);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Un sottile bordo chiaro per definire la forma */
+  }
+
+  /* Adattamento per dispositivi mobili */
+  @media (max-width: 600px) {
+    .hero-header {
+      max-width: 95%;
+    }
+    form {
+      max-width: 95%;
+      margin-top: -50px; /* Ridotto per schermi piccoli */
+      padding: 20px;
+    }
+  }
+
+  h2 { 
+    margin-bottom: 10px; 
+    color: var(--deep-blue); 
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .sub { 
+    font-size: 14px; 
+    opacity: 0.8; 
+    text-align: center; 
+    margin-bottom: 25px;
+    color: var(--deep-blue);
+    font-weight: 500;
+  }
+  
+  label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+    color: var(--deep-blue);
+    font-size: 14px;
+  }
+
+  /* Rendiamo anche i campi input leggermente trasparenti per coerenza */
+  input, select {
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(0, 31, 63, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+
+  input:focus {
+    background: rgba(255, 255, 255, 1);
+    outline: none;
+    border-color: var(--primary-orange);
+  }
+
+  /* Disclaimer e Box Informative */
+  .spacing, .disclaimer {
+    margin: 25px 0;
+    padding: 15px;
+    background: rgba(212, 175, 55, 0.1); /* Oro leggerissimo */
+    border-left: 4px solid var(--gold);
+    font-size: 13px;
+    line-height: 1.6;
+    color: #444;
+    border-radius: 4px;
+  }
+
+  /* Bottoni */
+  button {
+    width: 90%;
+    padding: 15px;
+    background: var(--primary-orange);
+    color: var(--deep-blue);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    max-width: 450px;
+    box-shadow: 0 4px 0 #d36b1d;
+  }
+
+  button:hover {
+    background: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #b38f2d;
+  }
+
+  button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #b38f2d;
+  }
+
+  #step1, #step2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra tutti i figli (label, input, button) */
+  }
+
+  label, input, select, .spacing, .disclaimer, .check-wrap {
+    width: 90%; /* Non occupano più il 100%, lasciando spazio ai lati */
+    max-width: 450px; /* Limite massimo per non farli diventare troppo larghi su desktop */
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 90%; /* Allineata agli altri elementi */
+    max-width: 450px;
+  }
+
+  /* Nelle grid, gli input tornano al 100% della loro cella */
+  .grid div input {
+    width: 100%;
+  }
+
+  /* 5. Stile extra per gli input (per enfatizzare l'effetto vetro 0.5) */
+  input, select {
+    background: rgba(255, 255, 255, 0.4); /* Più trasparente per matchare il form */
+    border: 1px solid rgba(0, 31, 63, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); /* Ombra interna per profondità */
+  }
+
+  .button-group {
+    width: 90%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .btn-secondary {
+    background: rgba(0, 31, 63, 0.1) !important; /* Blu molto leggero */
+    color: var(--deep-blue) !important;
+    box-shadow: none !important;
+    font-size: 14px !important;
+    text-transform: none !important;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(0, 31, 63, 0.2) !important;
+    transform: none !important;
+  }
+
+    /* Assicuriamoci che i partecipanti extra siano centrati */
+  .partecipante {
+    background: white; 
+    width: 100%;
+    display: flex;
+    border: 1px solid #eee;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+  }    
