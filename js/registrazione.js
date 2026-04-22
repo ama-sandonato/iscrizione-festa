@@ -41,7 +41,7 @@ selectProvincia.addEventListener('change', function() {
   selectCitta.disabled = true;
 
   if (provCode) {
-    fetch(`./resources/${provCode}-towns.json`)
+    fetch(`./resources/${provCode.toLowerCase()}-towns.json`)
       .then(response => response.json())
       .then(data => {
         selectCitta.innerHTML = '<option value="">Seleziona città</option>';
