@@ -1,0 +1,366 @@
+﻿[
+    {
+        "id":  "10051",
+        "name":  "ACQUAFONDATA"
+    },
+    {
+        "id":  "10091",
+        "name":  "ACUTO"
+    },
+    {
+        "id":  "10224",
+        "name":  "ALATRI"
+    },
+    {
+        "id":  "10437",
+        "name":  "ALVITO"
+    },
+    {
+        "id":  "10463",
+        "name":  "AMASENO"
+    },
+    {
+        "id":  "10488",
+        "name":  "ANAGNI"
+    },
+    {
+        "id":  "10654",
+        "name":  "AQUINO"
+    },
+    {
+        "id":  "10686",
+        "name":  "ARCE"
+    },
+    {
+        "id":  "10793",
+        "name":  "ARNARA"
+    },
+    {
+        "id":  "10815",
+        "name":  "ARPINO"
+    },
+    {
+        "id":  "10920",
+        "name":  "ATINA"
+    },
+    {
+        "id":  "10953",
+        "name":  "AUSONIA"
+    },
+    {
+        "id":  "11462",
+        "name":  "BELMONTE CASTELLO"
+    },
+    {
+        "id":  "12080",
+        "name":  "BOVILLE ERNICA"
+    },
+    {
+        "id":  "12245",
+        "name":  "BROCCOSTELLA"
+    },
+    {
+        "id":  "12863",
+        "name":  "CAMPOLI APPENNINO"
+    },
+    {
+        "id":  "13419",
+        "name":  "CASALATTICO"
+    },
+    {
+        "id":  "13489",
+        "name":  "CASALVIERI"
+    },
+    {
+        "id":  "13649",
+        "name":  "CASSINO"
+    },
+    {
+        "id":  "13919",
+        "name":  "CASTELLIRI"
+    },
+    {
+        "id":  "14030",
+        "name":  "CASTELNUOVO PARANO"
+    },
+    {
+        "id":  "14155",
+        "name":  "CASTRO DEI VOLSCI"
+    },
+    {
+        "id":  "14161",
+        "name":  "CASTROCIELO"
+    },
+    {
+        "id":  "14288",
+        "name":  "CECCANO"
+    },
+    {
+        "id":  "14402",
+        "name":  "CEPRANO"
+    },
+    {
+        "id":  "14520",
+        "name":  "CERVARO"
+    },
+    {
+        "id":  "15081",
+        "name":  "COLFELICE"
+    },
+    {
+        "id":  "15109",
+        "name":  "COLLE SAN MAGNO"
+    },
+    {
+        "id":  "15131",
+        "name":  "COLLEPARDO"
+    },
+    {
+        "id":  "15361",
+        "name":  "CORENO AUSONIO"
+    },
+    {
+        "id":  "16247",
+        "name":  "ESPERIA"
+    },
+    {
+        "id":  "16336",
+        "name":  "FALVATERRA"
+    },
+    {
+        "id":  "16424",
+        "name":  "FERENTINO"
+    },
+    {
+        "id":  "16512",
+        "name":  "FILETTINO"
+    },
+    {
+        "id":  "16556",
+        "name":  "FIUGGI"
+    },
+    {
+        "id":  "16668",
+        "name":  "FONTANA LIRI"
+    },
+    {
+        "id":  "16691",
+        "name":  "FONTECHIARI"
+    },
+    {
+        "id":  "16903",
+        "name":  "FROSINONE"
+    },
+    {
+        "id":  "16920",
+        "name":  "FUMONE"
+    },
+    {
+        "id":  "17044",
+        "name":  "GALLINARO"
+    },
+    {
+        "id":  "17365",
+        "name":  "GIULIANO DI ROMA"
+    },
+    {
+        "id":  "17713",
+        "name":  "GUARCINO"
+    },
+    {
+        "id":  "17907",
+        "name":  "ISOLA DEL LIRI"
+    },
+    {
+        "id":  "20050",
+        "name":  "MONTE SAN GIOVANNI CAMPANO"
+    },
+    {
+        "id":  "20528",
+        "name":  "MOROLO"
+    },
+    {
+        "id":  "21559",
+        "name":  "PALIANO"
+    },
+    {
+        "id":  "21709",
+        "name":  "PASTENA"
+    },
+    {
+        "id":  "21727",
+        "name":  "PATRICA"
+    },
+    {
+        "id":  "21977",
+        "name":  "PESCOSOLIDO"
+    },
+    {
+        "id":  "22130",
+        "name":  "PICINISCO"
+    },
+    {
+        "id":  "22132",
+        "name":  "PICO"
+    },
+    {
+        "id":  "22149",
+        "name":  "PIEDIMONTE SAN GERMANO"
+    },
+    {
+        "id":  "22266",
+        "name":  "PIGLIO"
+    },
+    {
+        "id":  "22270",
+        "name":  "PIGNATARO INTERAMNA"
+    },
+    {
+        "id":  "22451",
+        "name":  "POFI"
+    },
+    {
+        "id":  "22640",
+        "name":  "PONTECORVO"
+    },
+    {
+        "id":  "22803",
+        "name":  "POSTA FIBRENO"
+    },
+    {
+        "id":  "23549",
+        "name":  "RIPI"
+    },
+    {
+        "id":  "23665",
+        "name":  "ROCCA D\u0027ARCE"
+    },
+    {
+        "id":  "23781",
+        "name":  "ROCCASECCA"
+    },
+    {
+        "id":  "24451",
+        "name":  "SAN BIAGIO SARACINISCO"
+    },
+    {
+        "id":  "24539",
+        "name":  "SAN DONATO VAL DI COMINO"
+    },
+    {
+        "id":  "24639",
+        "name":  "SAN GIORGIO A LIRI"
+    },
+    {
+        "id":  "24724",
+        "name":  "SAN GIOVANNI INCARICO"
+    },
+    {
+        "id":  "25235",
+        "name":  "SAN VITTORE DEL LAZIO"
+    },
+    {
+        "id":  "25475",
+        "name":  "SANT\u0027AMBROGIO SUL GARIGLIANO"
+    },
+    {
+        "id":  "25484",
+        "name":  "SANT\u0027ANDREA DEL GARIGLIANO"
+    },
+    {
+        "id":  "25549",
+        "name":  "SANT\u0027APOLLINARE"
+    },
+    {
+        "id":  "25571",
+        "name":  "SANT\u0027ELIA FIUMERAPIDO"
+    },
+    {
+        "id":  "25641",
+        "name":  "SANTOPADRE"
+    },
+    {
+        "id":  "26162",
+        "name":  "SERRONE"
+    },
+    {
+        "id":  "26225",
+        "name":  "SETTEFRATI"
+    },
+    {
+        "id":  "26282",
+        "name":  "SGURGOLA"
+    },
+    {
+        "id":  "26516",
+        "name":  "SORA"
+    },
+    {
+        "id":  "26780",
+        "name":  "STRANGOLAGALLI"
+    },
+    {
+        "id":  "26850",
+        "name":  "SUPINO"
+    },
+    {
+        "id":  "27078",
+        "name":  "TERELLE"
+    },
+    {
+        "id":  "27390",
+        "name":  "TORRE CAJETANI"
+    },
+    {
+        "id":  "27458",
+        "name":  "TORRICE"
+    },
+    {
+        "id":  "27668",
+        "name":  "TREVI NEL LAZIO"
+    },
+    {
+        "id":  "27739",
+        "name":  "TRIVIGLIANO"
+    },
+    {
+        "id":  "28112",
+        "name":  "VALLECORSA"
+    },
+    {
+        "id":  "28131",
+        "name":  "VALLEMAIO"
+    },
+    {
+        "id":  "28141",
+        "name":  "VALLEROTONDA"
+    },
+    {
+        "id":  "28488",
+        "name":  "VEROLI"
+    },
+    {
+        "id":  "28608",
+        "name":  "VICALVI"
+    },
+    {
+        "id":  "28627",
+        "name":  "VICO NEL LAZIO"
+    },
+    {
+        "id":  "28785",
+        "name":  "VILLA LATINA"
+    },
+    {
+        "id":  "28813",
+        "name":  "VILLA SANTA LUCIA"
+    },
+    {
+        "id":  "28825",
+        "name":  "VILLA SANTO STEFANO"
+    },
+    {
+        "id":  "29106",
+        "name":  "VITICUSO"
+    }
+]

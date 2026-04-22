@@ -1,0 +1,474 @@
+﻿[
+    {
+        "id":  "10125",
+        "name":  "AGLIANO TERME"
+    },
+    {
+        "id":  "10308",
+        "name":  "ALBUGNANO"
+    },
+    {
+        "id":  "10580",
+        "name":  "ANTIGNANO"
+    },
+    {
+        "id":  "10663",
+        "name":  "ARAMENGO"
+    },
+    {
+        "id":  "10910",
+        "name":  "ASTI"
+    },
+    {
+        "id":  "11018",
+        "name":  "AZZANO D\u0027ASTI"
+    },
+    {
+        "id":  "11125",
+        "name":  "BALDICHIERI D\u0027ASTI"
+    },
+    {
+        "id":  "11481",
+        "name":  "BELVEGLIO"
+    },
+    {
+        "id":  "11561",
+        "name":  "BERZANO DI SAN PIETRO"
+    },
+    {
+        "id":  "12294",
+        "name":  "BRUNO"
+    },
+    {
+        "id":  "12319",
+        "name":  "BUBBIO"
+    },
+    {
+        "id":  "12438",
+        "name":  "BUTTIGLIERA D\u0027ASTI"
+    },
+    {
+        "id":  "12543",
+        "name":  "CALAMANDRANA"
+    },
+    {
+        "id":  "12629",
+        "name":  "CALLIANO"
+    },
+    {
+        "id":  "12640",
+        "name":  "CALOSSO"
+    },
+    {
+        "id":  "12708",
+        "name":  "CAMERANO CASASCO"
+    },
+    {
+        "id":  "12947",
+        "name":  "CANELLI"
+    },
+    {
+        "id":  "13015",
+        "name":  "CANTARANA"
+    },
+    {
+        "id":  "13136",
+        "name":  "CAPRIGLIO"
+    },
+    {
+        "id":  "13608",
+        "name":  "CASORZO"
+    },
+    {
+        "id":  "13641",
+        "name":  "CASSINASCO"
+    },
+    {
+        "id":  "13668",
+        "name":  "CASTAGNOLE DELLE LANZE"
+    },
+    {
+        "id":  "13670",
+        "name":  "CASTAGNOLE MONFERRATO"
+    },
+    {
+        "id":  "13684",
+        "name":  "CASTEL BOGLIONE"
+    },
+    {
+        "id":  "13746",
+        "name":  "CASTEL ROCCHERO"
+    },
+    {
+        "id":  "13832",
+        "name":  "CASTELL\u0027ALFERO"
+    },
+    {
+        "id":  "13883",
+        "name":  "CASTELLERO"
+    },
+    {
+        "id":  "13895",
+        "name":  "CASTELLETTO MOLINA"
+    },
+    {
+        "id":  "13934",
+        "name":  "CASTELLO DI ANNONE"
+    },
+    {
+        "id":  "13990",
+        "name":  "CASTELNUOVO BELBO"
+    },
+    {
+        "id":  "13998",
+        "name":  "CASTELNUOVO CALCEA"
+    },
+    {
+        "id":  "14022",
+        "name":  "CASTELNUOVO DON BOSCO"
+    },
+    {
+        "id":  "14326",
+        "name":  "CELLARENGO"
+    },
+    {
+        "id":  "14333",
+        "name":  "CELLE ENOMONDO"
+    },
+    {
+        "id":  "14484",
+        "name":  "CERRETO D\u0027ASTI"
+    },
+    {
+        "id":  "14508",
+        "name":  "CERRO TANARO"
+    },
+    {
+        "id":  "14602",
+        "name":  "CESSOLE"
+    },
+    {
+        "id":  "14754",
+        "name":  "CHIUSANO D\u0027ASTI"
+    },
+    {
+        "id":  "14823",
+        "name":  "CINAGLIO"
+    },
+    {
+        "id":  "14888",
+        "name":  "CISTERNA D\u0027ASTI"
+    },
+    {
+        "id":  "15014",
+        "name":  "COAZZOLO"
+    },
+    {
+        "id":  "15024",
+        "name":  "COCCONATO"
+    },
+    {
+        "id":  "15438",
+        "name":  "CORSIONE"
+    },
+    {
+        "id":  "15448",
+        "name":  "CORTANDONE"
+    },
+    {
+        "id":  "15450",
+        "name":  "CORTANZE"
+    },
+    {
+        "id":  "15452",
+        "name":  "CORTAZZONE"
+    },
+    {
+        "id":  "15484",
+        "name":  "CORTIGLIONE"
+    },
+    {
+        "id":  "15549",
+        "name":  "COSSOMBRATO"
+    },
+    {
+        "id":  "15578",
+        "name":  "COSTIGLIOLE D\u0027ASTI"
+    },
+    {
+        "id":  "15752",
+        "name":  "CUNICO"
+    },
+    {
+        "id":  "16132",
+        "name":  "DUSINO SAN MICHELE"
+    },
+    {
+        "id":  "16449",
+        "name":  "FERRERE"
+    },
+    {
+        "id":  "16684",
+        "name":  "FONTANILE"
+    },
+    {
+        "id":  "16886",
+        "name":  "FRINCO"
+    },
+    {
+        "id":  "17530",
+        "name":  "GRANA"
+    },
+    {
+        "id":  "17571",
+        "name":  "GRAZZANO BADOGLIO"
+    },
+    {
+        "id":  "17822",
+        "name":  "INCISA SCAPACCINO"
+    },
+    {
+        "id":  "17902",
+        "name":  "ISOLA D\u0027ASTI"
+    },
+    {
+        "id":  "18457",
+        "name":  "LOAZZOLO"
+    },
+    {
+        "id":  "19029",
+        "name":  "MARANZANA"
+    },
+    {
+        "id":  "19076",
+        "name":  "MARETTO"
+    },
+    {
+        "id":  "19656",
+        "name":  "MOASCA"
+    },
+    {
+        "id":  "19751",
+        "name":  "MOMBALDONE"
+    },
+    {
+        "id":  "19757",
+        "name":  "MOMBARUZZO"
+    },
+    {
+        "id":  "19771",
+        "name":  "MOMBERCELLI"
+    },
+    {
+        "id":  "19784",
+        "name":  "MONALE"
+    },
+    {
+        "id":  "19788",
+        "name":  "MONASTERO BORMIDA"
+    },
+    {
+        "id":  "19808",
+        "name":  "MONCALVO"
+    },
+    {
+        "id":  "19824",
+        "name":  "MONCUCCO TORINESE"
+    },
+    {
+        "id":  "19854",
+        "name":  "MONGARDINO"
+    },
+    {
+        "id":  "19907",
+        "name":  "MONTABONE"
+    },
+    {
+        "id":  "19915",
+        "name":  "MONTAFIA"
+    },
+    {
+        "id":  "19947",
+        "name":  "MONTALDO SCARAMPI"
+    },
+    {
+        "id":  "20128",
+        "name":  "MONTECHIARO D\u0027ASTI"
+    },
+    {
+        "id":  "20213",
+        "name":  "MONTEGROSSO D\u0027ASTI"
+    },
+    {
+        "id":  "20256",
+        "name":  "MONTEMAGNO"
+    },
+    {
+        "id":  "20416",
+        "name":  "MONTIGLIO MONFERRATO"
+    },
+    {
+        "id":  "20472",
+        "name":  "MORANSENGO"
+    },
+    {
+        "id":  "20837",
+        "name":  "NIZZA MONFERRATO"
+    },
+    {
+        "id":  "21121",
+        "name":  "OLMO GENTILE"
+    },
+    {
+        "id":  "21700",
+        "name":  "PASSERANO MARMORITO"
+    },
+    {
+        "id":  "21829",
+        "name":  "PENANGO"
+    },
+    {
+        "id":  "22134",
+        "name":  "PIEA"
+    },
+    {
+        "id":  "22304",
+        "name":  "PINO D\u0027ASTI"
+    },
+    {
+        "id":  "22334",
+        "name":  "PIOVÃ MASSAIA"
+    },
+    {
+        "id":  "22722",
+        "name":  "PORTACOMARO"
+    },
+    {
+        "id":  "23140",
+        "name":  "QUARANTI"
+    },
+    {
+        "id":  "23344",
+        "name":  "REFRANCORE"
+    },
+    {
+        "id":  "23404",
+        "name":  "REVIGLIASCO D\u0027ASTI"
+    },
+    {
+        "id":  "23634",
+        "name":  "ROATTO"
+    },
+    {
+        "id":  "23649",
+        "name":  "ROBELLA"
+    },
+    {
+        "id":  "23662",
+        "name":  "ROCCA D\u0027ARAZZO"
+    },
+    {
+        "id":  "23795",
+        "name":  "ROCCAVERANO"
+    },
+    {
+        "id":  "23826",
+        "name":  "ROCCHETTA PALAFEA"
+    },
+    {
+        "id":  "23830",
+        "name":  "ROCCHETTA TANARO"
+    },
+    {
+        "id":  "24509",
+        "name":  "SAN DAMIANO D\u0027ASTI"
+    },
+    {
+        "id":  "24679",
+        "name":  "SAN GIORGIO SCARAMPI"
+    },
+    {
+        "id":  "24864",
+        "name":  "SAN MARTINO ALFIERI"
+    },
+    {
+        "id":  "24912",
+        "name":  "SAN MARZANO OLIVETO"
+    },
+    {
+        "id":  "25008",
+        "name":  "SAN PAOLO SOLBRITO"
+    },
+    {
+        "id":  "25924",
+        "name":  "SCURZOLENGO"
+    },
+    {
+        "id":  "26103",
+        "name":  "SEROLE"
+    },
+    {
+        "id":  "26184",
+        "name":  "SESSAME"
+    },
+    {
+        "id":  "26227",
+        "name":  "SETTIME"
+    },
+    {
+        "id":  "26425",
+        "name":  "SOGLIO"
+    },
+    {
+        "id":  "27237",
+        "name":  "TIGLIOLE"
+    },
+    {
+        "id":  "27320",
+        "name":  "TONCO"
+    },
+    {
+        "id":  "27322",
+        "name":  "TONENGO"
+    },
+    {
+        "id":  "27944",
+        "name":  "VAGLIO SERRA"
+    },
+    {
+        "id":  "28035",
+        "name":  "VALFENERA"
+    },
+    {
+        "id":  "28553",
+        "name":  "VESIME"
+    },
+    {
+        "id":  "28591",
+        "name":  "VIALE"
+    },
+    {
+        "id":  "28600",
+        "name":  "VIARIGI"
+    },
+    {
+        "id":  "28685",
+        "name":  "VIGLIANO D\u0027ASTI"
+    },
+    {
+        "id":  "28808",
+        "name":  "VILLA SAN SECONDO"
+    },
+    {
+        "id":  "28862",
+        "name":  "VILLAFRANCA D\u0027ASTI"
+    },
+    {
+        "id":  "28918",
+        "name":  "VILLANOVA D\u0027ASTI"
+    },
+    {
+        "id":  "29048",
+        "name":  "VINCHIO"
+    }
+]

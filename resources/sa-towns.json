@@ -1,0 +1,634 @@
+﻿[
+    {
+        "id":  "10039",
+        "name":  "ACERNO"
+    },
+    {
+        "id":  "10159",
+        "name":  "AGROPOLI"
+    },
+    {
+        "id":  "10233",
+        "name":  "ALBANELLA"
+    },
+    {
+        "id":  "10330",
+        "name":  "ALFANO"
+    },
+    {
+        "id":  "10414",
+        "name":  "ALTAVILLA SILENTINA"
+    },
+    {
+        "id":  "10453",
+        "name":  "AMALFI"
+    },
+    {
+        "id":  "10546",
+        "name":  "ANGRI"
+    },
+    {
+        "id":  "10641",
+        "name":  "AQUARA"
+    },
+    {
+        "id":  "10872",
+        "name":  "ASCEA"
+    },
+    {
+        "id":  "10917",
+        "name":  "ATENA LUCANA"
+    },
+    {
+        "id":  "10922",
+        "name":  "ATRANI"
+    },
+    {
+        "id":  "10941",
+        "name":  "AULETTA"
+    },
+    {
+        "id":  "11292",
+        "name":  "BARONISSI"
+    },
+    {
+        "id":  "11383",
+        "name":  "BATTIPAGLIA"
+    },
+    {
+        "id":  "11449",
+        "name":  "BELLIZZI"
+    },
+    {
+        "id":  "11455",
+        "name":  "BELLOSGUARDO"
+    },
+    {
+        "id":  "12105",
+        "name":  "BRACIGLIANO"
+    },
+    {
+        "id":  "12326",
+        "name":  "BUCCINO"
+    },
+    {
+        "id":  "12371",
+        "name":  "BUONABITACOLO"
+    },
+    {
+        "id":  "12492",
+        "name":  "CAGGIANO"
+    },
+    {
+        "id":  "12662",
+        "name":  "CALVANICO"
+    },
+    {
+        "id":  "12718",
+        "name":  "CAMEROTA"
+    },
+    {
+        "id":  "12752",
+        "name":  "CAMPAGNA"
+    },
+    {
+        "id":  "12882",
+        "name":  "CAMPORA"
+    },
+    {
+        "id":  "12972",
+        "name":  "CANNALONGA"
+    },
+    {
+        "id":  "13035",
+        "name":  "CAPACCIO PAESTUM"
+    },
+    {
+        "id":  "13416",
+        "name":  "CASAL VELINO"
+    },
+    {
+        "id":  "13427",
+        "name":  "CASALBUONO"
+    },
+    {
+        "id":  "13455",
+        "name":  "CASALETTO SPARTANO"
+    },
+    {
+        "id":  "13556",
+        "name":  "CASELLE IN PITTARI"
+    },
+    {
+        "id":  "13749",
+        "name":  "CASTEL SAN GIORGIO"
+    },
+    {
+        "id":  "13751",
+        "name":  "CASTEL SAN LORENZO"
+    },
+    {
+        "id":  "13786",
+        "name":  "CASTELCIVITA"
+    },
+    {
+        "id":  "13828",
+        "name":  "CASTELLABATE"
+    },
+    {
+        "id":  "13999",
+        "name":  "CASTELNUOVO CILENTO"
+    },
+    {
+        "id":  "14006",
+        "name":  "CASTELNUOVO DI CONZA"
+    },
+    {
+        "id":  "14104",
+        "name":  "CASTIGLIONE DEL GENOVESI"
+    },
+    {
+        "id":  "14196",
+        "name":  "CAVA DE\u0027 TIRRENI"
+    },
+    {
+        "id":  "14328",
+        "name":  "CELLE DI BULGHERIA"
+    },
+    {
+        "id":  "14387",
+        "name":  "CENTOLA"
+    },
+    {
+        "id":  "14411",
+        "name":  "CERASO"
+    },
+    {
+        "id":  "14603",
+        "name":  "CETARA"
+    },
+    {
+        "id":  "14786",
+        "name":  "CICERALE"
+    },
+    {
+        "id":  "15173",
+        "name":  "COLLIANO"
+    },
+    {
+        "id":  "15270",
+        "name":  "CONCA DEI MARINI"
+    },
+    {
+        "id":  "15327",
+        "name":  "CONTRONE"
+    },
+    {
+        "id":  "15329",
+        "name":  "CONTURSI TERME"
+    },
+    {
+        "id":  "15341",
+        "name":  "CORBARA"
+    },
+    {
+        "id":  "15377",
+        "name":  "CORLETO MONFORTE"
+    },
+    {
+        "id":  "15726",
+        "name":  "CUCCARO VETERE"
+    },
+    {
+        "id":  "16137",
+        "name":  "EBOLI"
+    },
+    {
+        "id":  "16407",
+        "name":  "FELITTO"
+    },
+    {
+        "id":  "16552",
+        "name":  "FISCIANO"
+    },
+    {
+        "id":  "16936",
+        "name":  "FURORE"
+    },
+    {
+        "id":  "16947",
+        "name":  "FUTANI"
+    },
+    {
+        "id":  "17316",
+        "name":  "GIFFONI SEI CASALI"
+    },
+    {
+        "id":  "17317",
+        "name":  "GIFFONI VALLE PIANA"
+    },
+    {
+        "id":  "17334",
+        "name":  "GIOI"
+    },
+    {
+        "id":  "17372",
+        "name":  "GIUNGANO"
+    },
+    {
+        "id":  "17935",
+        "name":  "ISPANI"
+    },
+    {
+        "id":  "18187",
+        "name":  "LAUREANA CILENTO"
+    },
+    {
+        "id":  "18199",
+        "name":  "LAURINO"
+    },
+    {
+        "id":  "18200",
+        "name":  "LAURITO"
+    },
+    {
+        "id":  "18219",
+        "name":  "LAVIANO"
+    },
+    {
+        "id":  "18728",
+        "name":  "LUSTRA"
+    },
+    {
+        "id":  "18828",
+        "name":  "MAGLIANO VETERE"
+    },
+    {
+        "id":  "18878",
+        "name":  "MAIORI"
+    },
+    {
+        "id":  "19439",
+        "name":  "MERCATO SAN SEVERINO"
+    },
+    {
+        "id":  "19606",
+        "name":  "MINORI"
+    },
+    {
+        "id":  "19699",
+        "name":  "MOIO DELLA CIVITELLA"
+    },
+    {
+        "id":  "19977",
+        "name":  "MONTANO ANTILIA"
+    },
+    {
+        "id":  "20048",
+        "name":  "MONTE SAN GIACOMO"
+    },
+    {
+        "id":  "20137",
+        "name":  "MONTECORICE"
+    },
+    {
+        "id":  "20139",
+        "name":  "MONTECORVINO PUGLIANO"
+    },
+    {
+        "id":  "20142",
+        "name":  "MONTECORVINO ROVELLA"
+    },
+    {
+        "id":  "20176",
+        "name":  "MONTEFORTE CILENTO"
+    },
+    {
+        "id":  "20341",
+        "name":  "MONTESANO SULLA MARCELLANA"
+    },
+    {
+        "id":  "20515",
+        "name":  "MORIGERATI"
+    },
+    {
+        "id":  "20849",
+        "name":  "NOCERA INFERIORE"
+    },
+    {
+        "id":  "20850",
+        "name":  "NOCERA SUPERIORE"
+    },
+    {
+        "id":  "20962",
+        "name":  "NOVI VELIA"
+    },
+    {
+        "id":  "21053",
+        "name":  "OGLIASTRO CILENTO"
+    },
+    {
+        "id":  "21073",
+        "name":  "OLEVANO SUL TUSCIANO"
+    },
+    {
+        "id":  "21095",
+        "name":  "OLIVETO CITRA"
+    },
+    {
+        "id":  "21147",
+        "name":  "OMIGNANO"
+    },
+    {
+        "id":  "21257",
+        "name":  "ORRIA"
+    },
+    {
+        "id":  "21408",
+        "name":  "OTTATI"
+    },
+    {
+        "id":  "21476",
+        "name":  "PADULA"
+    },
+    {
+        "id":  "21481",
+        "name":  "PAGANI"
+    },
+    {
+        "id":  "21588",
+        "name":  "PALOMONTE"
+    },
+    {
+        "id":  "21819",
+        "name":  "PELLEZZANO"
+    },
+    {
+        "id":  "21862",
+        "name":  "PERDIFUMO"
+    },
+    {
+        "id":  "21883",
+        "name":  "PERITO"
+    },
+    {
+        "id":  "21920",
+        "name":  "PERTOSA"
+    },
+    {
+        "id":  "21990",
+        "name":  "PETINA"
+    },
+    {
+        "id":  "22040",
+        "name":  "PIAGGINE"
+    },
+    {
+        "id":  "22362",
+        "name":  "PISCIOTTA"
+    },
+    {
+        "id":  "22533",
+        "name":  "POLLA"
+    },
+    {
+        "id":  "22539",
+        "name":  "POLLICA"
+    },
+    {
+        "id":  "22635",
+        "name":  "PONTECAGNANO FAIANO"
+    },
+    {
+        "id":  "22799",
+        "name":  "POSITANO"
+    },
+    {
+        "id":  "22809",
+        "name":  "POSTIGLIONE"
+    },
+    {
+        "id":  "22878",
+        "name":  "PRAIANO"
+    },
+    {
+        "id":  "23059",
+        "name":  "PRIGNANO CILENTO"
+    },
+    {
+        "id":  "23308",
+        "name":  "RAVELLO"
+    },
+    {
+        "id":  "23454",
+        "name":  "RICIGLIANO"
+    },
+    {
+        "id":  "23716",
+        "name":  "ROCCADASPIDE"
+    },
+    {
+        "id":  "23735",
+        "name":  "ROCCAGLORIOSA"
+    },
+    {
+        "id":  "23770",
+        "name":  "ROCCAPIEMONTE"
+    },
+    {
+        "id":  "23855",
+        "name":  "ROFRANO"
+    },
+    {
+        "id":  "23892",
+        "name":  "ROMAGNANO AL MONTE"
+    },
+    {
+        "id":  "24006",
+        "name":  "ROSCIGNO"
+    },
+    {
+        "id":  "24155",
+        "name":  "RUTINO"
+    },
+    {
+        "id":  "24175",
+        "name":  "SACCO"
+    },
+    {
+        "id":  "24254",
+        "name":  "SALA CONSILINA"
+    },
+    {
+        "id":  "24290",
+        "name":  "SALENTO"
+    },
+    {
+        "id":  "24298",
+        "name":  "SALERNO"
+    },
+    {
+        "id":  "24353",
+        "name":  "SALVITELLE"
+    },
+    {
+        "id":  "24489",
+        "name":  "SAN CIPRIANO PICENTINO"
+    },
+    {
+        "id":  "24688",
+        "name":  "SAN GIOVANNI A PIRO"
+    },
+    {
+        "id":  "24761",
+        "name":  "SAN GREGORIO MAGNO"
+    },
+    {
+        "id":  "24827",
+        "name":  "SAN MANGO PIEMONTE"
+    },
+    {
+        "id":  "24913",
+        "name":  "SAN MARZANO SUL SARNO"
+    },
+    {
+        "id":  "24922",
+        "name":  "SAN MAURO CILENTO"
+    },
+    {
+        "id":  "24928",
+        "name":  "SAN MAURO LA BRUCA"
+    },
+    {
+        "id":  "25033",
+        "name":  "SAN PIETRO AL TANAGRO"
+    },
+    {
+        "id":  "25116",
+        "name":  "SAN RUFO"
+    },
+    {
+        "id":  "25181",
+        "name":  "SAN VALENTINO TORIO"
+    },
+    {
+        "id":  "25497",
+        "name":  "SANT\u0027ANGELO A FASANELLA"
+    },
+    {
+        "id":  "25559",
+        "name":  "SANT\u0027ARSENIO"
+    },
+    {
+        "id":  "25563",
+        "name":  "SANT\u0027EGIDIO DEL MONTE ALBINO"
+    },
+    {
+        "id":  "25396",
+        "name":  "SANTA MARINA"
+    },
+    {
+        "id":  "25632",
+        "name":  "SANTOMENNA"
+    },
+    {
+        "id":  "25657",
+        "name":  "SANZA"
+    },
+    {
+        "id":  "25672",
+        "name":  "SAPRI"
+    },
+    {
+        "id":  "25698",
+        "name":  "SARNO"
+    },
+    {
+        "id":  "25725",
+        "name":  "SASSANO"
+    },
+    {
+        "id":  "25795",
+        "name":  "SCAFATI"
+    },
+    {
+        "id":  "25799",
+        "name":  "SCALA"
+    },
+    {
+        "id":  "26127",
+        "name":  "SERRAMEZZANA"
+    },
+    {
+        "id":  "26152",
+        "name":  "SERRE"
+    },
+    {
+        "id":  "26181",
+        "name":  "SESSA CILENTO"
+    },
+    {
+        "id":  "26290",
+        "name":  "SIANO"
+    },
+    {
+        "id":  "26295",
+        "name":  "SICIGNANO DEGLI ALBURNI"
+    },
+    {
+        "id":  "26728",
+        "name":  "STELLA CILENTO"
+    },
+    {
+        "id":  "26755",
+        "name":  "STIO"
+    },
+    {
+        "id":  "27020",
+        "name":  "TEGGIANO"
+    },
+    {
+        "id":  "27341",
+        "name":  "TORCHIARA"
+    },
+    {
+        "id":  "27369",
+        "name":  "TORRACA"
+    },
+    {
+        "id":  "27416",
+        "name":  "TORRE ORSAIA"
+    },
+    {
+        "id":  "27484",
+        "name":  "TORTORELLA"
+    },
+    {
+        "id":  "27516",
+        "name":  "TRAMONTI"
+    },
+    {
+        "id":  "27620",
+        "name":  "TRENTINARA"
+    },
+    {
+        "id":  "28081",
+        "name":  "VALLE DELL\u0027ANGELO"
+    },
+    {
+        "id":  "28155",
+        "name":  "VALLO DELLA LUCANIA"
+    },
+    {
+        "id":  "28219",
+        "name":  "VALVA"
+    },
+    {
+        "id":  "28605",
+        "name":  "VIBONATI"
+    },
+    {
+        "id":  "28651",
+        "name":  "VIETRI SUL MARE"
+    }
+]

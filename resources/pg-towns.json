@@ -1,0 +1,238 @@
+﻿[
+    {
+        "id":  "10901",
+        "name":  "ASSISI"
+    },
+    {
+        "id":  "11368",
+        "name":  "BASTIA UMBRA"
+    },
+    {
+        "id":  "11590",
+        "name":  "BETTONA"
+    },
+    {
+        "id":  "11594",
+        "name":  "BEVAGNA"
+    },
+    {
+        "id":  "12774",
+        "name":  "CAMPELLO SUL CLITUNNO"
+    },
+    {
+        "id":  "12973",
+        "name":  "CANNARA"
+    },
+    {
+        "id":  "13540",
+        "name":  "CASCIA"
+    },
+    {
+        "id":  "13743",
+        "name":  "CASTEL RITALDI"
+    },
+    {
+        "id":  "14106",
+        "name":  "CASTIGLIONE DEL LAGO"
+    },
+    {
+        "id":  "14486",
+        "name":  "CERRETO DI SPOLETO"
+    },
+    {
+        "id":  "14900",
+        "name":  "CITERNA"
+    },
+    {
+        "id":  "14901",
+        "name":  "CITTÃ DELLA PIEVE"
+    },
+    {
+        "id":  "14902",
+        "name":  "CITTÃ DI CASTELLO"
+    },
+    {
+        "id":  "15093",
+        "name":  "COLLAZZONE"
+    },
+    {
+        "id":  "15347",
+        "name":  "CORCIANO"
+    },
+    {
+        "id":  "15566",
+        "name":  "COSTACCIARO"
+    },
+    {
+        "id":  "15901",
+        "name":  "DERUTA"
+    },
+    {
+        "id":  "16634",
+        "name":  "FOLIGNO"
+    },
+    {
+        "id":  "16798",
+        "name":  "FOSSATO DI VICO"
+    },
+    {
+        "id":  "16860",
+        "name":  "FRATTA TODINA"
+    },
+    {
+        "id":  "17282",
+        "name":  "GIANO DELL\u0027UMBRIA"
+    },
+    {
+        "id":  "17703",
+        "name":  "GUALDO CATTANEO"
+    },
+    {
+        "id":  "17704",
+        "name":  "GUALDO TADINO"
+    },
+    {
+        "id":  "17742",
+        "name":  "GUBBIO"
+    },
+    {
+        "id":  "18411",
+        "name":  "LISCIANO NICCONE"
+    },
+    {
+        "id":  "18813",
+        "name":  "MAGIONE"
+    },
+    {
+        "id":  "19138",
+        "name":  "MARSCIANO"
+    },
+    {
+        "id":  "19234",
+        "name":  "MASSA MARTANA"
+    },
+    {
+        "id":  "20000",
+        "name":  "MONTE CASTELLO DI VIBIO"
+    },
+    {
+        "id":  "20068",
+        "name":  "MONTE SANTA MARIA TIBERINA"
+    },
+    {
+        "id":  "20151",
+        "name":  "MONTEFALCO"
+    },
+    {
+        "id":  "20232",
+        "name":  "MONTELEONE DI SPOLETO"
+    },
+    {
+        "id":  "20431",
+        "name":  "MONTONE"
+    },
+    {
+        "id":  "20852",
+        "name":  "NOCERA UMBRA"
+    },
+    {
+        "id":  "20898",
+        "name":  "NORCIA"
+    },
+    {
+        "id":  "21448",
+        "name":  "PACIANO"
+    },
+    {
+        "id":  "21615",
+        "name":  "PANICALE"
+    },
+    {
+        "id":  "21703",
+        "name":  "PASSIGNANO SUL TRASIMENO"
+    },
+    {
+        "id":  "21924",
+        "name":  "PERUGIA"
+    },
+    {
+        "id":  "22155",
+        "name":  "PIEGARO"
+    },
+    {
+        "id":  "22186",
+        "name":  "PIETRALUNGA"
+    },
+    {
+        "id":  "22492",
+        "name":  "POGGIODOMO"
+    },
+    {
+        "id":  "22963",
+        "name":  "PRECI"
+    },
+    {
+        "id":  "24749",
+        "name":  "SAN GIUSTINO"
+    },
+    {
+        "id":  "25478",
+        "name":  "SANT\u0027ANATOLIA DI NARCO"
+    },
+    {
+        "id":  "25865",
+        "name":  "SCHEGGIA E PASCELUPO"
+    },
+    {
+        "id":  "25867",
+        "name":  "SCHEGGINO"
+    },
+    {
+        "id":  "25988",
+        "name":  "SELLANO"
+    },
+    {
+        "id":  "26305",
+        "name":  "SIGILLO"
+    },
+    {
+        "id":  "26612",
+        "name":  "SPELLO"
+    },
+    {
+        "id":  "26678",
+        "name":  "SPOLETO"
+    },
+    {
+        "id":  "27281",
+        "name":  "TODI"
+    },
+    {
+        "id":  "27347",
+        "name":  "TORGIANO"
+    },
+    {
+        "id":  "27666",
+        "name":  "TREVI"
+    },
+    {
+        "id":  "27798",
+        "name":  "TUORO SUL TRASIMENO"
+    },
+    {
+        "id":  "27858",
+        "name":  "UMBERTIDE"
+    },
+    {
+        "id":  "28033",
+        "name":  "VALFABBRICA"
+    },
+    {
+        "id":  "28157",
+        "name":  "VALLO DI NERA"
+    },
+    {
+        "id":  "28212",
+        "name":  "VALTOPINA"
+    }
+]

@@ -1,0 +1,310 @@
+﻿[
+    {
+        "id":  "10248",
+        "name":  "ALBAREDO PER SAN MARCO"
+    },
+    {
+        "id":  "10306",
+        "name":  "ALBOSAGGIA"
+    },
+    {
+        "id":  "10500",
+        "name":  "ANDALO VALTELLINO"
+    },
+    {
+        "id":  "10634",
+        "name":  "APRICA"
+    },
+    {
+        "id":  "10725",
+        "name":  "ARDENNO"
+    },
+    {
+        "id":  "11484",
+        "name":  "BEMA"
+    },
+    {
+        "id":  "11499",
+        "name":  "BERBENNO DI VALTELLINA"
+    },
+    {
+        "id":  "11622",
+        "name":  "BIANZONE"
+    },
+    {
+        "id":  "11985",
+        "name":  "BORMIO"
+    },
+    {
+        "id":  "12353",
+        "name":  "BUGLIO IN MONTE"
+    },
+    {
+        "id":  "12524",
+        "name":  "CAIOLO"
+    },
+    {
+        "id":  "12846",
+        "name":  "CAMPODOLCINO"
+    },
+    {
+        "id":  "13613",
+        "name":  "CASPOGGIO"
+    },
+    {
+        "id":  "13932",
+        "name":  "CASTELLO DELL\u0027ACQUA"
+    },
+    {
+        "id":  "14133",
+        "name":  "CASTIONE ANDEVENNO"
+    },
+    {
+        "id":  "14300",
+        "name":  "CEDRASCO"
+    },
+    {
+        "id":  "14421",
+        "name":  "CERCINO"
+    },
+    {
+        "id":  "14696",
+        "name":  "CHIAVENNA"
+    },
+    {
+        "id":  "14711",
+        "name":  "CHIESA IN VALMALENCO"
+    },
+    {
+        "id":  "14738",
+        "name":  "CHIURO"
+    },
+    {
+        "id":  "14832",
+        "name":  "CINO"
+    },
+    {
+        "id":  "14980",
+        "name":  "CIVO"
+    },
+    {
+        "id":  "15206",
+        "name":  "COLORINA"
+    },
+    {
+        "id":  "15522",
+        "name":  "COSIO VALTELLINO"
+    },
+    {
+        "id":  "15861",
+        "name":  "DAZIO"
+    },
+    {
+        "id":  "15880",
+        "name":  "DELEBIO"
+    },
+    {
+        "id":  "16108",
+        "name":  "DUBINO"
+    },
+    {
+        "id":  "16288",
+        "name":  "FAEDO VALTELLINO"
+    },
+    {
+        "id":  "16706",
+        "name":  "FORCOLA"
+    },
+    {
+        "id":  "16945",
+        "name":  "FUSINE"
+    },
+    {
+        "id":  "17248",
+        "name":  "GEROLA ALTA"
+    },
+    {
+        "id":  "17450",
+        "name":  "GORDONA"
+    },
+    {
+        "id":  "17655",
+        "name":  "GROSIO"
+    },
+    {
+        "id":  "17656",
+        "name":  "GROSOTTO"
+    },
+    {
+        "id":  "18112",
+        "name":  "LANZADA"
+    },
+    {
+        "id":  "18428",
+        "name":  "LIVIGNO"
+    },
+    {
+        "id":  "18606",
+        "name":  "LOVERO"
+    },
+    {
+        "id":  "18788",
+        "name":  "MADESIMO"
+    },
+    {
+        "id":  "18990",
+        "name":  "MANTELLO"
+    },
+    {
+        "id":  "19315",
+        "name":  "MAZZO DI VALTELLINA"
+    },
+    {
+        "id":  "19390",
+        "name":  "MELLO"
+    },
+    {
+        "id":  "19469",
+        "name":  "MESE"
+    },
+    {
+        "id":  "19925",
+        "name":  "MONTAGNA IN VALTELLINA"
+    },
+    {
+        "id":  "20482",
+        "name":  "MORBEGNO"
+    },
+    {
+        "id":  "20946",
+        "name":  "NOVATE MEZZOLA"
+    },
+    {
+        "id":  "21793",
+        "name":  "PEDESINA"
+    },
+    {
+        "id":  "22097",
+        "name":  "PIANTEDO"
+    },
+    {
+        "id":  "22104",
+        "name":  "PIATEDA"
+    },
+    {
+        "id":  "22385",
+        "name":  "PIURO"
+    },
+    {
+        "id":  "22498",
+        "name":  "POGGIRIDENTI"
+    },
+    {
+        "id":  "22616",
+        "name":  "PONTE IN VALTELLINA"
+    },
+    {
+        "id":  "22808",
+        "name":  "POSTALESIO"
+    },
+    {
+        "id":  "22907",
+        "name":  "PRATA CAMPORTACCIO"
+    },
+    {
+        "id":  "23299",
+        "name":  "RASURA"
+    },
+    {
+        "id":  "23870",
+        "name":  "ROGOLO"
+    },
+    {
+        "id":  "24398",
+        "name":  "SAMOLACO"
+    },
+    {
+        "id":  "24623",
+        "name":  "SAN GIACOMO FILIPPO"
+    },
+    {
+        "id":  "26101",
+        "name":  "SERNIO"
+    },
+    {
+        "id":  "26495",
+        "name":  "SONDALO"
+    },
+    {
+        "id":  "26496",
+        "name":  "SONDRIO"
+    },
+    {
+        "id":  "26694",
+        "name":  "SPRIANA"
+    },
+    {
+        "id":  "26906",
+        "name":  "TALAMONA"
+    },
+    {
+        "id":  "26959",
+        "name":  "TARTANO"
+    },
+    {
+        "id":  "27023",
+        "name":  "TEGLIO"
+    },
+    {
+        "id":  "27255",
+        "name":  "TIRANO"
+    },
+    {
+        "id":  "27411",
+        "name":  "TORRE DI SANTA MARIA"
+    },
+    {
+        "id":  "27499",
+        "name":  "TOVO DI SANT\u0027AGATA"
+    },
+    {
+        "id":  "27528",
+        "name":  "TRAONA"
+    },
+    {
+        "id":  "27657",
+        "name":  "TRESIVIO"
+    },
+    {
+        "id":  "27968",
+        "name":  "VAL MASINO"
+    },
+    {
+        "id":  "28005",
+        "name":  "VALDIDENTRO"
+    },
+    {
+        "id":  "28016",
+        "name":  "VALDISOTTO"
+    },
+    {
+        "id":  "28039",
+        "name":  "VALFURVA"
+    },
+    {
+        "id":  "28436",
+        "name":  "VERCEIA"
+    },
+    {
+        "id":  "28538",
+        "name":  "VERVIO"
+    },
+    {
+        "id":  "28765",
+        "name":  "VILLA DI CHIAVENNA"
+    },
+    {
+        "id":  "28767",
+        "name":  "VILLA DI TIRANO"
+    }
+]

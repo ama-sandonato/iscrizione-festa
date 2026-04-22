@@ -1,0 +1,266 @@
+﻿[
+    {
+        "id":  "10201",
+        "name":  "AIROLE"
+    },
+    {
+        "id":  "10635",
+        "name":  "APRICALE"
+    },
+    {
+        "id":  "10644",
+        "name":  "AQUILA D\u0027ARROSCIA"
+    },
+    {
+        "id":  "10785",
+        "name":  "ARMO"
+    },
+    {
+        "id":  "10948",
+        "name":  "AURIGO"
+    },
+    {
+        "id":  "11038",
+        "name":  "BADALUCCO"
+    },
+    {
+        "id":  "11119",
+        "name":  "BAJARDO"
+    },
+    {
+        "id":  "11862",
+        "name":  "BORDIGHERA"
+    },
+    {
+        "id":  "11873",
+        "name":  "BORGHETTO D\u0027ARROSCIA"
+    },
+    {
+        "id":  "11959",
+        "name":  "BORGOMARO"
+    },
+    {
+        "id":  "12890",
+        "name":  "CAMPOROSSO"
+    },
+    {
+        "id":  "13193",
+        "name":  "CARAVONICA"
+    },
+    {
+        "id":  "13769",
+        "name":  "CASTEL VITTORIO"
+    },
+    {
+        "id":  "13867",
+        "name":  "CASTELLARO"
+    },
+    {
+        "id":  "14453",
+        "name":  "CERIANA"
+    },
+    {
+        "id":  "14556",
+        "name":  "CERVO"
+    },
+    {
+        "id":  "14592",
+        "name":  "CESIO"
+    },
+    {
+        "id":  "14752",
+        "name":  "CHIUSANICO"
+    },
+    {
+        "id":  "14759",
+        "name":  "CHIUSAVECCHIA"
+    },
+    {
+        "id":  "14849",
+        "name":  "CIPRESSA"
+    },
+    {
+        "id":  "14925",
+        "name":  "CIVEZZA"
+    },
+    {
+        "id":  "15521",
+        "name":  "COSIO D\u0027ARROSCIA"
+    },
+    {
+        "id":  "15570",
+        "name":  "COSTARAINERA"
+    },
+    {
+        "id":  "15922",
+        "name":  "DIANO ARENTINO"
+    },
+    {
+        "id":  "15926",
+        "name":  "DIANO CASTELLO"
+    },
+    {
+        "id":  "15930",
+        "name":  "DIANO MARINA"
+    },
+    {
+        "id":  "15932",
+        "name":  "DIANO SAN PIETRO"
+    },
+    {
+        "id":  "15977",
+        "name":  "DOLCEACQUA"
+    },
+    {
+        "id":  "15978",
+        "name":  "DOLCEDO"
+    },
+    {
+        "id":  "17814",
+        "name":  "IMPERIA"
+    },
+    {
+        "id":  "17928",
+        "name":  "ISOLABONA"
+    },
+    {
+        "id":  "18628",
+        "name":  "LUCINASCO"
+    },
+    {
+        "id":  "19405",
+        "name":  "MENDATICA"
+    },
+    {
+        "id":  "19719",
+        "name":  "MOLINI DI TRIORA"
+    },
+    {
+        "id":  "19959",
+        "name":  "MONTALTO CARPASIO"
+    },
+    {
+        "id":  "20216",
+        "name":  "MONTEGROSSO PIAN LATTE"
+    },
+    {
+        "id":  "21101",
+        "name":  "OLIVETTA SAN MICHELE"
+    },
+    {
+        "id":  "21352",
+        "name":  "OSPEDALETTI"
+    },
+    {
+        "id":  "21882",
+        "name":  "PERINALDO"
+    },
+    {
+        "id":  "22174",
+        "name":  "PIETRABRUNA"
+    },
+    {
+        "id":  "22241",
+        "name":  "PIEVE DI TECO"
+    },
+    {
+        "id":  "22268",
+        "name":  "PIGNA"
+    },
+    {
+        "id":  "22572",
+        "name":  "POMPEIANA"
+    },
+    {
+        "id":  "22643",
+        "name":  "PONTEDASSIO"
+    },
+    {
+        "id":  "22716",
+        "name":  "PORNASSIO"
+    },
+    {
+        "id":  "22989",
+        "name":  "PRELÃ"
+    },
+    {
+        "id":  "23279",
+        "name":  "RANZO"
+    },
+    {
+        "id":  "23416",
+        "name":  "REZZO"
+    },
+    {
+        "id":  "23570",
+        "name":  "RIVA LIGURE"
+    },
+    {
+        "id":  "23824",
+        "name":  "ROCCHETTA NERVINA"
+    },
+    {
+        "id":  "24410",
+        "name":  "SAN BARTOLOMEO AL MARE"
+    },
+    {
+        "id":  "24445",
+        "name":  "SAN BIAGIO DELLA CIMA"
+    },
+    {
+        "id":  "24794",
+        "name":  "SAN LORENZO AL MARE"
+    },
+    {
+        "id":  "25277",
+        "name":  "SANREMO"
+    },
+    {
+        "id":  "25607",
+        "name":  "SANTO STEFANO AL MARE"
+    },
+    {
+        "id":  "25925",
+        "name":  "SEBORGA"
+    },
+    {
+        "id":  "26450",
+        "name":  "SOLDANO"
+    },
+    {
+        "id":  "26878",
+        "name":  "TAGGIA"
+    },
+    {
+        "id":  "27190",
+        "name":  "TERZORIO"
+    },
+    {
+        "id":  "27727",
+        "name":  "TRIORA"
+    },
+    {
+        "id":  "28110",
+        "name":  "VALLEBONA"
+    },
+    {
+        "id":  "28115",
+        "name":  "VALLECROSIA"
+    },
+    {
+        "id":  "28306",
+        "name":  "VASIA"
+    },
+    {
+        "id":  "28414",
+        "name":  "VENTIMIGLIA"
+    },
+    {
+        "id":  "28556",
+        "name":  "VESSALICO"
+    },
+    {
+        "id":  "28774",
+        "name":  "VILLA FARALDI"
+    }
+]

@@ -1,0 +1,390 @@
+﻿[
+    {
+        "id":  "10109",
+        "name":  "AFRICO"
+    },
+    {
+        "id":  "10137",
+        "name":  "AGNANA CALABRA"
+    },
+    {
+        "id":  "10560",
+        "name":  "ANOIA"
+    },
+    {
+        "id":  "10582",
+        "name":  "ANTONIMINA"
+    },
+    {
+        "id":  "10727",
+        "name":  "ARDORE"
+    },
+    {
+        "id":  "11053",
+        "name":  "BAGALADI"
+    },
+    {
+        "id":  "11059",
+        "name":  "BAGNARA CALABRA"
+    },
+    {
+        "id":  "11490",
+        "name":  "BENESTARE"
+    },
+    {
+        "id":  "11612",
+        "name":  "BIANCO"
+    },
+    {
+        "id":  "11712",
+        "name":  "BIVONGI"
+    },
+    {
+        "id":  "12068",
+        "name":  "BOVA"
+    },
+    {
+        "id":  "12069",
+        "name":  "BOVA MARINA"
+    },
+    {
+        "id":  "12070",
+        "name":  "BOVALINO"
+    },
+    {
+        "id":  "12110",
+        "name":  "BRANCALEONE"
+    },
+    {
+        "id":  "12316",
+        "name":  "BRUZZANO ZEFFIRIO"
+    },
+    {
+        "id":  "12551",
+        "name":  "CALANNA"
+    },
+    {
+        "id":  "12733",
+        "name":  "CAMINI"
+    },
+    {
+        "id":  "12806",
+        "name":  "CAMPO CALABRO"
+    },
+    {
+        "id":  "12942",
+        "name":  "CANDIDONI"
+    },
+    {
+        "id":  "12985",
+        "name":  "CANOLO"
+    },
+    {
+        "id":  "13165",
+        "name":  "CARAFFA DEL BIANCO"
+    },
+    {
+        "id":  "13231",
+        "name":  "CARDETO"
+    },
+    {
+        "id":  "13250",
+        "name":  "CARERI"
+    },
+    {
+        "id":  "13578",
+        "name":  "CASIGNANA"
+    },
+    {
+        "id":  "14192",
+        "name":  "CAULONIA"
+    },
+    {
+        "id":  "14810",
+        "name":  "CIMINÃ"
+    },
+    {
+        "id":  "14833",
+        "name":  "CINQUEFRONDI"
+    },
+    {
+        "id":  "14909",
+        "name":  "CITTANOVA"
+    },
+    {
+        "id":  "15295",
+        "name":  "CONDOFURI"
+    },
+    {
+        "id":  "15523",
+        "name":  "COSOLETO"
+    },
+    {
+        "id":  "15882",
+        "name":  "DELIANUOVA"
+    },
+    {
+        "id":  "16433",
+        "name":  "FEROLETO DELLA CHIESA"
+    },
+    {
+        "id":  "16453",
+        "name":  "FERRUZZANO"
+    },
+    {
+        "id":  "16561",
+        "name":  "FIUMARA"
+    },
+    {
+        "id":  "17008",
+        "name":  "GALATRO"
+    },
+    {
+        "id":  "17222",
+        "name":  "GERACE"
+    },
+    {
+        "id":  "17314",
+        "name":  "GIFFONE"
+    },
+    {
+        "id":  "17341",
+        "name":  "GIOIA TAURO"
+    },
+    {
+        "id":  "17343",
+        "name":  "GIOIOSA IONICA"
+    },
+    {
+        "id":  "17674",
+        "name":  "GROTTERIA"
+    },
+    {
+        "id":  "18044",
+        "name":  "LAGANADI"
+    },
+    {
+        "id":  "18189",
+        "name":  "LAUREANA DI BORRELLO"
+    },
+    {
+        "id":  "18482",
+        "name":  "LOCRI"
+    },
+    {
+        "id":  "18945",
+        "name":  "MAMMOLA"
+    },
+    {
+        "id":  "19100",
+        "name":  "MARINA DI GIOIOSA IONICA"
+    },
+    {
+        "id":  "19128",
+        "name":  "MAROPATI"
+    },
+    {
+        "id":  "19167",
+        "name":  "MARTONE"
+    },
+    {
+        "id":  "19374",
+        "name":  "MELICUCCO"
+    },
+    {
+        "id":  "19373",
+        "name":  "MELICUCCÃ"
+    },
+    {
+        "id":  "19382",
+        "name":  "MELITO DI PORTO SALVO"
+    },
+    {
+        "id":  "19738",
+        "name":  "MOLOCHIO"
+    },
+    {
+        "id":  "19785",
+        "name":  "MONASTERACE"
+    },
+    {
+        "id":  "20083",
+        "name":  "MONTEBELLO JONICO"
+    },
+    {
+        "id":  "20599",
+        "name":  "MOTTA SAN GIOVANNI"
+    },
+    {
+        "id":  "21183",
+        "name":  "OPPIDO MAMERTINA"
+    },
+    {
+        "id":  "21560",
+        "name":  "PALIZZI"
+    },
+    {
+        "id":  "21581",
+        "name":  "PALMI"
+    },
+    {
+        "id":  "21765",
+        "name":  "PAZZANO"
+    },
+    {
+        "id":  "22401",
+        "name":  "PLACANICA"
+    },
+    {
+        "id":  "22416",
+        "name":  "PLATÃ"
+    },
+    {
+        "id":  "22531",
+        "name":  "POLISTENA"
+    },
+    {
+        "id":  "22734",
+        "name":  "PORTIGLIOLA"
+    },
+    {
+        "id":  "23353",
+        "name":  "REGGIO DI CALABRIA"
+    },
+    {
+        "id":  "23432",
+        "name":  "RIACE"
+    },
+    {
+        "id":  "23618",
+        "name":  "RIZZICONI"
+    },
+    {
+        "id":  "23720",
+        "name":  "ROCCAFORTE DEL GRECO"
+    },
+    {
+        "id":  "23804",
+        "name":  "ROCCELLA IONICA"
+    },
+    {
+        "id":  "23863",
+        "name":  "ROGHUDI"
+    },
+    {
+        "id":  "23997",
+        "name":  "ROSARNO"
+    },
+    {
+        "id":  "24394",
+        "name":  "SAMO"
+    },
+    {
+        "id":  "24566",
+        "name":  "SAN FERDINANDO"
+    },
+    {
+        "id":  "24676",
+        "name":  "SAN GIORGIO MORGETO"
+    },
+    {
+        "id":  "24705",
+        "name":  "SAN GIOVANNI DI GERACE"
+    },
+    {
+        "id":  "24788",
+        "name":  "SAN LORENZO"
+    },
+    {
+        "id":  "24821",
+        "name":  "SAN LUCA"
+    },
+    {
+        "id":  "25045",
+        "name":  "SAN PIETRO DI CARIDÃ"
+    },
+    {
+        "id":  "25101",
+        "name":  "SAN PROCOPIO"
+    },
+    {
+        "id":  "25110",
+        "name":  "SAN ROBERTO"
+    },
+    {
+        "id":  "25441",
+        "name":  "SANT\u0027AGATA DEL BIANCO"
+    },
+    {
+        "id":  "25466",
+        "name":  "SANT\u0027ALESSIO IN ASPROMONTE"
+    },
+    {
+        "id":  "25580",
+        "name":  "SANT\u0027EUFEMIA D\u0027ASPROMONTE"
+    },
+    {
+        "id":  "25594",
+        "name":  "SANT\u0027ILARIO DELLO IONIO"
+    },
+    {
+        "id":  "25291",
+        "name":  "SANTA CRISTINA D\u0027ASPROMONTE"
+    },
+    {
+        "id":  "25624",
+        "name":  "SANTO STEFANO IN ASPROMONTE"
+    },
+    {
+        "id":  "25888",
+        "name":  "SCIDO"
+    },
+    {
+        "id":  "25892",
+        "name":  "SCILLA"
+    },
+    {
+        "id":  "26016",
+        "name":  "SEMINARA"
+    },
+    {
+        "id":  "26134",
+        "name":  "SERRATA"
+    },
+    {
+        "id":  "26302",
+        "name":  "SIDERNO"
+    },
+    {
+        "id":  "26359",
+        "name":  "SINOPOLI"
+    },
+    {
+        "id":  "26704",
+        "name":  "STAITI"
+    },
+    {
+        "id":  "26746",
+        "name":  "STIGNANO"
+    },
+    {
+        "id":  "26747",
+        "name":  "STILO"
+    },
+    {
+        "id":  "26974",
+        "name":  "TAURIANOVA"
+    },
+    {
+        "id":  "27156",
+        "name":  "TERRANOVA SAPPO MINULIO"
+    },
+    {
+        "id":  "28258",
+        "name":  "VARAPODIO"
+    },
+    {
+        "id":  "28802",
+        "name":  "VILLA SAN GIOVANNI"
+    }
+]

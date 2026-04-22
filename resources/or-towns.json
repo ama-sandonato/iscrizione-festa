@@ -1,0 +1,350 @@
+﻿[
+    {
+        "id":  "10013",
+        "name":  "ABBASANTA"
+    },
+    {
+        "id":  "10170",
+        "name":  "AIDOMAGGIORE"
+    },
+    {
+        "id":  "10231",
+        "name":  "ALBAGIARA"
+    },
+    {
+        "id":  "10321",
+        "name":  "ALES"
+    },
+    {
+        "id":  "10364",
+        "name":  "ALLAI"
+    },
+    {
+        "id":  "10675",
+        "name":  "ARBOREA"
+    },
+    {
+        "id":  "10718",
+        "name":  "ARDAULI"
+    },
+    {
+        "id":  "10905",
+        "name":  "ASSOLO"
+    },
+    {
+        "id":  "10912",
+        "name":  "ASUNI"
+    },
+    {
+        "id":  "11175",
+        "name":  "BARADILI"
+    },
+    {
+        "id":  "11189",
+        "name":  "BARATILI SAN PIETRO"
+    },
+    {
+        "id":  "11259",
+        "name":  "BARESSA"
+    },
+    {
+        "id":  "11389",
+        "name":  "BAULADU"
+    },
+    {
+        "id":  "11637",
+        "name":  "BIDONÃ"
+    },
+    {
+        "id":  "11824",
+        "name":  "BONARCADO"
+    },
+    {
+        "id":  "11996",
+        "name":  "BORONEDDU"
+    },
+    {
+        "id":  "11951",
+        "name":  "BOSA"
+    },
+    {
+        "id":  "12400",
+        "name":  "BUSACHI"
+    },
+    {
+        "id":  "12455",
+        "name":  "CABRAS"
+    },
+    {
+        "id":  "15738",
+        "name":  "CUGLIERI"
+    },
+    {
+        "id":  "15767",
+        "name":  "CURCURIS"
+    },
+    {
+        "id":  "16611",
+        "name":  "FLUSSIO"
+    },
+    {
+        "id":  "16710",
+        "name":  "FORDONGIANUS"
+    },
+    {
+        "id":  "17274",
+        "name":  "GHILARZA"
+    },
+    {
+        "id":  "17436",
+        "name":  "GONNOSCODINA"
+    },
+    {
+        "id":  "17443",
+        "name":  "GONNOSNÃ"
+    },
+    {
+        "id":  "17448",
+        "name":  "GONNOSTRAMATZA"
+    },
+    {
+        "id":  "18039",
+        "name":  "LACONI"
+    },
+    {
+        "id":  "18848",
+        "name":  "MAGOMADAS"
+    },
+    {
+        "id":  "19134",
+        "name":  "MARRUBIU"
+    },
+    {
+        "id":  "19271",
+        "name":  "MASULLAS"
+    },
+    {
+        "id":  "19580",
+        "name":  "MILIS"
+    },
+    {
+        "id":  "19668",
+        "name":  "MODOLO"
+    },
+    {
+        "id":  "19686",
+        "name":  "MOGORELLA"
+    },
+    {
+        "id":  "19689",
+        "name":  "MOGORO"
+    },
+    {
+        "id":  "20454",
+        "name":  "MONTRESTA"
+    },
+    {
+        "id":  "20507",
+        "name":  "MORGONGIORI"
+    },
+    {
+        "id":  "20708",
+        "name":  "NARBOLIA"
+    },
+    {
+        "id":  "20770",
+        "name":  "NEONELI"
+    },
+    {
+        "id":  "20897",
+        "name":  "NORBELLO"
+    },
+    {
+        "id":  "20975",
+        "name":  "NUGHEDU SANTA VITTORIA"
+    },
+    {
+        "id":  "20986",
+        "name":  "NURACHI"
+    },
+    {
+        "id":  "21001",
+        "name":  "NURECI"
+    },
+    {
+        "id":  "21105",
+        "name":  "OLLASTRA"
+    },
+    {
+        "id":  "21243",
+        "name":  "ORISTANO"
+    },
+    {
+        "id":  "21579",
+        "name":  "PALMAS ARBOREA"
+    },
+    {
+        "id":  "21734",
+        "name":  "PAU"
+    },
+    {
+        "id":  "21747",
+        "name":  "PAULILATINO"
+    },
+    {
+        "id":  "22578",
+        "name":  "POMPU"
+    },
+    {
+        "id":  "23514",
+        "name":  "RIOLA SARDO"
+    },
+    {
+        "id":  "24137",
+        "name":  "RUINAS"
+    },
+    {
+        "id":  "24193",
+        "name":  "SAGAMA"
+    },
+    {
+        "id":  "24409",
+        "name":  "SAMUGHEO"
+    },
+    {
+        "id":  "24981",
+        "name":  "SAN NICOLÃ D\u0027ARCIDANO"
+    },
+    {
+        "id":  "25191",
+        "name":  "SAN VERO MILIS"
+    },
+    {
+        "id":  "25321",
+        "name":  "SANTA GIUSTA"
+    },
+    {
+        "id":  "25653",
+        "name":  "SANTU LUSSURGIU"
+    },
+    {
+        "id":  "25837",
+        "name":  "SCANO DI MONTIFERRO"
+    },
+    {
+        "id":  "25940",
+        "name":  "SEDILO"
+    },
+    {
+        "id":  "26035",
+        "name":  "SENEGHE"
+    },
+    {
+        "id":  "26043",
+        "name":  "SENIS"
+    },
+    {
+        "id":  "26051",
+        "name":  "SENNARIOLO"
+    },
+    {
+        "id":  "26285",
+        "name":  "SIAMAGGIORE"
+    },
+    {
+        "id":  "26287",
+        "name":  "SIAMANNA"
+    },
+    {
+        "id":  "26292",
+        "name":  "SIAPICCIA"
+    },
+    {
+        "id":  "26337",
+        "name":  "SIMALA"
+    },
+    {
+        "id":  "26341",
+        "name":  "SIMAXIS"
+    },
+    {
+        "id":  "26351",
+        "name":  "SINI"
+    },
+    {
+        "id":  "26365",
+        "name":  "SIRIS"
+    },
+    {
+        "id":  "26417",
+        "name":  "SODDÃ"
+    },
+    {
+        "id":  "26439",
+        "name":  "SOLARUSSA"
+    },
+    {
+        "id":  "26565",
+        "name":  "SORRADILE"
+    },
+    {
+        "id":  "26192",
+        "name":  "SUNI"
+    },
+    {
+        "id":  "26877",
+        "name":  "TADASUNI"
+    },
+    {
+        "id":  "27147",
+        "name":  "TERRALBA"
+    },
+    {
+        "id":  "27246",
+        "name":  "TINNURA"
+    },
+    {
+        "id":  "27513",
+        "name":  "TRAMATZA"
+    },
+    {
+        "id":  "27660",
+        "name":  "TRESNURAGHES"
+    },
+    {
+        "id":  "27845",
+        "name":  "ULÃ TIRSO"
+    },
+    {
+        "id":  "27864",
+        "name":  "URAS"
+    },
+    {
+        "id":  "27890",
+        "name":  "USELLUS"
+    },
+    {
+        "id":  "28821",
+        "name":  "VILLA SANT\u0027ANTONIO"
+    },
+    {
+        "id":  "28828",
+        "name":  "VILLA VERDE"
+    },
+    {
+        "id":  "28935",
+        "name":  "VILLANOVA TRUSCHEDU"
+    },
+    {
+        "id":  "29004",
+        "name":  "VILLAURBANA"
+    },
+    {
+        "id":  "29237",
+        "name":  "ZEDDIANI"
+    },
+    {
+        "id":  "29257",
+        "name":  "ZERFALIU"
+    }
+]

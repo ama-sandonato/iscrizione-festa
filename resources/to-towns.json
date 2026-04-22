@@ -1,0 +1,1250 @@
+﻿[
+    {
+        "id":  "10131",
+        "name":  "AGLIÃ"
+    },
+    {
+        "id":  "10199",
+        "name":  "AIRASCA"
+    },
+    {
+        "id":  "10214",
+        "name":  "ALA DI STURA"
+    },
+    {
+        "id":  "10282",
+        "name":  "ALBIANO D\u0027IVREA"
+    },
+    {
+        "id":  "10393",
+        "name":  "ALMESE"
+    },
+    {
+        "id":  "10399",
+        "name":  "ALPETTE"
+    },
+    {
+        "id":  "10400",
+        "name":  "ALPIGNANO"
+    },
+    {
+        "id":  "10501",
+        "name":  "ANDEZENO"
+    },
+    {
+        "id":  "10519",
+        "name":  "ANDRATE"
+    },
+    {
+        "id":  "10547",
+        "name":  "ANGROGNA"
+    },
+    {
+        "id":  "10760",
+        "name":  "ARIGNANO"
+    },
+    {
+        "id":  "10989",
+        "name":  "AVIGLIANA"
+    },
+    {
+        "id":  "11015",
+        "name":  "AZEGLIO"
+    },
+    {
+        "id":  "11115",
+        "name":  "BAIRO"
+    },
+    {
+        "id":  "11120",
+        "name":  "BALANGERO"
+    },
+    {
+        "id":  "11128",
+        "name":  "BALDISSERO CANAVESE"
+    },
+    {
+        "id":  "11130",
+        "name":  "BALDISSERO TORINESE"
+    },
+    {
+        "id":  "11146",
+        "name":  "BALME"
+    },
+    {
+        "id":  "11159",
+        "name":  "BANCHETTE"
+    },
+    {
+        "id":  "11196",
+        "name":  "BARBANIA"
+    },
+    {
+        "id":  "11248",
+        "name":  "BARDONECCHIA"
+    },
+    {
+        "id":  "11291",
+        "name":  "BARONE CANAVESE"
+    },
+    {
+        "id":  "11411",
+        "name":  "BEINASCO"
+    },
+    {
+        "id":  "11630",
+        "name":  "BIBIANA"
+    },
+    {
+        "id":  "11736",
+        "name":  "BOBBIO PELLICE"
+    },
+    {
+        "id":  "11793",
+        "name":  "BOLLENGO"
+    },
+    {
+        "id":  "11869",
+        "name":  "BORGARO TORINESE"
+    },
+    {
+        "id":  "11894",
+        "name":  "BORGIALLO"
+    },
+    {
+        "id":  "11949",
+        "name":  "BORGOFRANCO D\u0027IVREA"
+    },
+    {
+        "id":  "11964",
+        "name":  "BORGOMASINO"
+    },
+    {
+        "id":  "11967",
+        "name":  "BORGONE SUSA"
+    },
+    {
+        "id":  "12034",
+        "name":  "BOSCONERO"
+    },
+    {
+        "id":  "12113",
+        "name":  "BRANDIZZO"
+    },
+    {
+        "id":  "12202",
+        "name":  "BRICHERASIO"
+    },
+    {
+        "id":  "12261",
+        "name":  "BROSSO"
+    },
+    {
+        "id":  "12268",
+        "name":  "BROZOLO"
+    },
+    {
+        "id":  "12281",
+        "name":  "BRUINO"
+    },
+    {
+        "id":  "12299",
+        "name":  "BRUSASCO"
+    },
+    {
+        "id":  "12315",
+        "name":  "BRUZOLO"
+    },
+    {
+        "id":  "12391",
+        "name":  "BURIASCO"
+    },
+    {
+        "id":  "12394",
+        "name":  "BUROLO"
+    },
+    {
+        "id":  "12404",
+        "name":  "BUSANO"
+    },
+    {
+        "id":  "12422",
+        "name":  "BUSSOLENO"
+    },
+    {
+        "id":  "12436",
+        "name":  "BUTTIGLIERA ALTA"
+    },
+    {
+        "id":  "12491",
+        "name":  "CAFASSE"
+    },
+    {
+        "id":  "12658",
+        "name":  "CALUSO"
+    },
+    {
+        "id":  "12697",
+        "name":  "CAMBIANO"
+    },
+    {
+        "id":  "12793",
+        "name":  "CAMPIGLIONE FENILE"
+    },
+    {
+        "id":  "12937",
+        "name":  "CANDIA CANAVESE"
+    },
+    {
+        "id":  "12943",
+        "name":  "CANDIOLO"
+    },
+    {
+        "id":  "12968",
+        "name":  "CANISCHIO"
+    },
+    {
+        "id":  "13005",
+        "name":  "CANTALUPA"
+    },
+    {
+        "id":  "13023",
+        "name":  "CANTOIRA"
+    },
+    {
+        "id":  "13133",
+        "name":  "CAPRIE"
+    },
+    {
+        "id":  "13191",
+        "name":  "CARAVINO"
+    },
+    {
+        "id":  "13244",
+        "name":  "CAREMA"
+    },
+    {
+        "id":  "13272",
+        "name":  "CARIGNANO"
+    },
+    {
+        "id":  "13303",
+        "name":  "CARMAGNOLA"
+    },
+    {
+        "id":  "13426",
+        "name":  "CASALBORGONE"
+    },
+    {
+        "id":  "13552",
+        "name":  "CASCINETTE D\u0027IVREA"
+    },
+    {
+        "id":  "13554",
+        "name":  "CASELETTE"
+    },
+    {
+        "id":  "13563",
+        "name":  "CASELLE TORINESE"
+    },
+    {
+        "id":  "13663",
+        "name":  "CASTAGNETO PO"
+    },
+    {
+        "id":  "13671",
+        "name":  "CASTAGNOLE PIEMONTE"
+    },
+    {
+        "id":  "13846",
+        "name":  "CASTELLAMONTE"
+    },
+    {
+        "id":  "14028",
+        "name":  "CASTELNUOVO NIGRA"
+    },
+    {
+        "id":  "14127",
+        "name":  "CASTIGLIONE TORINESE"
+    },
+    {
+        "id":  "14213",
+        "name":  "CAVAGNOLO"
+    },
+    {
+        "id":  "14274",
+        "name":  "CAVOUR"
+    },
+    {
+        "id":  "14415",
+        "name":  "CERCENASCO"
+    },
+    {
+        "id":  "14438",
+        "name":  "CERES"
+    },
+    {
+        "id":  "14446",
+        "name":  "CERESOLE REALE"
+    },
+    {
+        "id":  "14568",
+        "name":  "CESANA TORINESE"
+    },
+    {
+        "id":  "14657",
+        "name":  "CHIALAMBERTO"
+    },
+    {
+        "id":  "14667",
+        "name":  "CHIANOCCO"
+    },
+    {
+        "id":  "14700",
+        "name":  "CHIAVERANO"
+    },
+    {
+        "id":  "14708",
+        "name":  "CHIERI"
+    },
+    {
+        "id":  "14714",
+        "name":  "CHIESANUOVA"
+    },
+    {
+        "id":  "14726",
+        "name":  "CHIOMONTE"
+    },
+    {
+        "id":  "14746",
+        "name":  "CHIUSA DI SAN MICHELE"
+    },
+    {
+        "id":  "14764",
+        "name":  "CHIVASSO"
+    },
+    {
+        "id":  "14791",
+        "name":  "CICONIO"
+    },
+    {
+        "id":  "14836",
+        "name":  "CINTANO"
+    },
+    {
+        "id":  "14842",
+        "name":  "CINZANO"
+    },
+    {
+        "id":  "14858",
+        "name":  "CIRIÃ"
+    },
+    {
+        "id":  "14992",
+        "name":  "CLAVIERE"
+    },
+    {
+        "id":  "15011",
+        "name":  "COASSOLO TORINESE"
+    },
+    {
+        "id":  "15012",
+        "name":  "COAZZE"
+    },
+    {
+        "id":  "15128",
+        "name":  "COLLEGNO"
+    },
+    {
+        "id":  "15139",
+        "name":  "COLLERETTO CASTELNUOVO"
+    },
+    {
+        "id":  "15140",
+        "name":  "COLLERETTO GIACOSA"
+    },
+    {
+        "id":  "15297",
+        "name":  "CONDOVE"
+    },
+    {
+        "id":  "13304",
+        "name":  "CORIO"
+    },
+    {
+        "id":  "15532",
+        "name":  "COSSANO CANAVESE"
+    },
+    {
+        "id":  "15731",
+        "name":  "CUCEGLIO"
+    },
+    {
+        "id":  "15742",
+        "name":  "CUMIANA"
+    },
+    {
+        "id":  "15757",
+        "name":  "CUORGNÃ"
+    },
+    {
+        "id":  "16097",
+        "name":  "DRUENTO"
+    },
+    {
+        "id":  "16261",
+        "name":  "EXILLES"
+    },
+    {
+        "id":  "16401",
+        "name":  "FAVRIA"
+    },
+    {
+        "id":  "16404",
+        "name":  "FELETTO"
+    },
+    {
+        "id":  "16414",
+        "name":  "FENESTRELLE"
+    },
+    {
+        "id":  "16461",
+        "name":  "FIANO"
+    },
+    {
+        "id":  "16540",
+        "name":  "FIORANO CANAVESE"
+    },
+    {
+        "id":  "16622",
+        "name":  "FOGLIZZO"
+    },
+    {
+        "id":  "16770",
+        "name":  "FORNO CANAVESE"
+    },
+    {
+        "id":  "16852",
+        "name":  "FRASSINETTO"
+    },
+    {
+        "id":  "16892",
+        "name":  "FRONT"
+    },
+    {
+        "id":  "16908",
+        "name":  "FROSSASCO"
+    },
+    {
+        "id":  "17130",
+        "name":  "GARZIGLIANA"
+    },
+    {
+        "id":  "17138",
+        "name":  "GASSINO TORINESE"
+    },
+    {
+        "id":  "17235",
+        "name":  "GERMAGNANO"
+    },
+    {
+        "id":  "17279",
+        "name":  "GIAGLIONE"
+    },
+    {
+        "id":  "17301",
+        "name":  "GIAVENO"
+    },
+    {
+        "id":  "17387",
+        "name":  "GIVOLETTO"
+    },
+    {
+        "id":  "17563",
+        "name":  "GRAVERE"
+    },
+    {
+        "id":  "17654",
+        "name":  "GROSCAVALLO"
+    },
+    {
+        "id":  "17661",
+        "name":  "GROSSO"
+    },
+    {
+        "id":  "17679",
+        "name":  "GRUGLIASCO"
+    },
+    {
+        "id":  "17833",
+        "name":  "INGRIA"
+    },
+    {
+        "id":  "17853",
+        "name":  "INVERSO PINASCA"
+    },
+    {
+        "id":  "17927",
+        "name":  "ISOLABELLA"
+    },
+    {
+        "id":  "17944",
+        "name":  "ISSIGLIO"
+    },
+    {
+        "id":  "16384",
+        "name":  "IVREA"
+    },
+    {
+        "id":  "17993",
+        "name":  "LA CASSA"
+    },
+    {
+        "id":  "17994",
+        "name":  "LA LOGGIA"
+    },
+    {
+        "id":  "18116",
+        "name":  "LANZO TORINESE"
+    },
+    {
+        "id":  "18198",
+        "name":  "LAURIANO"
+    },
+    {
+        "id":  "18257",
+        "name":  "LEINI"
+    },
+    {
+        "id":  "18259",
+        "name":  "LEMIE"
+    },
+    {
+        "id":  "18317",
+        "name":  "LESSOLO"
+    },
+    {
+        "id":  "18345",
+        "name":  "LEVONE"
+    },
+    {
+        "id":  "18461",
+        "name":  "LOCANA"
+    },
+    {
+        "id":  "18518",
+        "name":  "LOMBARDORE"
+    },
+    {
+        "id":  "18520",
+        "name":  "LOMBRIASCO"
+    },
+    {
+        "id":  "18567",
+        "name":  "LORANZÃ"
+    },
+    {
+        "id":  "18708",
+        "name":  "LUSERNA SAN GIOVANNI"
+    },
+    {
+        "id":  "18710",
+        "name":  "LUSERNETTA"
+    },
+    {
+        "id":  "18719",
+        "name":  "LUSIGLIÃ"
+    },
+    {
+        "id":  "18759",
+        "name":  "MACELLO"
+    },
+    {
+        "id":  "18834",
+        "name":  "MAGLIONE"
+    },
+    {
+        "id":  "19002",
+        "name":  "MAPPANO"
+    },
+    {
+        "id":  "19069",
+        "name":  "MARENTINO"
+    },
+    {
+        "id":  "19250",
+        "name":  "MASSELLO"
+    },
+    {
+        "id":  "19277",
+        "name":  "MATHI"
+    },
+    {
+        "id":  "19289",
+        "name":  "MATTIE"
+    },
+    {
+        "id":  "19311",
+        "name":  "MAZZÃ"
+    },
+    {
+        "id":  "19321",
+        "name":  "MEANA DI SUSA"
+    },
+    {
+        "id":  "19444",
+        "name":  "MERCENASCO"
+    },
+    {
+        "id":  "19524",
+        "name":  "MEZZENILE"
+    },
+    {
+        "id":  "19762",
+        "name":  "MOMBELLO DI TORINO"
+    },
+    {
+        "id":  "19773",
+        "name":  "MOMPANTERO"
+    },
+    {
+        "id":  "19789",
+        "name":  "MONASTERO DI LANZO"
+    },
+    {
+        "id":  "19805",
+        "name":  "MONCALIERI"
+    },
+    {
+        "id":  "19810",
+        "name":  "MONCENISIO"
+    },
+    {
+        "id":  "19948",
+        "name":  "MONTALDO TORINESE"
+    },
+    {
+        "id":  "19956",
+        "name":  "MONTALENGHE"
+    },
+    {
+        "id":  "19965",
+        "name":  "MONTALTO DORA"
+    },
+    {
+        "id":  "19973",
+        "name":  "MONTANARO"
+    },
+    {
+        "id":  "20378",
+        "name":  "MONTEU DA PO"
+    },
+    {
+        "id":  "20519",
+        "name":  "MORIONDO TORINESE"
+    },
+    {
+        "id":  "20813",
+        "name":  "NICHELINO"
+    },
+    {
+        "id":  "20844",
+        "name":  "NOASCA"
+    },
+    {
+        "id":  "20876",
+        "name":  "NOLE"
+    },
+    {
+        "id":  "20881",
+        "name":  "NOMAGLIO"
+    },
+    {
+        "id":  "20887",
+        "name":  "NONE"
+    },
+    {
+        "id":  "20939",
+        "name":  "NOVALESA"
+    },
+    {
+        "id":  "21052",
+        "name":  "OGLIANICO"
+    },
+    {
+        "id":  "21194",
+        "name":  "ORBASSANO"
+    },
+    {
+        "id":  "21229",
+        "name":  "ORIO CANAVESE"
+    },
+    {
+        "id":  "21323",
+        "name":  "OSASCO"
+    },
+    {
+        "id":  "21325",
+        "name":  "OSASIO"
+    },
+    {
+        "id":  "21416",
+        "name":  "OULX"
+    },
+    {
+        "id":  "21429",
+        "name":  "OZEGNA"
+    },
+    {
+        "id":  "21531",
+        "name":  "PALAZZO CANAVESE"
+    },
+    {
+        "id":  "21606",
+        "name":  "PANCALIERI"
+    },
+    {
+        "id":  "21647",
+        "name":  "PARELLA"
+    },
+    {
+        "id":  "21752",
+        "name":  "PAVAROLO"
+    },
+    {
+        "id":  "21761",
+        "name":  "PAVONE CANAVESE"
+    },
+    {
+        "id":  "21774",
+        "name":  "PECETTO TORINESE"
+    },
+    {
+        "id":  "21901",
+        "name":  "PEROSA ARGENTINA"
+    },
+    {
+        "id":  "21904",
+        "name":  "PEROSA CANAVESE"
+    },
+    {
+        "id":  "21908",
+        "name":  "PERRERO"
+    },
+    {
+        "id":  "21923",
+        "name":  "PERTUSIO"
+    },
+    {
+        "id":  "21982",
+        "name":  "PESSINETTO"
+    },
+    {
+        "id":  "22079",
+        "name":  "PIANEZZA"
+    },
+    {
+        "id":  "22294",
+        "name":  "PINASCA"
+    },
+    {
+        "id":  "22297",
+        "name":  "PINEROLO"
+    },
+    {
+        "id":  "22307",
+        "name":  "PINO TORINESE"
+    },
+    {
+        "id":  "22318",
+        "name":  "PIOBESI TORINESE"
+    },
+    {
+        "id":  "22328",
+        "name":  "PIOSSASCO"
+    },
+    {
+        "id":  "22357",
+        "name":  "PISCINA"
+    },
+    {
+        "id":  "22388",
+        "name":  "PIVERONE"
+    },
+    {
+        "id":  "22508",
+        "name":  "POIRINO"
+    },
+    {
+        "id":  "22554",
+        "name":  "POMARETTO"
+    },
+    {
+        "id":  "22600",
+        "name":  "PONT-CANAVESE"
+    },
+    {
+        "id":  "22724",
+        "name":  "PORTE"
+    },
+    {
+        "id":  "22875",
+        "name":  "PRAGELATO"
+    },
+    {
+        "id":  "22882",
+        "name":  "PRALI"
+    },
+    {
+        "id":  "22883",
+        "name":  "PRALORMO"
+    },
+    {
+        "id":  "22890",
+        "name":  "PRAMOLLO"
+    },
+    {
+        "id":  "22898",
+        "name":  "PRAROSTINO"
+    },
+    {
+        "id":  "22903",
+        "name":  "PRASCORSANO"
+    },
+    {
+        "id":  "22924",
+        "name":  "PRATIGLIONE"
+    },
+    {
+        "id":  "23136",
+        "name":  "QUAGLIUZZO"
+    },
+    {
+        "id":  "23178",
+        "name":  "QUASSOLO"
+    },
+    {
+        "id":  "23191",
+        "name":  "QUINCINETTO"
+    },
+    {
+        "id":  "23328",
+        "name":  "REANO"
+    },
+    {
+        "id":  "23442",
+        "name":  "RIBORDONE"
+    },
+    {
+        "id":  "23571",
+        "name":  "RIVA PRESSO CHIERI"
+    },
+    {
+        "id":  "23576",
+        "name":  "RIVALBA"
+    },
+    {
+        "id":  "23578",
+        "name":  "RIVALTA DI TORINO"
+    },
+    {
+        "id":  "23585",
+        "name":  "RIVARA"
+    },
+    {
+        "id":  "23586",
+        "name":  "RIVAROLO CANAVESE"
+    },
+    {
+        "id":  "23595",
+        "name":  "RIVAROSSA"
+    },
+    {
+        "id":  "23613",
+        "name":  "RIVOLI"
+    },
+    {
+        "id":  "23636",
+        "name":  "ROBASSOMERO"
+    },
+    {
+        "id":  "23654",
+        "name":  "ROCCA CANAVESE"
+    },
+    {
+        "id":  "23878",
+        "name":  "ROLETTO"
+    },
+    {
+        "id":  "23905",
+        "name":  "ROMANO CANAVESE"
+    },
+    {
+        "id":  "23955",
+        "name":  "RONCO CANAVESE"
+    },
+    {
+        "id":  "23973",
+        "name":  "RONDISSONE"
+    },
+    {
+        "id":  "23990",
+        "name":  "RORÃ"
+    },
+    {
+        "id":  "24032",
+        "name":  "ROSTA"
+    },
+    {
+        "id":  "24050",
+        "name":  "ROURE"
+    },
+    {
+        "id":  "24112",
+        "name":  "RUBIANA"
+    },
+    {
+        "id":  "24123",
+        "name":  "RUEGLIO"
+    },
+    {
+        "id":  "24269",
+        "name":  "SALASSA"
+    },
+    {
+        "id":  "24271",
+        "name":  "SALBERTRAND"
+    },
+    {
+        "id":  "24293",
+        "name":  "SALERANO CANAVESE"
+    },
+    {
+        "id":  "24355",
+        "name":  "SALZA DI PINEROLO"
+    },
+    {
+        "id":  "24403",
+        "name":  "SAMONE"
+    },
+    {
+        "id":  "24438",
+        "name":  "SAN BENIGNO CANAVESE"
+    },
+    {
+        "id":  "24467",
+        "name":  "SAN CARLO CANAVESE"
+    },
+    {
+        "id":  "24497",
+        "name":  "SAN COLOMBANO BELMONTE"
+    },
+    {
+        "id":  "24527",
+        "name":  "SAN DIDERO"
+    },
+    {
+        "id":  "24583",
+        "name":  "SAN FRANCESCO AL CAMPO"
+    },
+    {
+        "id":  "24609",
+        "name":  "SAN GERMANO CHISONE"
+    },
+    {
+        "id":  "24630",
+        "name":  "SAN GILLIO"
+    },
+    {
+        "id":  "24644",
+        "name":  "SAN GIORGIO CANAVESE"
+    },
+    {
+        "id":  "24685",
+        "name":  "SAN GIORIO DI SUSA"
+    },
+    {
+        "id":  "24752",
+        "name":  "SAN GIUSTO CANAVESE"
+    },
+    {
+        "id":  "24875",
+        "name":  "SAN MARTINO CANAVESE"
+    },
+    {
+        "id":  "24918",
+        "name":  "SAN MAURIZIO CANAVESE"
+    },
+    {
+        "id":  "24934",
+        "name":  "SAN MAURO TORINESE"
+    },
+    {
+        "id":  "25076",
+        "name":  "SAN PIETRO VAL LEMINA"
+    },
+    {
+        "id":  "25089",
+        "name":  "SAN PONSO"
+    },
+    {
+        "id":  "25108",
+        "name":  "SAN RAFFAELE CIMENA"
+    },
+    {
+        "id":  "25129",
+        "name":  "SAN SEBASTIANO DA PO"
+    },
+    {
+        "id":  "25135",
+        "name":  "SAN SECONDO DI PINEROLO"
+    },
+    {
+        "id":  "25255",
+        "name":  "SANGANO"
+    },
+    {
+        "id":  "25470",
+        "name":  "SANT\u0027AMBROGIO DI TORINO"
+    },
+    {
+        "id":  "25537",
+        "name":  "SANT\u0027ANTONINO DI SUSA"
+    },
+    {
+        "id":  "25575",
+        "name":  "SANTENA"
+    },
+    {
+        "id":  "25756",
+        "name":  "SAUZE D\u0027OULX"
+    },
+    {
+        "id":  "25754",
+        "name":  "SAUZE DI CESANA"
+    },
+    {
+        "id":  "25806",
+        "name":  "SCALENGHE"
+    },
+    {
+        "id":  "25849",
+        "name":  "SCARMAGNO"
+    },
+    {
+        "id":  "25894",
+        "name":  "SCIOLZE"
+    },
+    {
+        "id":  "26218",
+        "name":  "SESTRIERE"
+    },
+    {
+        "id":  "26231",
+        "name":  "SETTIMO ROTTARO"
+    },
+    {
+        "id":  "26239",
+        "name":  "SETTIMO TORINESE"
+    },
+    {
+        "id":  "26242",
+        "name":  "SETTIMO VITTONE"
+    },
+    {
+        "id":  "26610",
+        "name":  "SPARONE"
+    },
+    {
+        "id":  "26771",
+        "name":  "STRAMBINELLO"
+    },
+    {
+        "id":  "26774",
+        "name":  "STRAMBINO"
+    },
+    {
+        "id":  "26853",
+        "name":  "SUSA"
+    },
+    {
+        "id":  "26982",
+        "name":  "TAVAGNASCO"
+    },
+    {
+        "id":  "27352",
+        "name":  "TORINO"
+    },
+    {
+        "id":  "27374",
+        "name":  "TORRAZZA PIEMONTE"
+    },
+    {
+        "id":  "27391",
+        "name":  "TORRE CANAVESE"
+    },
+    {
+        "id":  "27420",
+        "name":  "TORRE PELLICE"
+    },
+    {
+        "id":  "27522",
+        "name":  "TRANA"
+    },
+    {
+        "id":  "27569",
+        "name":  "TRAVERSELLA"
+    },
+    {
+        "id":  "27573",
+        "name":  "TRAVES"
+    },
+    {
+        "id":  "27751",
+        "name":  "TROFARELLO"
+    },
+    {
+        "id":  "27908",
+        "name":  "USSEAUX"
+    },
+    {
+        "id":  "27909",
+        "name":  "USSEGLIO"
+    },
+    {
+        "id":  "27951",
+        "name":  "VAIE"
+    },
+    {
+        "id":  "27958",
+        "name":  "VAL DELLA TORRE"
+    },
+    {
+        "id":  "27959",
+        "name":  "VAL DI CHY"
+    },
+    {
+        "id":  "27981",
+        "name":  "VALCHIUSA"
+    },
+    {
+        "id":  "28043",
+        "name":  "VALGIOIE"
+    },
+    {
+        "id":  "28159",
+        "name":  "VALLO TORINESE"
+    },
+    {
+        "id":  "28186",
+        "name":  "VALPERGA"
+    },
+    {
+        "id":  "28190",
+        "name":  "VALPRATO SOANA"
+    },
+    {
+        "id":  "28287",
+        "name":  "VARISELLA"
+    },
+    {
+        "id":  "28318",
+        "name":  "VAUDA CANAVESE"
+    },
+    {
+        "id":  "28380",
+        "name":  "VENARIA REALE"
+    },
+    {
+        "id":  "28386",
+        "name":  "VENAUS"
+    },
+    {
+        "id":  "28486",
+        "name":  "VEROLENGO"
+    },
+    {
+        "id":  "28515",
+        "name":  "VERRUA SAVOIA"
+    },
+    {
+        "id":  "28561",
+        "name":  "VESTIGNÃ"
+    },
+    {
+        "id":  "28594",
+        "name":  "VIALFRÃ"
+    },
+    {
+        "id":  "28647",
+        "name":  "VIDRACCO"
+    },
+    {
+        "id":  "28722",
+        "name":  "VIGONE"
+    },
+    {
+        "id":  "28868",
+        "name":  "VILLAFRANCA PIEMONTE"
+    },
+    {
+        "id":  "28914",
+        "name":  "VILLANOVA CANAVESE"
+    },
+    {
+        "id":  "28964",
+        "name":  "VILLAR DORA"
+    },
+    {
+        "id":  "28965",
+        "name":  "VILLAR FOCCHIARDO"
+    },
+    {
+        "id":  "28966",
+        "name":  "VILLAR PELLICE"
+    },
+    {
+        "id":  "28967",
+        "name":  "VILLAR PEROSA"
+    },
+    {
+        "id":  "28970",
+        "name":  "VILLARBASSE"
+    },
+    {
+        "id":  "28975",
+        "name":  "VILLAREGGIA"
+    },
+    {
+        "id":  "28997",
+        "name":  "VILLASTELLONE"
+    },
+    {
+        "id":  "29050",
+        "name":  "VINOVO"
+    },
+    {
+        "id":  "29072",
+        "name":  "VIRLE PIEMONTE"
+    },
+    {
+        "id":  "29077",
+        "name":  "VISCHE"
+    },
+    {
+        "id":  "29099",
+        "name":  "VISTRORIO"
+    },
+    {
+        "id":  "29125",
+        "name":  "VIÃ"
+    },
+    {
+        "id":  "29180",
+        "name":  "VOLPIANO"
+    },
+    {
+        "id":  "29195",
+        "name":  "VOLVERA"
+    }
+]

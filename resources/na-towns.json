@@ -1,0 +1,370 @@
+﻿[
+    {
+        "id":  "10041",
+        "name":  "ACERRA"
+    },
+    {
+        "id":  "10107",
+        "name":  "AFRAGOLA"
+    },
+    {
+        "id":  "10112",
+        "name":  "AGEROLA"
+    },
+    {
+        "id":  "10486",
+        "name":  "ANACAPRI"
+    },
+    {
+        "id":  "10864",
+        "name":  "ARZANO"
+    },
+    {
+        "id":  "11036",
+        "name":  "BACOLI"
+    },
+    {
+        "id":  "11180",
+        "name":  "BARANO D\u0027ISCHIA"
+    },
+    {
+        "id":  "12037",
+        "name":  "BOSCOREALE"
+    },
+    {
+        "id":  "12040",
+        "name":  "BOSCOTRECASE"
+    },
+    {
+        "id":  "12303",
+        "name":  "BRUSCIANO"
+    },
+    {
+        "id":  "12532",
+        "name":  "CAIVANO"
+    },
+    {
+        "id":  "12679",
+        "name":  "CALVIZZANO"
+    },
+    {
+        "id":  "12897",
+        "name":  "CAMPOSANO"
+    },
+    {
+        "id":  "13114",
+        "name":  "CAPRI"
+    },
+    {
+        "id":  "13199",
+        "name":  "CARBONARA DI NOLA"
+    },
+    {
+        "id":  "13235",
+        "name":  "CARDITO"
+    },
+    {
+        "id":  "13471",
+        "name":  "CASALNUOVO DI NAPOLI"
+    },
+    {
+        "id":  "13497",
+        "name":  "CASAMARCIANO"
+    },
+    {
+        "id":  "13502",
+        "name":  "CASAMICCIOLA TERME"
+    },
+    {
+        "id":  "13503",
+        "name":  "CASANDRINO"
+    },
+    {
+        "id":  "13538",
+        "name":  "CASAVATORE"
+    },
+    {
+        "id":  "13592",
+        "name":  "CASOLA DI NAPOLI"
+    },
+    {
+        "id":  "13606",
+        "name":  "CASORIA"
+    },
+    {
+        "id":  "13838",
+        "name":  "CASTELLAMMARE DI STABIA"
+    },
+    {
+        "id":  "13939",
+        "name":  "CASTELLO DI CISTERNA"
+    },
+    {
+        "id":  "14426",
+        "name":  "CERCOLA"
+    },
+    {
+        "id":  "14785",
+        "name":  "CICCIANO"
+    },
+    {
+        "id":  "14814",
+        "name":  "CIMITILE"
+    },
+    {
+        "id":  "15250",
+        "name":  "COMIZIANO"
+    },
+    {
+        "id":  "15675",
+        "name":  "CRISPANO"
+    },
+    {
+        "id":  "16211",
+        "name":  "ERCOLANO"
+    },
+    {
+        "id":  "16722",
+        "name":  "FORIO"
+    },
+    {
+        "id":  "16862",
+        "name":  "FRATTAMAGGIORE"
+    },
+    {
+        "id":  "16864",
+        "name":  "FRATTAMINORE"
+    },
+    {
+        "id":  "17362",
+        "name":  "GIUGLIANO IN CAMPANIA"
+    },
+    {
+        "id":  "17526",
+        "name":  "GRAGNANO"
+    },
+    {
+        "id":  "17696",
+        "name":  "GRUMO NEVANO"
+    },
+    {
+        "id":  "17882",
+        "name":  "ISCHIA"
+    },
+    {
+        "id":  "18027",
+        "name":  "LACCO AMENO"
+    },
+    {
+        "id":  "18332",
+        "name":  "LETTERE"
+    },
+    {
+        "id":  "18427",
+        "name":  "LIVERI"
+    },
+    {
+        "id":  "19012",
+        "name":  "MARANO DI NAPOLI"
+    },
+    {
+        "id":  "19097",
+        "name":  "MARIGLIANELLA"
+    },
+    {
+        "id":  "19099",
+        "name":  "MARIGLIANO"
+    },
+    {
+        "id":  "19223",
+        "name":  "MASSA DI SOMMA"
+    },
+    {
+        "id":  "19230",
+        "name":  "MASSA LUBRENSE"
+    },
+    {
+        "id":  "19380",
+        "name":  "MELITO DI NAPOLI"
+    },
+    {
+        "id":  "19488",
+        "name":  "META"
+    },
+    {
+        "id":  "20015",
+        "name":  "MONTE DI PROCIDA"
+    },
+    {
+        "id":  "20628",
+        "name":  "MUGNANO DI NAPOLI"
+    },
+    {
+        "id":  "20706",
+        "name":  "NAPOLI"
+    },
+    {
+        "id":  "20873",
+        "name":  "NOLA"
+    },
+    {
+        "id":  "21409",
+        "name":  "OTTAVIANO"
+    },
+    {
+        "id":  "21572",
+        "name":  "PALMA CAMPANIA"
+    },
+    {
+        "id":  "22089",
+        "name":  "PIANO DI SORRENTO"
+    },
+    {
+        "id":  "22290",
+        "name":  "PIMONTE"
+    },
+    {
+        "id":  "22495",
+        "name":  "POGGIOMARINO"
+    },
+    {
+        "id":  "22537",
+        "name":  "POLLENA TROCCHIA"
+    },
+    {
+        "id":  "22568",
+        "name":  "POMIGLIANO D\u0027ARCO"
+    },
+    {
+        "id":  "22569",
+        "name":  "POMPEI"
+    },
+    {
+        "id":  "22727",
+        "name":  "PORTICI"
+    },
+    {
+        "id":  "22860",
+        "name":  "POZZUOLI"
+    },
+    {
+        "id":  "23089",
+        "name":  "PROCIDA"
+    },
+    {
+        "id":  "23138",
+        "name":  "QUALIANO"
+    },
+    {
+        "id":  "23166",
+        "name":  "QUARTO"
+    },
+    {
+        "id":  "23774",
+        "name":  "ROCCARAINOLA"
+    },
+    {
+        "id":  "24606",
+        "name":  "SAN GENNARO VESUVIANO"
+    },
+    {
+        "id":  "24637",
+        "name":  "SAN GIORGIO A CREMANO"
+    },
+    {
+        "id":  "24748",
+        "name":  "SAN GIUSEPPE VESUVIANO"
+    },
+    {
+        "id":  "24997",
+        "name":  "SAN PAOLO BEL SITO"
+    },
+    {
+        "id":  "25125",
+        "name":  "SAN SEBASTIANO AL VESUVIO"
+    },
+    {
+        "id":  "25201",
+        "name":  "SAN VITALIANO"
+    },
+    {
+        "id":  "25458",
+        "name":  "SANT\u0027AGNELLO"
+    },
+    {
+        "id":  "25476",
+        "name":  "SANT\u0027ANASTASIA"
+    },
+    {
+        "id":  "25532",
+        "name":  "SANT\u0027ANTIMO"
+    },
+    {
+        "id":  "25540",
+        "name":  "SANT\u0027ANTONIO ABATE"
+    },
+    {
+        "id":  "25382",
+        "name":  "SANTA MARIA LA CARITÃ"
+    },
+    {
+        "id":  "25762",
+        "name":  "SAVIANO"
+    },
+    {
+        "id":  "25896",
+        "name":  "SCISCIANO"
+    },
+    {
+        "id":  "26132",
+        "name":  "SERRARA FONTANA"
+    },
+    {
+        "id":  "26485",
+        "name":  "SOMMA VESUVIANA"
+    },
+    {
+        "id":  "26568",
+        "name":  "SORRENTO"
+    },
+    {
+        "id":  "26794",
+        "name":  "STRIANO"
+    },
+    {
+        "id":  "27178",
+        "name":  "TERZIGNO"
+    },
+    {
+        "id":  "27380",
+        "name":  "TORRE ANNUNZIATA"
+    },
+    {
+        "id":  "27405",
+        "name":  "TORRE DEL GRECO"
+    },
+    {
+        "id":  "27586",
+        "name":  "TRECASE"
+    },
+    {
+        "id":  "27780",
+        "name":  "TUFINO"
+    },
+    {
+        "id":  "28625",
+        "name":  "VICO EQUENSE"
+    },
+    {
+        "id":  "28976",
+        "name":  "VILLARICCA"
+    },
+    {
+        "id":  "29079",
+        "name":  "VISCIANO"
+    },
+    {
+        "id":  "29166",
+        "name":  "VOLLA"
+    }
+]

@@ -1,0 +1,434 @@
+﻿[
+    {
+        "id":  "10083",
+        "name":  "ACQUEDOLCI"
+    },
+    {
+        "id":  "10311",
+        "name":  "ALCARA LI FUSI"
+    },
+    {
+        "id":  "10343",
+        "name":  "ALÃ"
+    },
+    {
+        "id":  "10346",
+        "name":  "ALÃ TERME"
+    },
+    {
+        "id":  "10581",
+        "name":  "ANTILLO"
+    },
+    {
+        "id":  "11221",
+        "name":  "BARCELLONA POZZO DI GOTTO"
+    },
+    {
+        "id":  "11339",
+        "name":  "BASICÃ"
+    },
+    {
+        "id":  "12249",
+        "name":  "BROLO"
+    },
+    {
+        "id":  "13054",
+        "name":  "CAPIZZI"
+    },
+    {
+        "id":  "13059",
+        "name":  "CAPO D\u0027ORLANDO"
+    },
+    {
+        "id":  "13116",
+        "name":  "CAPRI LEONE"
+    },
+    {
+        "id":  "13322",
+        "name":  "CARONIA"
+    },
+    {
+        "id":  "13487",
+        "name":  "CASALVECCHIO SICULO"
+    },
+    {
+        "id":  "13712",
+        "name":  "CASTEL DI LUCIO"
+    },
+    {
+        "id":  "13965",
+        "name":  "CASTELL\u0027UMBERTO"
+    },
+    {
+        "id":  "13975",
+        "name":  "CASTELMOLA"
+    },
+    {
+        "id":  "14177",
+        "name":  "CASTROREALE"
+    },
+    {
+        "id":  "14579",
+        "name":  "CESARÃ"
+    },
+    {
+        "id":  "15298",
+        "name":  "CONDRÃ"
+    },
+    {
+        "id":  "16321",
+        "name":  "FALCONE"
+    },
+    {
+        "id":  "16474",
+        "name":  "FICARRA"
+    },
+    {
+        "id":  "16566",
+        "name":  "FIUMEDINISI"
+    },
+    {
+        "id":  "16598",
+        "name":  "FLORESTA"
+    },
+    {
+        "id":  "16645",
+        "name":  "FONDACHELLI-FANTINA"
+    },
+    {
+        "id":  "16783",
+        "name":  "FORZA D\u0027AGRÃ"
+    },
+    {
+        "id":  "16821",
+        "name":  "FRANCAVILLA DI SICILIA"
+    },
+    {
+        "id":  "16870",
+        "name":  "FRAZZANÃ"
+    },
+    {
+        "id":  "16933",
+        "name":  "FURCI SICULO"
+    },
+    {
+        "id":  "16934",
+        "name":  "FURNARI"
+    },
+    {
+        "id":  "16973",
+        "name":  "GAGGI"
+    },
+    {
+        "id":  "17003",
+        "name":  "GALATI MAMERTINO"
+    },
+    {
+        "id":  "17052",
+        "name":  "GALLODORO"
+    },
+    {
+        "id":  "17289",
+        "name":  "GIARDINI-NAXOS"
+    },
+    {
+        "id":  "17344",
+        "name":  "GIOIOSA MAREA"
+    },
+    {
+        "id":  "17539",
+        "name":  "GRANITI"
+    },
+    {
+        "id":  "17706",
+        "name":  "GUALTIERI SICAMINÃ"
+    },
+    {
+        "id":  "17954",
+        "name":  "ITALA"
+    },
+    {
+        "id":  "18263",
+        "name":  "LENI"
+    },
+    {
+        "id":  "18329",
+        "name":  "LETOJANNI"
+    },
+    {
+        "id":  "18353",
+        "name":  "LIBRIZZI"
+    },
+    {
+        "id":  "18388",
+        "name":  "LIMINA"
+    },
+    {
+        "id":  "18404",
+        "name":  "LIPARI"
+    },
+    {
+        "id":  "18550",
+        "name":  "LONGI"
+    },
+    {
+        "id":  "18913",
+        "name":  "MALFA"
+    },
+    {
+        "id":  "18940",
+        "name":  "MALVAGNA"
+    },
+    {
+        "id":  "18953",
+        "name":  "MANDANICI"
+    },
+    {
+        "id":  "19305",
+        "name":  "MAZZARRÃ SANT\u0027ANDREA"
+    },
+    {
+        "id":  "19457",
+        "name":  "MERÃ"
+    },
+    {
+        "id":  "19481",
+        "name":  "MESSINA"
+    },
+    {
+        "id":  "19572",
+        "name":  "MILAZZO"
+    },
+    {
+        "id":  "19583",
+        "name":  "MILITELLO ROSMARINO"
+    },
+    {
+        "id":  "19638",
+        "name":  "MIRTO"
+    },
+    {
+        "id":  "19652",
+        "name":  "MISTRETTA"
+    },
+    {
+        "id":  "19695",
+        "name":  "MOIO ALCANTARA"
+    },
+    {
+        "id":  "19850",
+        "name":  "MONFORTE SAN GIORGIO"
+    },
+    {
+        "id":  "19869",
+        "name":  "MONGIUFFI MELIA"
+    },
+    {
+        "id":  "19927",
+        "name":  "MONTAGNAREALE"
+    },
+    {
+        "id":  "19935",
+        "name":  "MONTALBANO ELICONA"
+    },
+    {
+        "id":  "20593",
+        "name":  "MOTTA CAMASTRA"
+    },
+    {
+        "id":  "20594",
+        "name":  "MOTTA D\u0027AFFERMO"
+    },
+    {
+        "id":  "20730",
+        "name":  "NASO"
+    },
+    {
+        "id":  "20834",
+        "name":  "NIZZA DI SICILIA"
+    },
+    {
+        "id":  "20942",
+        "name":  "NOVARA DI SICILIA"
+    },
+    {
+        "id":  "21094",
+        "name":  "OLIVERI"
+    },
+    {
+        "id":  "21440",
+        "name":  "PACE DEL MELA"
+    },
+    {
+        "id":  "21489",
+        "name":  "PAGLIARA"
+    },
+    {
+        "id":  "21730",
+        "name":  "PATTI"
+    },
+    {
+        "id":  "22018",
+        "name":  "PETTINEO"
+    },
+    {
+        "id":  "22345",
+        "name":  "PIRAINO"
+    },
+    {
+        "id":  "23220",
+        "name":  "RACCUJA"
+    },
+    {
+        "id":  "23359",
+        "name":  "REITANO"
+    },
+    {
+        "id":  "23718",
+        "name":  "ROCCAFIORITA"
+    },
+    {
+        "id":  "23748",
+        "name":  "ROCCALUMERA"
+    },
+    {
+        "id":  "23793",
+        "name":  "ROCCAVALDINA"
+    },
+    {
+        "id":  "23805",
+        "name":  "ROCCELLA VALDEMONE"
+    },
+    {
+        "id":  "23849",
+        "name":  "RODÃ MILICI"
+    },
+    {
+        "id":  "23923",
+        "name":  "ROMETTA"
+    },
+    {
+        "id":  "24572",
+        "name":  "SAN FILIPPO DEL MELA"
+    },
+    {
+        "id":  "24587",
+        "name":  "SAN FRATELLO"
+    },
+    {
+        "id":  "24843",
+        "name":  "SAN MARCO D\u0027ALUNZIO"
+    },
+    {
+        "id":  "25021",
+        "name":  "SAN PIER NICETO"
+    },
+    {
+        "id":  "25023",
+        "name":  "SAN PIERO PATTI"
+    },
+    {
+        "id":  "25117",
+        "name":  "SAN SALVATORE DI FITALIA"
+    },
+    {
+        "id":  "25159",
+        "name":  "SAN TEODORO"
+    },
+    {
+        "id":  "25445",
+        "name":  "SANT\u0027AGATA DI MILITELLO"
+    },
+    {
+        "id":  "25467",
+        "name":  "SANT\u0027ALESSIO SICULO"
+    },
+    {
+        "id":  "25506",
+        "name":  "SANT\u0027ANGELO DI BROLO"
+    },
+    {
+        "id":  "25310",
+        "name":  "SANTA DOMENICA VITTORIA"
+    },
+    {
+        "id":  "25329",
+        "name":  "SANTA LUCIA DEL MELA"
+    },
+    {
+        "id":  "25397",
+        "name":  "SANTA MARINA SALINA"
+    },
+    {
+        "id":  "25416",
+        "name":  "SANTA TERESA DI RIVA"
+    },
+    {
+        "id":  "25618",
+        "name":  "SANTO STEFANO DI CAMASTRA"
+    },
+    {
+        "id":  "25667",
+        "name":  "SAPONARA"
+    },
+    {
+        "id":  "25778",
+        "name":  "SAVOCA"
+    },
+    {
+        "id":  "25810",
+        "name":  "SCALETTA ZANCLEA"
+    },
+    {
+        "id":  "26345",
+        "name":  "SINAGRA"
+    },
+    {
+        "id":  "26599",
+        "name":  "SPADAFORA"
+    },
+    {
+        "id":  "26921",
+        "name":  "TAORMINA"
+    },
+    {
+        "id":  "27093",
+        "name":  "TERME VIGLIATORE"
+    },
+    {
+        "id":  "27434",
+        "name":  "TORREGROTTA"
+    },
+    {
+        "id":  "27436",
+        "name":  "TORRENOVA"
+    },
+    {
+        "id":  "27488",
+        "name":  "TORTORICI"
+    },
+    {
+        "id":  "27728",
+        "name":  "TRIPI"
+    },
+    {
+        "id":  "27826",
+        "name":  "TUSA"
+    },
+    {
+        "id":  "27835",
+        "name":  "UCRIA"
+    },
+    {
+        "id":  "28015",
+        "name":  "VALDINA"
+    },
+    {
+        "id":  "28399",
+        "name":  "VENETICO"
+    },
+    {
+        "id":  "28872",
+        "name":  "VILLAFRANCA TIRRENA"
+    }
+]

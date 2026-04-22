@@ -4,7 +4,7 @@
     --gold: #D4AF37;
     --cream: #FFF8E7;
     /* Definiamo una larghezza comune per coerenza */
-    --container-width: 550px; 
+    --container-width: 800px; 
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,7 +53,7 @@
     max-width: var(--container-width);
     
     /* Sovrapposizione */
-    margin-top: -100px; /* Aumentato un po' per mostrare meglio l'effetto */
+    margin-top: -180px; /* Aumentato un po' per mostrare meglio l'effetto */
     position: relative;
     z-index: 2;
     
@@ -117,7 +117,7 @@
 
   /* Disclaimer e Box Informative */
   .spacing, .disclaimer {
-    margin: 25px 0;
+    margin: 30px 0px 10px 0px;
     padding: 15px;
     background: rgba(212, 175, 55, 0.1); /* Oro leggerissimo */
     border-left: 4px solid var(--gold);
@@ -125,6 +125,16 @@
     line-height: 1.6;
     color: #444;
     border-radius: 4px;
+  }
+
+  .deep-blue {
+    border-left: 4px solid var(--deep-blue);
+    border-right: 4px solid var(--deep-blue);
+  }
+
+  .primary-orange {
+    border-left: 4px solid var(--primary-orange);
+    border-right: 4px solid var(--primary-orange);
   }
 
   /* Bottoni */
@@ -164,7 +174,7 @@
 
   label, input, select, .spacing, .disclaimer, .check-wrap {
     width: 90%; /* Non occupano più il 100%, lasciando spazio ai lati */
-    max-width: 450px; /* Limite massimo per non farli diventare troppo larghi su desktop */
+    max-width: 800px; /* Limite massimo per non farli diventare troppo larghi su desktop */
   }
 
   .grid {
@@ -172,7 +182,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     width: 90%; /* Allineata agli altri elementi */
-    max-width: 450px;
+    max-width: 800px;
   }
 
   /* Nelle grid, gli input tornano al 100% della loro cella */
@@ -189,7 +199,7 @@
 
   .button-group {
     width: 90%;
-    max-width: 450px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     gap: 10px;

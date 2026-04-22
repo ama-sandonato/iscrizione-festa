@@ -1,0 +1,410 @@
+﻿[
+    {
+        "id":  "10001",
+        "name":  "ABANO TERME"
+    },
+    {
+        "id":  "10135",
+        "name":  "AGNA"
+    },
+    {
+        "id":  "10286",
+        "name":  "ALBIGNASEGO"
+    },
+    {
+        "id":  "10550",
+        "name":  "ANGUILLARA VENETA"
+    },
+    {
+        "id":  "10816",
+        "name":  "ARQUÃ PETRARCA"
+    },
+    {
+        "id":  "10821",
+        "name":  "ARRE"
+    },
+    {
+        "id":  "10870",
+        "name":  "ARZERGRANDE"
+    },
+    {
+        "id":  "11088",
+        "name":  "BAGNOLI DI SOPRA"
+    },
+    {
+        "id":  "11172",
+        "name":  "BAONE"
+    },
+    {
+        "id":  "11220",
+        "name":  "BARBONA"
+    },
+    {
+        "id":  "11380",
+        "name":  "BATTAGLIA TERME"
+    },
+    {
+        "id":  "11729",
+        "name":  "BOARA PISANI"
+    },
+    {
+        "id":  "11937",
+        "name":  "BORGO VENETO"
+    },
+    {
+        "id":  "11971",
+        "name":  "BORGORICCO"
+    },
+    {
+        "id":  "12086",
+        "name":  "BOVOLENTA"
+    },
+    {
+        "id":  "12273",
+        "name":  "BRUGINE"
+    },
+    {
+        "id":  "12481",
+        "name":  "CADONEGHE"
+    },
+    {
+        "id":  "12817",
+        "name":  "CAMPO SAN MARTINO"
+    },
+    {
+        "id":  "12834",
+        "name":  "CAMPODARSEGO"
+    },
+    {
+        "id":  "12847",
+        "name":  "CAMPODORO"
+    },
+    {
+        "id":  "12894",
+        "name":  "CAMPOSAMPIERO"
+    },
+    {
+        "id":  "12940",
+        "name":  "CANDIANA"
+    },
+    {
+        "id":  "13215",
+        "name":  "CARCERI"
+    },
+    {
+        "id":  "13309",
+        "name":  "CARMIGNANO DI BRENTA"
+    },
+    {
+        "id":  "13386",
+        "name":  "CARTURA"
+    },
+    {
+        "id":  "13437",
+        "name":  "CASALE DI SCODOSIA"
+    },
+    {
+        "id":  "13481",
+        "name":  "CASALSERUGO"
+    },
+    {
+        "id":  "13773",
+        "name":  "CASTELBALDO"
+    },
+    {
+        "id":  "14518",
+        "name":  "CERVARESE SANTA CROCE"
+    },
+    {
+        "id":  "14841",
+        "name":  "CINTO EUGANEO"
+    },
+    {
+        "id":  "14905",
+        "name":  "CITTADELLA"
+    },
+    {
+        "id":  "15030",
+        "name":  "CODEVIGO"
+    },
+    {
+        "id":  "15311",
+        "name":  "CONSELVE"
+    },
+    {
+        "id":  "15430",
+        "name":  "CORREZZOLA"
+    },
+    {
+        "id":  "15788",
+        "name":  "CURTAROLO"
+    },
+    {
+        "id":  "16109",
+        "name":  "DUE CARRARE"
+    },
+    {
+        "id":  "16250",
+        "name":  "ESTE"
+    },
+    {
+        "id":  "16685",
+        "name":  "FONTANIVA"
+    },
+    {
+        "id":  "17041",
+        "name":  "GALLIERA VENETA"
+    },
+    {
+        "id":  "17061",
+        "name":  "GALZIGNANO TERME"
+    },
+    {
+        "id":  "17177",
+        "name":  "GAZZO"
+    },
+    {
+        "id":  "17545",
+        "name":  "GRANTORTO"
+    },
+    {
+        "id":  "17546",
+        "name":  "GRANZE"
+    },
+    {
+        "id":  "18252",
+        "name":  "LEGNARO"
+    },
+    {
+        "id":  "18385",
+        "name":  "LIMENA"
+    },
+    {
+        "id":  "18568",
+        "name":  "LOREGGIA"
+    },
+    {
+        "id":  "18612",
+        "name":  "LOZZO ATESTINO"
+    },
+    {
+        "id":  "19198",
+        "name":  "MASERÃ DI PADOVA"
+    },
+    {
+        "id":  "19201",
+        "name":  "MASI"
+    },
+    {
+        "id":  "19241",
+        "name":  "MASSANZAGO"
+    },
+    {
+        "id":  "19354",
+        "name":  "MEGLIADINO SAN VITALE"
+    },
+    {
+        "id":  "19458",
+        "name":  "MERLARA"
+    },
+    {
+        "id":  "19486",
+        "name":  "MESTRINO"
+    },
+    {
+        "id":  "19899",
+        "name":  "MONSELICE"
+    },
+    {
+        "id":  "19926",
+        "name":  "MONTAGNANA"
+    },
+    {
+        "id":  "20217",
+        "name":  "MONTEGROTTO TERME"
+    },
+    {
+        "id":  "20957",
+        "name":  "NOVENTA PADOVANA"
+    },
+    {
+        "id":  "21357",
+        "name":  "OSPEDALETTO EUGANEO"
+    },
+    {
+        "id":  "21471",
+        "name":  "PADOVA"
+    },
+    {
+        "id":  "21896",
+        "name":  "PERNUMIA"
+    },
+    {
+        "id":  "22033",
+        "name":  "PIACENZA D\u0027ADIGE"
+    },
+    {
+        "id":  "22123",
+        "name":  "PIAZZOLA SUL BRENTA"
+    },
+    {
+        "id":  "22325",
+        "name":  "PIOMBINO DESE"
+    },
+    {
+        "id":  "22335",
+        "name":  "PIOVE DI SACCO"
+    },
+    {
+        "id":  "22550",
+        "name":  "POLVERARA"
+    },
+    {
+        "id":  "22587",
+        "name":  "PONSO"
+    },
+    {
+        "id":  "22624",
+        "name":  "PONTE SAN NICOLÃ"
+    },
+    {
+        "id":  "22658",
+        "name":  "PONTELONGO"
+    },
+    {
+        "id":  "22857",
+        "name":  "POZZONOVO"
+    },
+    {
+        "id":  "24105",
+        "name":  "ROVOLON"
+    },
+    {
+        "id":  "24110",
+        "name":  "RUBANO"
+    },
+    {
+        "id":  "24176",
+        "name":  "SACCOLONGO"
+    },
+    {
+        "id":  "24649",
+        "name":  "SAN GIORGIO DELLE PERTICHE"
+    },
+    {
+        "id":  "24666",
+        "name":  "SAN GIORGIO IN BOSCO"
+    },
+    {
+        "id":  "24814",
+        "name":  "SAN MARTINO DI LUPARI"
+    },
+    {
+        "id":  "25058",
+        "name":  "SAN PIETRO IN GU"
+    },
+    {
+        "id":  "25079",
+        "name":  "SAN PIETRO VIMINARIO"
+    },
+    {
+        "id":  "25507",
+        "name":  "SANT\u0027ANGELO DI PIOVE DI SACCO"
+    },
+    {
+        "id":  "25358",
+        "name":  "SANT\u0027ELENA"
+    },
+    {
+        "id":  "25654",
+        "name":  "SANT\u0027URBANO"
+    },
+    {
+        "id":  "25323",
+        "name":  "SANTA GIUSTINA IN COLLE"
+    },
+    {
+        "id":  "25664",
+        "name":  "SAONARA"
+    },
+    {
+        "id":  "26009",
+        "name":  "SELVAZZANO DENTRO"
+    },
+    {
+        "id":  "26456",
+        "name":  "SOLESINO"
+    },
+    {
+        "id":  "26706",
+        "name":  "STANGHELLA"
+    },
+    {
+        "id":  "27069",
+        "name":  "TEOLO"
+    },
+    {
+        "id":  "27160",
+        "name":  "TERRASSA PADOVANA"
+    },
+    {
+        "id":  "27312",
+        "name":  "TOMBOLO"
+    },
+    {
+        "id":  "27433",
+        "name":  "TORREGLIA"
+    },
+    {
+        "id":  "27580",
+        "name":  "TREBASELEGHE"
+    },
+    {
+        "id":  "27690",
+        "name":  "TRIBANO"
+    },
+    {
+        "id":  "27865",
+        "name":  "URBANA"
+    },
+    {
+        "id":  "28340",
+        "name":  "VEGGIANO"
+    },
+    {
+        "id":  "28549",
+        "name":  "VESCOVANA"
+    },
+    {
+        "id":  "28679",
+        "name":  "VIGHIZZOLO D\u0027ESTE"
+    },
+    {
+        "id":  "28712",
+        "name":  "VIGODARZERE"
+    },
+    {
+        "id":  "28724",
+        "name":  "VIGONZA"
+    },
+    {
+        "id":  "28761",
+        "name":  "VILLA DEL CONTE"
+    },
+    {
+        "id":  "28772",
+        "name":  "VILLA ESTENSE"
+    },
+    {
+        "id":  "28866",
+        "name":  "VILLAFRANCA PADOVANA"
+    },
+    {
+        "id":  "28923",
+        "name":  "VILLANOVA DI CAMPOSAMPIERO"
+    },
+    {
+        "id":  "29139",
+        "name":  "VO\u0027"
+    }
+]

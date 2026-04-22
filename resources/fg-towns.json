@@ -1,0 +1,246 @@
+﻿[
+    {
+        "id":  "10026",
+        "name":  "ACCADIA"
+    },
+    {
+        "id":  "10266",
+        "name":  "ALBERONA"
+    },
+    {
+        "id":  "10598",
+        "name":  "ANZANO DI PUGLIA"
+    },
+    {
+        "id":  "10636",
+        "name":  "APRICENA"
+    },
+    {
+        "id":  "10875",
+        "name":  "ASCOLI SATRIANO"
+    },
+    {
+        "id":  "11631",
+        "name":  "BICCARI"
+    },
+    {
+        "id":  "12081",
+        "name":  "BOVINO"
+    },
+    {
+        "id":  "12508",
+        "name":  "CAGNANO VARANO"
+    },
+    {
+        "id":  "12929",
+        "name":  "CANDELA"
+    },
+    {
+        "id":  "13177",
+        "name":  "CARAPELLE"
+    },
+    {
+        "id":  "13291",
+        "name":  "CARLANTINO"
+    },
+    {
+        "id":  "13362",
+        "name":  "CARPINO"
+    },
+    {
+        "id":  "13473",
+        "name":  "CASALNUOVO MONTEROTARO"
+    },
+    {
+        "id":  "13485",
+        "name":  "CASALVECCHIO DI PUGLIA"
+    },
+    {
+        "id":  "13959",
+        "name":  "CASTELLUCCIO DEI SAURI"
+    },
+    {
+        "id":  "13964",
+        "name":  "CASTELLUCCIO VALMAGGIORE"
+    },
+    {
+        "id":  "14003",
+        "name":  "CASTELNUOVO DELLA DAUNIA"
+    },
+    {
+        "id":  "14318",
+        "name":  "CELENZA VALFORTORE"
+    },
+    {
+        "id":  "14331",
+        "name":  "CELLE DI SAN VITO"
+    },
+    {
+        "id":  "14460",
+        "name":  "CERIGNOLA"
+    },
+    {
+        "id":  "14717",
+        "name":  "CHIEUTI"
+    },
+    {
+        "id":  "15883",
+        "name":  "DELICETO"
+    },
+    {
+        "id":  "16291",
+        "name":  "FAETO"
+    },
+    {
+        "id":  "16615",
+        "name":  "FOGGIA"
+    },
+    {
+        "id":  "17885",
+        "name":  "ISCHITELLA"
+    },
+    {
+        "id":  "17930",
+        "name":  "ISOLE TREMITI"
+    },
+    {
+        "id":  "18312",
+        "name":  "LESINA"
+    },
+    {
+        "id":  "18624",
+        "name":  "LUCERA"
+    },
+    {
+        "id":  "18974",
+        "name":  "MANFREDONIA"
+    },
+    {
+        "id":  "19290",
+        "name":  "MATTINATA"
+    },
+    {
+        "id":  "20070",
+        "name":  "MONTE SANT\u0027ANGELO"
+    },
+    {
+        "id":  "20231",
+        "name":  "MONTELEONE DI PUGLIA"
+    },
+    {
+        "id":  "20598",
+        "name":  "MOTTA MONTECORVINO"
+    },
+    {
+        "id":  "21205",
+        "name":  "ORDONA"
+    },
+    {
+        "id":  "21265",
+        "name":  "ORSARA DI PUGLIA"
+    },
+    {
+        "id":  "21278",
+        "name":  "ORTA NOVA"
+    },
+    {
+        "id":  "21620",
+        "name":  "PANNI"
+    },
+    {
+        "id":  "21948",
+        "name":  "PESCHICI"
+    },
+    {
+        "id":  "22190",
+        "name":  "PIETRAMONTECORVINO"
+    },
+    {
+        "id":  "22468",
+        "name":  "POGGIO IMPERIALE"
+    },
+    {
+        "id":  "23478",
+        "name":  "RIGNANO GARGANICO"
+    },
+    {
+        "id":  "23828",
+        "name":  "ROCCHETTA SANT\u0027ANTONIO"
+    },
+    {
+        "id":  "23848",
+        "name":  "RODI GARGANICO"
+    },
+    {
+        "id":  "24011",
+        "name":  "ROSETO VALFORTORE"
+    },
+    {
+        "id":  "24730",
+        "name":  "SAN GIOVANNI ROTONDO"
+    },
+    {
+        "id":  "24849",
+        "name":  "SAN MARCO IN LAMIS"
+    },
+    {
+        "id":  "24850",
+        "name":  "SAN MARCO LA CATOLA"
+    },
+    {
+        "id":  "24967",
+        "name":  "SAN NICANDRO GARGANICO"
+    },
+    {
+        "id":  "25004",
+        "name":  "SAN PAOLO DI CIVITATE"
+    },
+    {
+        "id":  "25140",
+        "name":  "SAN SEVERO"
+    },
+    {
+        "id":  "25446",
+        "name":  "SANT\u0027AGATA DI PUGLIA"
+    },
+    {
+        "id":  "26118",
+        "name":  "SERRACAPRIOLA"
+    },
+    {
+        "id":  "26758",
+        "name":  "STORNARA"
+    },
+    {
+        "id":  "26760",
+        "name":  "STORNARELLA"
+    },
+    {
+        "id":  "27435",
+        "name":  "TORREMAGGIORE"
+    },
+    {
+        "id":  "27752",
+        "name":  "TROIA"
+    },
+    {
+        "id":  "28622",
+        "name":  "VICO DEL GARGANO"
+    },
+    {
+        "id":  "28648",
+        "name":  "VIESTE"
+    },
+    {
+        "id":  "29191",
+        "name":  "VOLTURARA APPULA"
+    },
+    {
+        "id":  "29194",
+        "name":  "VOLTURINO"
+    },
+    {
+        "id":  "29225",
+        "name":  "ZAPPONETA"
+    }
+]
