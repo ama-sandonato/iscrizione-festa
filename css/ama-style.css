@@ -63,18 +63,6 @@
     border: 1px solid rgba(255, 255, 255, 0.3); /* Un sottile bordo chiaro per definire la forma */
   }
 
-  /* Adattamento per dispositivi mobili */
-  @media (max-width: 600px) {
-    .hero-header {
-      max-width: 95%;
-    }
-    form {
-      max-width: 95%;
-      margin-top: -50px; /* Ridotto per schermi piccoli */
-      padding: 20px;
-    }
-  }
-
   h2 { 
     margin-bottom: 10px; 
     color: var(--deep-blue); 
@@ -218,6 +206,7 @@
 
   .grid {
     display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     width: 90%; /* Allineata agli altri elementi */
@@ -284,3 +273,41 @@
   .bambino {
     background: rgba(255, 255, 255, 0.3);
   }
+
+  /* Adattamento per dispositivi mobili */
+  @media (max-width: 768px) {
+    .hero-header {
+      max-width: 95%;
+    }
+    form {
+      max-width: 95%;
+      margin-top: -50px; /* Ridotto per schermi piccoli */
+      padding: 10px;
+    }
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .partecipanti {
+      max-width: 768px;
+    }
+  }
+
+
+  /* Adattamento per dispositivi mobili */
+  @media (max-width: 480px) {
+    .hero-header {
+      max-width: 95%;
+    }
+    form {
+      max-width: 95%;
+      margin-top: -50px; /* Ridotto per schermi piccoli */
+      padding: 10px;
+    }
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .partecipanti {
+      max-width: 480px;
+    }
+  }
+  
