@@ -7,7 +7,7 @@ async function initDatabase() {
     });
 
     // 2. Scarica il file del database creato con lo script
-    const dataPromise = fetch("./resources/comuni_italiani.db").then(res => res.arrayBuffer());
+    const dataPromise = fetch("./resources/comuni.db").then(res => res.arrayBuffer());
 
     const [SQL, buf] = await Promise.all([sqlPromise, dataPromise]);
 
@@ -16,7 +16,7 @@ async function initDatabase() {
     console.log("Database SQLite pronto!");
 }
 
-// Esempio: Recupera comuni dopo aver scelto la provincia
+//Recupera comuni dopo aver scelto la provincia
 function getComuniByProvincia(sigla) {
     if (!db) return;
 
@@ -31,9 +31,3 @@ function getComuniByProvincia(sigla) {
     
     return comuni;
 }
-
-// Utilizzo
-//initDatabase().then(() => {
-//    const elenco = getComuniByProvincia("MI");
-//    console.log("Comuni di Milano:", elenco);
-//});
