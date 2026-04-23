@@ -9,6 +9,7 @@ const AppConfig = (() => {
     };
 })();
 
+
 function loadProvince() {
     fetch('./resources/provinces.json')
     .then(response => response.json())

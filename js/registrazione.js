@@ -9,19 +9,17 @@ const msg = document.getElementById('msg');
 const selectProvincia = document.getElementById('provincia');
 const selectCitta = document.getElementById('citta');
 
-
-// 1. Caricamento iniziale delle Province
-//window.addEventListener('DOMContentLoaded', () => {
-//});
-
 window.addEventListener('DOMContentLoaded', loadProvince());
 
 // 2. Caricamento dei Comuni al cambio della Provincia
 selectProvincia.addEventListener('change', e => loadCitta(e.target.value));
 
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     console.log("Pagina caricata, procedo ad effettuare il caricamento dei dati della form...");
+    initDatabase();
+    loadProvince();
+    //mi posiziono nel punto giusto
     step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
  });
 
