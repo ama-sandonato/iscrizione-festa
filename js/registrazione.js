@@ -1,75 +1,29 @@
-const GAS_URL = "https://script.google.com/macros/s/AKfycbywhbbHNVrJIKJSH0RJ5sllwp-khgMkKK0zhP9_pMNWHMi__P_3SoTxPCpl0lVJ99gW/exec";
-                    
 const form = document.getElementById('regForm');
 const step1 = document.getElementById('step1');
 const step2 = document.getElementById('step2');
 const partecipantiDiv = document.getElementById('partecipanti');
 const btnNext = document.getElementById('btnNext');
 const btnBack = document.getElementById('btnBack');
+
 const msg = document.getElementById('msg');
 const selectProvincia = document.getElementById('provincia');
 const selectCitta = document.getElementById('citta');
 
 
 // 1. Caricamento iniziale delle Province
-window.addEventListener('DOMContentLoaded', () => {
-  fetch('./resources/provinces.json')
-    .then(response => response.json())
-    .then(data => {
-      selectProvincia.innerHTML = '<option value="">Seleziona provincia</option>';
-      // L'API restituisce un array di oggetti, solitamente con 'code' e 'description' (o simili)
-      // Adattiamo in base alla struttura reale dell'API
-      data.forEach(prov => {
-        const option = document.createElement('option');
-        option.value = prov.id; // Il codice (es. MI)
-        option.textContent = prov.name; // Il nome (es. Milano)
-        selectProvincia.appendChild(option);
-      });
-    })
-    .catch(err => {
-      console.error("Errore caricamento province:", err);
-      selectProvincia.innerHTML = '<option value="">Errore nel caricamento</option>';
-    });
-});
+//window.addEventListener('DOMContentLoaded', () => {
+//});
+
+window.addEventListener('DOMContentLoaded', loadProvince());
 
 // 2. Caricamento dei Comuni al cambio della Provincia
-selectProvincia.addEventListener('change', function() {
-  const provCode = this.value;
-  
-  // Reset campo città
-  selectCitta.innerHTML = '<option value="">Caricamento comuni...</option>';
-  selectCitta.disabled = true;
-
-  if (provCode) {
-    fetch(`./resources/${provCode.toLowerCase()}-towns.min.json`)
-      .then(response => response.json())
-      .then(data => {
-        selectCitta.innerHTML = '<option value="">Seleziona città</option>';
-        selectCitta.disabled = false;
-
-        data.forEach(town => {
-          const option = document.createElement('option');
-          // Nota: usa 'description' o 'name' in base a cosa restituisce l'API per i comuni
-          option.value = town.name; 
-          option.textContent = town.name;
-          selectCitta.appendChild(option);
-        });
-      })
-      .catch(err => {
-        console.error("Errore caricamento comuni:", err);
-        selectCitta.innerHTML = '<option value="">Errore nel caricamento</option>';
-      });
-  } else {
-    selectCitta.innerHTML = '<option value="">Seleziona prima una provincia</option>';
-  }
-});
+selectProvincia.addEventListener('change', e => loadCitta(e.target.value));
 
 
 window.addEventListener("load", () => {
     console.log("Pagina caricata, procedo ad effettuare il caricamento dei dati della form...");
-    
-});
-
+    step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+ });
 
 // Maiuscolo automatico per CF
 document.getElementById('cf').addEventListener('input', e => {
@@ -80,6 +34,7 @@ document.getElementById('cf').addEventListener('input', e => {
 btnBack.addEventListener('click', () => {
   step2.style.display = 'none';
   step1.style.display = 'flex';
+  step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 // Gestione passaggio allo Step 2
@@ -98,30 +53,54 @@ btnNext.addEventListener('click', () => {
 
   const adulti = Number(document.getElementById('adulti').value);
   const minori = Number(document.getElementById('minori').value);
-  const tot = adulti + minori;
 
   // Genera campi per i partecipanti extra
-  partecipantiDiv.innerHTML = '';
-  for (let i = 1; i < tot; i++) {
+  // partecipantiDiv.innerHTML = '';
+
+  //dati partecipanti ADULTI (extra il primo)
+  for (let i = 1; i < adulti; i++) {
     const p = document.createElement('div');
-    p.className = 'partecipante'; // Questa classe ora ha il flex-column e align-items: center nel CSS
+    p.className = 'partecipante adulto'; // Questa classe ora ha il flex-column e align-items: center nel CSS
     p.innerHTML = `
-      <h3>Partecipante ${i+1}</h3>
+      <h3>Adulto ${i+1}</h3>
       <div class="grid">
         <div>
           <label>Nome *</label>
-          <input type="text" name="nomeP${i}" required>
+          <input type="text" name="nome-adulto-${i+1}" required>
         </div>
         <div>
           <label>Cognome *</label>
-          <input type="text" name="cognomeP${i}" required>
+          <input type="text" name="cognome-adulto-${i+1}" required>
         </div>
       </div>
     `;
     partecipantiDiv.appendChild(p);
+    partecipantiDiv.style.display = 'flex';
+  }
+  
+  for (let i = 1; i <= minori; i++) {
+    const p = document.createElement('div');
+    p.className = 'partecipante bambino'; // Questa classe ora ha il flex-column e align-items: center nel CSS
+    p.innerHTML = `
+      <h3>Bambino (minore) ${i}</h3>
+      <div class="grid">
+        <div>
+          <label>Nome *</label>
+          <input type="text" name="nome-bambino-${i}" required>
+        </div>
+        <div>
+          <label>Cognome *</label>
+          <input type="text" name="cognome-bambino-${i}" required>
+        </div>
+      </div>
+    `;
+    partecipantiDiv.appendChild(p);
+    partecipantiDiv.style.display = 'flex';
   }  
+
   step1.style.display = 'none';
   step2.style.display = 'flex'; // Usiamo flex per mantenere la centratura impostata nel CSS
+  step2.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 // Invio Finale
@@ -139,13 +118,20 @@ form.addEventListener('submit', async (e) => {
   // Raccolgo i partecipanti extra in un array
   const adulti = Number(document.getElementById('adulti').value);
   const minori = Number(document.getElementById('minori').value);
-  const tot = adulti + minori;
   
   data.partecipanti = [];
-  for (let i = 1; i < tot; i++) {
+  for (let i = 1; i < adulti; i++) {
     data.partecipanti.push({
-      nome: formData.get(`nomeP${i}`),
-      cognome: formData.get(`cognomeP${i}`)
+      nome: formData.get(`nome-adulto-${i+1}`),
+      cognome: formData.get(`cognome-adulto-${i+1}`),
+      adulto: "si"
+    });
+  }
+  for (let i = 1; i <= minori; i++) {
+    data.partecipanti.push({
+      nome: formData.get(`nome-bambino-${i}`),
+      cognome: formData.get(`cognome-bambino-${i}`),
+      adulto: "no"
     });
   }
 
@@ -153,43 +139,66 @@ form.addEventListener('submit', async (e) => {
   const btnSubmit = document.getElementById('btnSubmit');
   btnSubmit.disabled = true;
   btnSubmit.textContent = "Invio in corso...";
-  
-  console.log("Invio i dati al server:", JSON.stringify(data));
 
-  fetch(GAS_URL, {
+  if ( AppConfig.debugMode ) {
+    console.log("Invio i dati al server:", JSON.stringify(data));
+  }
+
+  fetch(AppConfig.apiUrl, {
     method: 'POST',
     headers: { "Content-Type": "text/plain" },
     body: JSON.stringify({
-      action: "registraNuovoIscritto", // AGGIUNTE LE VIRGOLETTE QUI
+      action: "registraNuovoIscritto",
       formData: data
     })
   })
   .then(res => res.json())
   .then(res => {
     mostraRisultato(res);
-    btnSubmit.disabled = false;
-    btnSubmit.textContent = "Invia registrazione";
+    //btnSubmit.disabled = true;
+    //btnSubmit.textContent = "Registrazione inviata con successo!!!";
   })
   .catch(err => {
     mostraErrore();
-    btnSubmit.disabled = false;
-    btnSubmit.textContent = "Invia registrazione";
+    //btnSubmit.disabled = false;
+    //btnSubmit.textContent = "Invia registrazione";
   });
 
 });
 
 function mostraRisultato(res) {
-  msg.textContent = 'Registrazione inviata con successo! Ti aspettiamo.';
+  if (AppConfig.debugMode) {
+    console.log("[mostraRisultato]", "Ricevuta risposta dal server ->", JSON.stringify(res));
+  }
+
+  //nascondo i vari step precedenti
+  step1.style.display = 'none';
+  step2.style.display = 'none';
+
+  //aggiorno il messaggio
+  msg.innerHTML = res.messaggio + '<button type="button" id="btnHome" class="btn-secondary">NUOVA PRENOTAZIONE</button>';
   msg.className = 'success';
-  msg.style.display = 'block';
+  msg.style.display = 'flex';
+
+  //reset della form
   form.reset();
-  setTimeout(() => {
-      location.reload(); // Ricarica la pagina per pulire tutto dopo 3 secondi
-  }, 3000);
+  
+  //rivado in home sul click
+  document.getElementById('btnHome')
+          .addEventListener('click', () => { location.reload(); });
 }
 
 function mostraErrore() {
-  msg.textContent = 'Si è verificato un errore. Controlla la connessione e riprova.';
+  //nascondo i vari step precedenti
+  step1.style.display = 'none';
+  step2.style.display = 'none';
+
+  //aggiorno il messaggio
+  msg.innerHTML = 'Si è verificato un errore.<br>Controlla la connessione e riprova.<br><br>'  + '<button type="button" id="btnHome" class="btn-secondary">RIPROVA</button>';
   msg.className = 'error';
-  msg.style.display = 'block';
+  msg.style.display = 'flex';
+
+    //rivado in home sul click
+  document.getElementById('btnHome')
+          .addEventListener('click', () => { location.reload(); });
 }

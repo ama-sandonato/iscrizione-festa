@@ -6,6 +6,7 @@
   <title>🌙 Le Mille e Una Notte 2026 ✨</title>
   <link rel="stylesheet" href="./css/ama-style.css">
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <script src="./js/config.js"></script>
 </head>
 <body>
   <div class="hero-header">
@@ -13,7 +14,7 @@
   </div>
   <form id="regForm">
     <div id="step1">
-      <div class="spacing primary-orange">
+      <div class="spacing deep-blue">
         <strong>
           Compila questo breve form per prenotare il tuo ingresso alla festa di inizio anno 
           della scuola Maria Ausiliatrice!  🎉
@@ -22,12 +23,11 @@
         per festeggiare insieme l'inizio di un nuovo anno scolastico.<br>
         Non mancare! 😊
       </div>
-      <div class="spacing deep-blue">
+      <div class="spacing">
         <h3>FORNISCI I TUOI DATI</h3>
         Raccoglieremo l'anagrafica del genitore che effettuerà la prenotazione per registrare gli ingressi 
         e completare l'iscrizione all'associazione AMA 😊
       </div>
-
       <div class="grid">
         <div>
           <label for="nome">Nome *</label>
@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <div class="spacing deep-blue">
+      <div class="spacing">
         Inserisci qui il numero di partecipanti e i menù scelti
       </div>
       <div class="grid">
@@ -108,7 +108,7 @@
           <input type="number" id="birre" name="birre" min="0" max="10" value="0" class="full">
         </div>
       </div>
-      <div class="spacing">
+      <div class="spacing gold">
         Dopo aver cliccato "Avanti", dovrai inserire i dati i tutti i partecipanti, ad esclusione del tuo nominativo.
       </div>
 
@@ -116,27 +116,35 @@
     </div>
 
     <div id="step2" style="display: none;">
-      <h2>Inserisci i dati dei partecipanti</h2>
-      <div id="partecipanti"></div>
-      <div class="disclaimer">
-        L'associazione AMA quale ente organizzatore dell'evento 
-        e la scuola Maria Ausiliatrice quale proprietaria degli immobili e delle pertinenze nei quali la festa si svolge 
-        non hanno e non assumono alcun onere di vigilanza nei confronti dei soggetti minori partecipanti, siano essi allievi o non allievi della scuola.
-        Nessun onere in tal senso sussiste neppure in capo ai soggetti incaricati di svolgere attività ludico - ricreative nell'ambito della festa.
-        Ogni onere di cura e vigilanza sui minori partecipanti resta integralmente ed esclusivamente a carico del genitore, del tutore o del diverso soggetto maggiorenne accompagnatore individuato dal genitore o da chi ne fa le veci. 
-        Il genitore o il tutore liberano pertanto espressamente sin da ora AMA, la scuola Maria Ausiliatrice e tutti i rispettivi addetti da ogni responsabilità per i danni arrecati a cose e persone dal minore nonché per i danni subiti dal medesimo  ex art. 2048 CC nell'ambito della festa di cui trattasi.
+      <div id="partecipanti" style="display: none;">
+        <div class="spacing">
+          Inserisci qui i dati anagrafici dei partecipanti. 
+          I tuoi dati non devono essere inseriti in questa sezione, dato che sono stati già inseriti nello step precedente.
+        </div>
+      </div>
+      <div class="spacing disclaimer">
+        <h3>DISCLAIMER</h3>
+        L'associazione <strong>AMA</strong> quale ente organizzatore dell'evento 
+        e la scuola <strong>Maria Ausiliatrice</strong> quale proprietaria degli immobili e delle pertinenze nei quali la festa si svolge 
+        non hanno e non assumono alcun onere di vigilanza nei confronti dei soggetti minori partecipanti, siano essi allievi o non allievi della scuola.<br>
+        Nessun onere in tal senso sussiste neppure in capo ai soggetti incaricati di svolgere attività ludico - ricreative nell'ambito della festa.<br>
+        Ogni onere di cura e vigilanza sui minori partecipanti resta integralmente ed esclusivamente a carico del genitore, 
+        del tutore o del diverso soggetto maggiorenne accompagnatore individuato dal genitore o da chi ne fa le veci.<br> 
+        Il <strong>genitore</strong> o il <strong>tutore</strong> liberano pertanto espressamente sin da ora <strong>AMA</strong>, 
+        la scuola <strong>Maria Ausiliatrice</strong> e tutti i rispettivi addetti da ogni responsabilità per i danni arrecati 
+        a cose e persone dal minore nonché per i danni subiti dal medesimo ex art. 2048 CC nell'ambito della festa di cui trattasi.
       </div>
 
       <div class="check-wrap">
-        <input type="checkbox" id="privacy" name="privacy" required>
-        <label for="privacy">Dichiaro di aver letto il disclaimer e ne accetto integralmente le condizioni *</label>
+        <input type="checkbox" id="disclaimer" name="disclaimer" required>
+        <label for="disclaimer">Dichiaro di aver letto il disclaimer e ne accetto integralmente le condizioni *</label>
       </div>
 
       <button type="submit" id="btnSubmit">Invia registrazione</button>
       <button type="button" id="btnBack" class="btn-secondary">Indietro</button>
     </div>
 
-    <div id="msg"></div>
+    <div id="msg" style="display: none;"></div>
   </form>
   <script src="./js/registrazione.js"></script>
 </body>
