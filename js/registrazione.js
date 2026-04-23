@@ -62,7 +62,7 @@ btnNext.addEventListener('click', () => {
     const p = document.createElement('div');
     p.className = 'partecipante adulto'; // Questa classe ora ha il flex-column e align-items: center nel CSS
     p.innerHTML = `
-      <h3>Adulto ${i+1}</h3>
+      <h4>Adulto ${i+1}</h4>
       <div class="grid">
         <div>
           <label>Nome *</label>
@@ -75,14 +75,14 @@ btnNext.addEventListener('click', () => {
       </div>
     `;
     partecipantiDiv.appendChild(p);
-    partecipantiDiv.style.display = 'flex';
+    partecipantiDiv.style.display = 'block';
   }
   
   for (let i = 1; i <= minori; i++) {
     const p = document.createElement('div');
     p.className = 'partecipante bambino'; // Questa classe ora ha il flex-column e align-items: center nel CSS
     p.innerHTML = `
-      <h3>Bambino (minore) ${i}</h3>
+      <h4>Bambino (minore) ${i}</h4>
       <div class="grid">
         <div>
           <label>Nome *</label>

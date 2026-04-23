@@ -258,13 +258,18 @@
     transform: none !important;
   }
 
+  .partecipanti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
     /* Assicuriamoci che i partecipanti extra siano centrati */
   .partecipante {
     width: 100%;
     display: flex;
     border: 1px solid #eee;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     background: rgba(255, 255, 255, 0.3);
     margin-top: 15px;
     margin-bottom: 15px;
