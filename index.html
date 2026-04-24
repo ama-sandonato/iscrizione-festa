@@ -6,9 +6,15 @@
   <title>🌙 Le Mille e Una Notte 2026 ✨</title>
   <link rel="stylesheet" href="./css/ama-style.css">
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
   <script src="./js/config.js"></script>
+  <script src="./js/comuni-db.js"></script>
 </head>
 <body>
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <p>Caricamento dati in corso...</p>
+  </div>
   <div class="hero-header">
     <img src="./images/ama-header.png" alt="Le Mille e Una Notte 2026">
   </div>
@@ -53,31 +59,30 @@
       </div>
       <div class="grid">
         <div>
-          <label for="indirizzo">Indirizzo (Via, Piazza, e n. civico) *</label>
-          <input type="text" id="indirizzo" name="indirizzo" required>
-        </div>
-        <div>
-          <label for="cap">CAP *</label>
-          <input type="text" id="cap" name="cap" required
-                pattern="^[0-9]{5}$"
-                title="Inserisci un CAP valido di 5 caratteri">
-        </div>
-      </div>
-      <div class="grid">
-        <div>
           <label for="provincia">Provincia *</label>
           <select id="provincia" name="provincia" required>
             <option value="">Caricamento province...</option>
           </select>
         </div>
         <div>
-          <label for="citta">Città *</label>
-          <select id="citta" name="citta" required disabled>
+          <label for="comune">Comune *</label>
+          <select id="comune" name="comune" required disabled>
             <option value="">Seleziona prima una provincia</option>
           </select>
         </div>
       </div>
-
+      <div class="grid">
+        <div>
+          <label for="indirizzo">Indirizzo (Via, Piazza, e n. civico) *</label>
+          <input type="text" id="indirizzo" name="indirizzo" required>
+        </div>
+        <div>
+          <label for="cap">CAP *</label>
+          <select id="cap" name="cap" required>
+            <option value="">Seleziona prima un comune ...</option>
+          </select>
+        </div>
+      </div>
       <div class="spacing">
         Inserisci qui il numero di partecipanti e i menù scelti
       </div>
@@ -109,7 +114,7 @@
         </div>
       </div>
       <div class="spacing gold">
-        Dopo aver cliccato "Avanti", dovrai inserire i dati i tutti i partecipanti, ad esclusione del tuo nominativo.
+        Dopo aver cliccato "Avanti", dovrai inserire i dati di tutti i partecipanti, ad esclusione del tuo nominativo.
       </div>
 
       <button type="button" id="btnNext">Avanti</button>

@@ -7,28 +7,31 @@ const btnBack = document.getElementById('btnBack');
 
 const msg = document.getElementById('msg');
 const selectProvincia = document.getElementById('provincia');
-const selectCitta = document.getElementById('citta');
+const selectComune = document.getElementById('comune');
+const selectCap = document.getElementById('cap');
 
 
-// 1. Caricamento iniziale delle Province
-//window.addEventListener('DOMContentLoaded', () => {
-//});
+/**
+ * Listener per l'inizializzazione del "mondo" ^_^
+ * 
+ */
+window.addEventListener('DOMContentLoaded', async () => {
+  console.log("Pagina caricata, procedo ad effettuare il caricamento dei dati della form...");
 
-window.addEventListener('DOMContentLoaded', loadProvince());
+  //inizializzo il database
+  await initDatabase();
 
-// 2. Caricamento dei Comuni al cambio della Provincia
-selectProvincia.addEventListener('change', e => loadCitta(e.target.value));
+  //mi posiziono nel punto giusto
+  step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
 
+//Caricamento dei Comuni al cambio della Provincia
+selectProvincia.addEventListener('change', e => populateCity(e.target.value));
 
-window.addEventListener("load", () => {
-    console.log("Pagina caricata, procedo ad effettuare il caricamento dei dati della form...");
-    step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
- });
+selectComune.addEventListener('change', e => populateCap(e.target.value));
 
 // Maiuscolo automatico per CF
-document.getElementById('cf').addEventListener('input', e => {
-  e.target.value = e.target.value.toUpperCase();
-});
+document.getElementById('cf').addEventListener('input', e => { e.target.value = e.target.value.toUpperCase(); });
 
 // Gestione tasto Indietro
 btnBack.addEventListener('click', () => {
@@ -36,6 +39,7 @@ btnBack.addEventListener('click', () => {
   step1.style.display = 'flex';
   step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+
 
 // Gestione passaggio allo Step 2
 btnNext.addEventListener('click', () => {
