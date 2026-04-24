@@ -7,7 +7,9 @@ const btnBack = document.getElementById('btnBack');
 
 const msg = document.getElementById('msg');
 const selectProvincia = document.getElementById('provincia');
-const selectCitta = document.getElementById('citta');
+const selectComune = document.getElementById('comune');
+const selectCap = document.getElementById('cap');
+
 
 /**
  * Listener per l'inizializzazione del "mondo" ^_^
@@ -23,9 +25,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
-
 //Caricamento dei Comuni al cambio della Provincia
 selectProvincia.addEventListener('change', e => populateCity(e.target.value));
+
+selectComune.addEventListener('change', e => populateCap(e.target.value));
 
 // Maiuscolo automatico per CF
 document.getElementById('cf').addEventListener('input', e => { e.target.value = e.target.value.toUpperCase(); });
