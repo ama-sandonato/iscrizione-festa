@@ -15,10 +15,9 @@
     <div class="spinner"></div>
     <p>Caricamento dati in corso...</p>
   </div>
-  <div class="hero-header">
-    <img src="./images/ama-header.png" alt="Le Mille e Una Notte 2026">
-  </div>
+  <div class="hero-header"></div>
   <form id="regForm">
+    <img src="./images/header-full.png " alt="Le Mille e Una Notte 2026">
     <div id="step1">
       <div class="spacing deep-blue">
         <strong>
@@ -29,8 +28,8 @@
         per festeggiare insieme l'inizio di un nuovo anno scolastico.<br>
         Non mancare! 😊
       </div>
-      <div class="spacing">
-        <h3>FORNISCI I TUOI DATI</h3>
+      <div class="spacing gold">
+        <strong>FORNISCI I DATI DEL TITOLARE DELLA PRENOTAZIONE</strong><br>
         Raccoglieremo l'anagrafica del genitore che effettuerà la prenotazione per registrare gli ingressi 
         e completare l'iscrizione all'associazione AMA 😊
       </div>
@@ -66,7 +65,7 @@
         </div>
         <div>
           <label for="comune">Comune *</label>
-          <select id="comune" name="comune" required disabled>
+          <select id="comune" name="comune" required>
             <option value="">Seleziona prima una provincia</option>
           </select>
         </div>
@@ -83,37 +82,45 @@
           </select>
         </div>
       </div>
-      <div class="spacing">
-        Inserisci qui il numero di partecipanti e i menù scelti
+      <div class="spacing gold">
+        <strong>FACCI SAPERE IN QUANTI SARETE ALLA FESTA</strong><br>
+        Inserisci qui il numero di partecipanti adulti (a parte te), il numero di minori dai 3 ai 18 anni<br>
+        e il numero di bambini "piccoli" nella fascia 0-3 anni.
       </div>
-      <div class="grid">
+      <div class="grid-3">
         <div>
-          <label for="adulti">Partecipanti adulti *</label>
+          <label for="adulti">N. adulti &#128104;&#128105; *</label>
+          <!-- select id="adulti" name="adulti" required ></select -->
           <input type="number" id="adulti" name="adulti" min="1" max="10" value="1" required>
         </div>
         <div>
-          <label for="minori">Partecipanti minorenni</label>
+          <label for="minori">N. minori &#128102;&#128103; (3-18 anni)</label>
           <input type="number" id="minori" name="minori" min="0" max="10" value="0">
         </div>
-      </div>
-
-      <div class="grid">
         <div>
-          <label for="menu1">Menù Tipo 1</label>
-          <input type="number" id="menu1" name="menu1" min="0" max="10" value="0">
-        </div>
-        <div>
-          <label for="menu2">Menù Tipo 2</label>
-          <input type="number" id="menu2" name="menu2" min="0" max="10" value="0">
-        </div>
-      </div>
-      <div class="grid">
-        <div>
-          <label for="birre">Birre extra</label>
-          <input type="number" id="birre" name="birre" min="0" max="10" value="0" class="full">
+          <label for="infanti">N. bambini &#128118;(0-3 anni)</label>
+          <input type="number" id="infanti" name="infanti" min="0" max="10" value="0">
         </div>
       </div>
       <div class="spacing gold">
+        <strong>SCEGLI COSA MANGIARE E QUANTE BIRRE BERE</strong><br>
+        Scegli tra il menù pizza e il menù panino con wrustel, entrambi serviti caldi e accompagnati da una bevanda analcolica.
+      </div>
+      <div class="grid-3">
+        <div>
+          <label for="menu1">Menù Pizza &#127829;</label>
+          <input type="number" id="menu1" name="menu1" min="0" max="10" value="0">
+        </div>
+        <div>
+          <label for="menu2">Menù Panino &#127789;</label>
+          <input type="number" id="menu2" name="menu2" min="0" max="10" value="0">
+        </div>
+        <div>
+          <label for="birre">Birre extra &#127866;</label>
+          <input type="number" id="birre" name="birre" min="0" max="10" value="0">
+        </div>
+      </div>
+      <div class="spacing deep-blue">
         Dopo aver cliccato "Avanti", dovrai inserire i dati di tutti i partecipanti, ad esclusione del tuo nominativo.
       </div>
 
@@ -121,9 +128,9 @@
     </div>
 
     <div id="step2" style="display: none;">
-      <div class="spacing">
-        Inserisci qui i dati anagrafici dei partecipanti. 
-        I tuoi dati non devono essere inseriti in questa sezione, dato che sono stati già inseriti nello step precedente.
+      <div class="spacing gold">
+        <strong>FORNISCI I DETTAGLI DEI PARTECIPANTI</strong><br>
+        Inserisci nome e cognome di tutti i partecipanti alla festa tranne il tuo che hai già inserito nello step precedente.
       </div>
       <div id="partecipanti" class="partecipanti" style="display: none;"></div>
       <div class="spacing disclaimer">

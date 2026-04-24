@@ -1,9 +1,13 @@
 :root {
+    --sfondo-ama: #fff3e9;
+    --testo-blue: #082652;
+    --testo-rosso: #cd142a;
+
     --primary-orange: #FF8C32;
-    --deep-blue: #001F3F;
+    --deep-blue: #082652;
     --gold: #D4AF37;
     --cream: #FFF8E7;
-    --red: #c21e1e;
+    --red: #cd142a;
     /* Definiamo una larghezza comune per coerenza */
     --container-width: 800px; 
   }
@@ -12,7 +16,7 @@
 
   body {
     font-family: 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, var(--deep-blue) 0%, #003366 100%);
+    background: var(--sfondo-ama);
     background-attachment: fixed;
     min-height: 100vh;
     display: flex;
@@ -63,11 +67,11 @@
     max-width: var(--container-width); /* Stessa larghezza del form */
     border-radius: 15px 15px 0 0; /* Arrotondiamo solo gli angoli superiori */
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0px -30px 30px 5px rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
 
-  .hero-header img {
+  form img {
     width: 100%;
     height: auto;
     display: block;
@@ -76,22 +80,23 @@
   /* Form sovrapposto all'immagine */
   form {
     /* Usiamo un colore RGBA per la trasparenza (l'ultimo valore 0.85 è l'opacità) */
-    background: rgba(255, 248, 231, 0.5); 
+    background: rgba(255, 243, 233, 0.75); 
     
     /* L'effetto magico: sfoca ciò che sta dietro il form */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Per compatibilità Safari */
 
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 30px 30px 10px rgba(0, 0, 0, 0.4);
     width: 100%;
     max-width: var(--container-width);
     
-    /* Sovrapposizione */
-    margin-top: -180px; /* Aumentato un po' per mostrare meglio l'effetto */
+    /* Sovrapposizione */ 
+    margin-top: 0px;
     position: relative;
     z-index: 2;
+    
     
     /* Bordo superiore leggermente più morbido per la trasparenza */
     border-top: 5px solid var(--primary-orange);
@@ -249,9 +254,30 @@
     max-width: 800px;
   }
 
+  .grid-3 {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 90%; /* Allineata agli altri elementi */
+    max-width: 800px;
+  }
+
   /* Nelle grid, gli input tornano al 100% della loro cella */
   .grid div input {
-    width: 100%;
+    width: 90%;
+  }
+
+  .grid-3 div input {
+    width: 90%;
+  }
+
+  .grid div select {
+    width: 90%;
+  }
+
+  .grid-3 div select {
+    width: 90%;
   }
 
   /* 5. Stile extra per gli input (per enfatizzare l'effetto vetro 0.5) */
@@ -319,11 +345,13 @@
     }
     form {
       max-width: 95%;
-      margin-top: -50px; /* Ridotto per schermi piccoli */
       padding: 10px;
     }
     .grid {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
     .partecipanti {
       max-width: 768px;
@@ -338,10 +366,12 @@
     }
     form {
       max-width: 95%;
-      margin-top: -50px; /* Ridotto per schermi piccoli */
       padding: 10px;
     }
     .grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .grid-3 {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .partecipanti {
