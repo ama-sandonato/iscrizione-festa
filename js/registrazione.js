@@ -9,24 +9,26 @@ const msg = document.getElementById('msg');
 const selectProvincia = document.getElementById('provincia');
 const selectCitta = document.getElementById('citta');
 
-window.addEventListener('DOMContentLoaded', loadProvince());
+/**
+ * Listener per l'inizializzazione del "mondo" ^_^
+ * 
+ */
+window.addEventListener('DOMContentLoaded', async () => {
+  console.log("Pagina caricata, procedo ad effettuare il caricamento dei dati della form...");
 
-// 2. Caricamento dei Comuni al cambio della Provincia
-selectProvincia.addEventListener('change', e => loadCitta(e.target.value));
+  //inizializzo il database
+  await initDatabase();
+
+  //mi posiziono nel punto giusto
+  step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
 
 
-window.addEventListener("DOMContentLoaded", () => {
-    console.log("Pagina caricata, procedo ad effettuare il caricamento dei dati della form...");
-    initDatabase();
-    loadProvince();
-    //mi posiziono nel punto giusto
-    step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
- });
+//Caricamento dei Comuni al cambio della Provincia
+selectProvincia.addEventListener('change', e => populateCity(e.target.value));
 
 // Maiuscolo automatico per CF
-document.getElementById('cf').addEventListener('input', e => {
-  e.target.value = e.target.value.toUpperCase();
-});
+document.getElementById('cf').addEventListener('input', e => { e.target.value = e.target.value.toUpperCase(); });
 
 // Gestione tasto Indietro
 btnBack.addEventListener('click', () => {
@@ -34,6 +36,7 @@ btnBack.addEventListener('click', () => {
   step1.style.display = 'flex';
   step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+
 
 // Gestione passaggio allo Step 2
 btnNext.addEventListener('click', () => {
