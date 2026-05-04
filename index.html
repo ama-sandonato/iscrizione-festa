@@ -65,7 +65,7 @@
         </div>
         <div>
           <label for="comune">Comune *</label>
-          <select id="comune" name="comune" required>
+          <select id="citta" name="citta" required>
             <option value="">Seleziona prima una provincia</option>
           </select>
         </div>
@@ -90,34 +90,34 @@
       <div class="grid-3">
         <div>
           <label for="adulti">N. adulti &#128104;&#128105; *</label>
-          <!-- select id="adulti" name="adulti" required ></select -->
-          <input type="number" id="adulti" name="adulti" min="1" max="10" value="1" required>
+          <select id="adulti" name="adulti" required ></select>
         </div>
         <div>
           <label for="minori">N. minori &#128102;&#128103; (3-18 anni)</label>
-          <input type="number" id="minori" name="minori" min="0" max="10" value="0">
+          <select id="minori" name="minori" required ></select>
         </div>
         <div>
           <label for="infanti">N. bambini &#128118;(0-3 anni)</label>
-          <input type="number" id="infanti" name="infanti" min="0" max="10" value="0">
+          <select id="infanti" name="infanti" required ></select>
         </div>
       </div>
       <div class="spacing gold">
         <strong>SCEGLI COSA MANGIARE E QUANTE BIRRE BERE</strong><br>
-        Scegli tra il menù pizza e il menù panino con wrustel, entrambi serviti caldi e accompagnati da una bevanda analcolica.
+        Scegli tra il menù pizza e il menù panino con wrustel, entrambi serviti caldi e accompagnati da una bevanda analcolica.<br>
+        Il costo di ogni singolo menù è di 16€, mentre ogni birra ha un costo di 4€
       </div>
       <div class="grid-3">
         <div>
           <label for="menu1">Menù Pizza &#127829;</label>
-          <input type="number" id="menu1" name="menu1" min="0" max="10" value="0">
+          <select id="menu1" name="menu1" required ></select>
         </div>
         <div>
           <label for="menu2">Menù Panino &#127789;</label>
-          <input type="number" id="menu2" name="menu2" min="0" max="10" value="0">
+          <select id="menu2" name="menu2" required ></select>
         </div>
         <div>
           <label for="birre">Birre extra &#127866;</label>
-          <input type="number" id="birre" name="birre" min="0" max="10" value="0">
+          <select id="birre" name="birre" required ></select>
         </div>
       </div>
       <div class="spacing deep-blue">
@@ -128,11 +128,13 @@
     </div>
 
     <div id="step2" style="display: none;">
-      <div class="spacing gold">
-        <strong>FORNISCI I DETTAGLI DEI PARTECIPANTI</strong><br>
-        Inserisci nome e cognome di tutti i partecipanti alla festa tranne il tuo che hai già inserito nello step precedente.
+      <div id="partecipanti" class="partecipanti" style="display: none;">
+        <div class="spacing gold">
+          <strong>FORNISCI I DETTAGLI DEI PARTECIPANTI</strong><br>
+          Inserisci nome e cognome di tutti i partecipanti alla festa tranne il tuo che hai già inserito nello step precedente.
+        </div>
+  
       </div>
-      <div id="partecipanti" class="partecipanti" style="display: none;"></div>
       <div class="spacing disclaimer">
         <h3>DISCLAIMER</h3>
         L'associazione <strong>AMA</strong> quale ente organizzatore dell'evento 
