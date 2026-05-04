@@ -4,7 +4,6 @@ let db = null;
  * Inizializza il database dei comuni e precarica le province
  */
 async function initDatabase() {
-    const overlay = document.getElementById('loading-overlay');
 
     try {
         // 1. Carica WASM e DB
@@ -21,10 +20,6 @@ async function initDatabase() {
 
         // 3. Popola subito la prima select (Province)
         populateProvince();
-        
-        // 4. FINE: Nascondi spinner e mostra il sito
-        overlay.style.display = 'none';
-
     } catch (err) {
         console.error("Errore durante il caricamento:", err);
         overlay.innerHTML = "<p style='color:red'>Errore nel caricamento dei dati. Ricarica la pagina.</p>";
@@ -85,7 +80,7 @@ function _listaCapByComune(comune) {
 function populateProvince() {
 
     const province = _listaProvince();
-    if (AppConfig.debugMode) console.log(`Caricate ${province.length} province: ${JSON.stringify(province)}`);
+    // if (AppConfig.debugMode) console.log(`Caricate ${province.length} province: ${JSON.stringify(province)}`);
 
     // 1. Pulizia: Rimuovi tutte le opzioni esistenti tranne la prima (il placeholder)
     selectProvincia.innerHTML = '<option value="" selected disabled>Scegli una provincia...</option>';
@@ -116,7 +111,7 @@ function populateProvince() {
 function populateCity(provCode) {
 
     const city = _listaComuniByProvincia(provCode);
-    if (AppConfig.debugMode) console.log(`Caricate ${city.length} città, per il codice provincia [${provCode}]: ${JSON.stringify(city)}`);
+    // if (AppConfig.debugMode) console.log(`Caricate ${city.length} città, per il codice provincia [${provCode}]: ${JSON.stringify(city)}`);
 
     // 1. Pulizia: Rimuovi tutte le opzioni esistenti tranne la prima (il placeholder)
     // Reset campo città
@@ -151,13 +146,12 @@ function populateCity(provCode) {
  */
 function populateCap(comune) {
 
-    const cap = _listaCapByComune(comune);
-    if (AppConfig.debugMode) console.log(`Caricati ${cap.length} CAP, per il comune [${comune}]: ${JSON.stringify(cap)}`);
-
-    // 1. Pulizia: Rimuovi tutte le opzioni esistenti tranne la prima (il placeholder)
     // Reset campo città
     selectCap.innerHTML = '<option value="">Caricamento CAP...</option>';
     selectCap.disabled = true;
+
+    //carico i CAP
+    const cap = _listaCapByComune(comune);
     
     if (!cap || cap.length === 0) {
         console.warn(`Nessun CAP trovato per il comune [${comune}]`);

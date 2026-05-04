@@ -7,7 +7,7 @@ const btnBack = document.getElementById('btnBack');
 
 const msg = document.getElementById('msg');
 const selectProvincia = document.getElementById('provincia');
-const selectComune = document.getElementById('comune');
+const selectComune = document.getElementById('citta');
 const selectCap = document.getElementById('cap');
 
 
@@ -18,8 +18,20 @@ const selectCap = document.getElementById('cap');
 window.addEventListener('DOMContentLoaded', async () => {
   console.log("Pagina caricata, procedo ad effettuare il caricamento dei dati della form...");
 
-  //inizializzo il database
+  //Nascondo sito, mostro spinner di caricamento
+  const overlay = document.getElementById('loading-overlay');
+
+  //inizializzo il database dei comuni
   await initDatabase();
+
+  //inizializzo i limiti di iscrizione/prenotazione
+  const limit = await loadLimit();
+
+  //prepara la form tenendo conto dei limiti ricevuti
+  await buildForm(limit);
+
+  //Nascondi spinner e mostra il sito
+  overlay.style.display = 'none';
 
   //mi posiziono nel punto giusto
   step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -36,6 +48,13 @@ document.getElementById('cf').addEventListener('input', e => { e.target.value = 
 // Gestione tasto Indietro
 btnBack.addEventListener('click', () => {
   step2.style.display = 'none';
+
+  //rimuovo tutti i dettagli dei partecipanti
+  while (partecipantiDiv.firstChild) {
+    // The list is LIVE so it will re-index each call
+    partecipantiDiv.removeChild(partecipantiDiv.firstChild);
+  }
+
   step1.style.display = 'flex';
   step1.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
@@ -115,7 +134,7 @@ form.addEventListener('submit', async (e) => {
   const data = Object.fromEntries(formData.entries());
   
   // Convertiamo i numeri
-  ['adulti','minori','menu1','menu2','birre'].forEach(k => {
+  ['adulti','minori', 'infanti', 'menu1','menu2','birre'].forEach(k => {
     if(data[k]) data[k] = Number(data[k]);
   });
 
@@ -143,6 +162,8 @@ form.addEventListener('submit', async (e) => {
   const btnSubmit = document.getElementById('btnSubmit');
   btnSubmit.disabled = true;
   btnSubmit.textContent = "Invio in corso...";
+  const overlay = document.getElementById('loading-overlay');
+  overlay.style.display = 'flex';
 
   if ( AppConfig.debugMode ) {
     console.log("Invio i dati al server:", JSON.stringify(data));
@@ -159,13 +180,12 @@ form.addEventListener('submit', async (e) => {
   .then(res => res.json())
   .then(res => {
     mostraRisultato(res);
-    //btnSubmit.disabled = true;
-    //btnSubmit.textContent = "Registrazione inviata con successo!!!";
   })
   .catch(err => {
     mostraErrore();
-    //btnSubmit.disabled = false;
-    //btnSubmit.textContent = "Invia registrazione";
+  })
+  .finally( e => {
+    overlay.style.display = 'none';
   });
 
 });
