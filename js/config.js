@@ -90,10 +90,10 @@ async function buildForm(limit) {
 function populateOptions(selectField, optionList) {
 
   // Reset campo città
-  selectField.innerHTML = '<option value="">Caricamento in corso</option>';
+  selectField.innerHTML = '<option value="">⛔ esaurito</option>';
   selectField.disabled = true;
 
-  if (!optionList || optionList.length === 0) {
+  if (!optionList || optionList.length === 0 || (optionList.length === 1 && optionList[0] === 0)) {
       console.warn(`lista di option vuota`);
       return;
   }
