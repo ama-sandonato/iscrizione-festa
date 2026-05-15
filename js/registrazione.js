@@ -268,6 +268,7 @@ function mostraRisultato(res) {
   //nascondo i vari step precedenti
   step1.style.display = 'none';
   step2.style.display = 'none';
+  stepRiepilogo.style.display = 'none';
 
   //aggiorno il messaggio
   msg.innerHTML = res.messaggio + '<button type="button" id="btnHome" class="btn-secondary">NUOVA PRENOTAZIONE</button>';
@@ -286,6 +287,7 @@ function mostraErrore() {
   //nascondo i vari step precedenti
   step1.style.display = 'none';
   step2.style.display = 'none';
+  stepRiepilogo.style.display = 'none';
 
   //aggiorno il messaggio
   msg.innerHTML = 'Si è verificato un errore.<br>Controlla la connessione e riprova.<br><br>'  + '<button type="button" id="btnHome" class="btn-secondary">RIPROVA</button>';
