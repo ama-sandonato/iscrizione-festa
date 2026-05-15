@@ -16,7 +16,7 @@
     <p>Caricamento dati in corso...</p>
   </div>
   <div class="hero-header"></div>
-  <form id="regForm">
+  <form id="regForm" novalidate>
     <img src="./images/header-full.png " alt="Le Mille e Una Notte 2026">
     <div id="step1">
       <div class="spacing deep-blue">
@@ -133,6 +133,26 @@
       <button type="button" id="btnNext">Avanti</button>
     </div>
 
+    <!-- Step intermedio: riepilogo -->
+    <div id="stepRiepilogo" style="display: none;">
+
+      <div class="spacing gold">
+        <strong>📋 RIEPILOGO PRENOTAZIONE</strong><br>
+        Controlla i dettagli prima di procedere con l'inserimento dei partecipanti.
+      </div>
+
+      <div id="riepilogo-content" class="riepilogo-box"></div>
+
+      <div class="spacing deep-blue" style="font-size: 13px;">
+        Se qualcosa non va, torna indietro e modifica i dati. Una volta confermato, 
+        procederai con l'inserimento dei nominativi dei partecipanti.
+      </div>
+
+      <button type="button" id="btnRiepilogoProsegui">Prosegui ➜</button>
+      <button type="button" id="btnRiepilogoIndietro" class="btn-secondary">← Indietro</button>
+
+    </div>
+
     <div id="step2" style="display: none;">
       <div id="partecipanti" class="partecipanti" style="display: none;">
         <div class="spacing gold">
@@ -165,6 +185,18 @@
 
     <div id="msg" style="display: none;"></div>
   </form>
+  <!-- Modale alert per verifica limiti -->
+  <div id="confirmModal" class="modal-confirm" onclick="closeConfirmModal()">
+    <div class="modal-confirm-maindiv" onclick="event.stopPropagation()">
+      <div class="modal-confirm-icon">❌</div>
+      <h3 id="confirmModalTitle">Errore nei dati inseriti</h3>
+      <p id="confirmModalText"></p>
+      <div class="modal-footer">
+        <button class="btn-annulla" onclick="closeConfirmModal()">Chiudi</button>
+      </div>
+    </div>
+  </div>
+
   <script src="./js/registrazione.js"></script>
 </body>
 </html>
