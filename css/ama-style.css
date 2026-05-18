@@ -263,6 +263,15 @@
     max-width: 800px;
   }
 
+  .grid-4 {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    width: 90%; /* Allineata agli altri elementi */
+    max-width: 800px;
+  }
+
   /* Nelle grid, gli input tornano al 100% della loro cella */
   .grid div input {
     width: 90%;
@@ -272,11 +281,23 @@
     width: 90%;
   }
 
+  .grid-4 div input {
+    width: 90%;
+  }
+
+  .grid-4 div label {
+    white-space: nowrap;
+  }
+
   .grid div select {
     width: 90%;
   }
 
   .grid-3 div select {
+    width: 90%;
+  }
+
+  .grid-4 div select {
     width: 90%;
   }
 
@@ -476,6 +497,9 @@
     .grid-3 {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+    .grid-4 {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
     .partecipanti {
       max-width: 768px;
     }
@@ -495,6 +519,9 @@
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .grid-4 {
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .partecipanti {

@@ -6,6 +6,8 @@ const btnNext = document.getElementById('btnNext');
 const btnBack = document.getElementById('btnBack');
 
 const msg = document.getElementById('msg');
+
+/** da spostare e togliere dallo scope globale */
 const selectProvincia = document.getElementById('provincia');
 const selectComune = document.getElementById('citta');
 const selectCap = document.getElementById('cap');
@@ -30,10 +32,18 @@ window.addEventListener('DOMContentLoaded', async () => {
   await initDatabase();
 
   //inizializzo i limiti di iscrizione/prenotazione
-  limit = await loadLimit();
+  try {
+    limit = await loadLimit();
 
-  //prepara la form tenendo conto dei limiti ricevuti
-  await buildForm(limit);
+    //prepara la form tenendo conto dei limiti ricevuti
+    await buildForm(limit);
+  }
+  catch (err) {
+    console.error("Errore durante il caricamento dei limiti:", err);
+    overlay.style.display = 'none';
+    mostraErrore();
+    return; //esce così da tutto il processo di inizializzazione, lasciando solo il messaggio di errore visibile
+  }
 
   //Nascondi spinner e mostra il sito
   overlay.style.display = 'none';
@@ -67,17 +77,11 @@ btnBack.addEventListener('click', () => {
 
 // Gestione passaggio allo Step 2
 btnNext.addEventListener('click', () => {
-  // Validiamo solo i campi visibili dello Step 1
-  const inputsStep1 = step1.querySelectorAll('input');
-  let valid = true;
-  inputsStep1.forEach(input => {
-    if (!input.checkValidity()) {
-      input.reportValidity();
-      valid = false;
-    }
-  });
 
+  //Verifico che i campi obbligatori dello step 1 siano stati compilati correttamente (validazione HTML5)
+  let valid = checkFormValidity_Step1();
   if (!valid) return;
+  
 
   //verifica numero partecipanti <=> menu
   const adulti = Number(document.getElementById('adulti').value);
@@ -85,44 +89,19 @@ btnNext.addEventListener('click', () => {
   const infanti = Number(document.getElementById('infanti').value);
   const menu_1 = Number(document.getElementById('menu1').value);
   const menu_2 = Number(document.getElementById('menu2').value);
+  const menu_3 = Number(document.getElementById('menu3').value);
   const birre  = Number(document.getElementById('birre').value);
 
-  const partecimantiTotali = adulti + minori;
-  const totaleMenu = menu_1 + menu_2;
-  const soloIngressi = partecimantiTotali - (totaleMenu);
-  if ( AppConfig.debugMode ) {
-    console.log("Controllo disponibilità menu:", {
-      menu_1, menu_2, soloIngressi, partecimantiTotali, totaleMenu, limit
-    });
-  }
 
+  //verifico la congruenza tra numero di partecipanti e menu selezionati (es. non posso avere 5 menu se ho solo 4 partecipanti)
+  valid = checkFormCongruence(adulti, minori, menu_1, menu_2, menu_3);
+  if (!valid) return;
 
-  //per prima cosa verifico che ogni singolo menu non superi i limiti imposti
-  if ( menu_1 > limit.disp.menu1 ) {
-    openConfirmModal(`Il numero dei Menu "pizza" selezionati supera la disponibilità: (${limit.disp.menu1} disponibili).`);
-    return;
-  }
-  
-  if ( menu_2 > limit.disp.menu2 ) {
-    openConfirmModal(`Il numero dei Menu "Hot Dog" selezionati supera la disponibilità: (${limit.disp.menu2} disponibili).`);
-    return;
-  }
-
-  //verifico se gli ingressi senza menu hanno disponibilità nei limiti
-  if (soloIngressi > limit.disp.soloIngressi) {
-    openConfirmModal(`Il numero di partecipanti senza menu (${soloIngressi}) supera la disponibilità (${limit.disp.soloIngressi} disponibili)`);
-    //alert(`Il numero di partecipanti senza menu supera la disponibilità (${limit.disp.soloIngressi} disponibili).`);
-    return;
-  }
-
-  //verifico che il numero totale di menu selezionati non superi il numero totale di partecipanti
-  if (totaleMenu > partecimantiTotali) {
-    openConfirmModal(`Il numero totale di menu selezionati (${totaleMenu} menù) non può superare il numero totale di partecipanti (${partecimantiTotali} adulti + bambini).`);
-    return;
-  }
   // tutte le validazioni ok → mostra riepilogo
-  buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, birre);
+  buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, menu_3, birre);
+
   step1.style.display         = 'none';
+  step2.style.display         = 'none';
   stepRiepilogo.style.display = 'flex';
   stepRiepilogo.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
@@ -200,11 +179,15 @@ btnRiepilogoProsegui.addEventListener('click', () => {
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
+  //DEVO RIVALIDARE TUTTI I DATI DELLA FORM, COMPRESI QUELLI DINAMICI DEI PARTECIPANTI EXTRA
+  let valid = checkFormValidity_Step1() && checkFormValidity_Step2();
+  if (!valid) return;
+
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
   
   // Convertiamo i numeri
-  ['adulti','minori', 'infanti', 'menu1','menu2','birre'].forEach(k => {
+  ['adulti','minori', 'infanti', 'menu1','menu2', 'menu3', 'birre'].forEach(k => {
     if(data[k]) data[k] = Number(data[k]);
   });
 
@@ -235,6 +218,7 @@ form.addEventListener('submit', async (e) => {
   const overlay = document.getElementById('loading-overlay');
   overlay.style.display = 'flex';
 
+  
   if ( AppConfig.debugMode ) {
     console.log("Invio i dati al server:", JSON.stringify(data));
   }
@@ -303,9 +287,9 @@ function mostraErrore() {
 // =====================
 // RIEPILOGO
 // =====================
-function buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, birre) {
-  const prezzi      = limit.prezzi;
-  const soloIngressi = (adulti + minori) - (menu_1 + menu_2);
+function buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, menu_3, birre) {
+  const prezzi        = limit.prezzi;
+  const soloIngressi = menu_3; // vecchia implementazione: (adulti + minori) - (menu_1 + menu_2);
 
   const costoMenu1        = menu_1 * prezzi.menu1;
   const costoMenu2        = menu_2 * prezzi.menu2;

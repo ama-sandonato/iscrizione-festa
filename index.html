@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
   <script src="./js/config.js"></script>
   <script src="./js/comuni-db.js"></script>
+  <script src="./js/validatori.js"></script>
 </head>
 <body>
   <div id="loading-overlay">
@@ -64,7 +65,7 @@
           </select>
         </div>
         <div>
-          <label for="comune">Comune di residenza *</label>
+          <label for="citta">Comune di residenza *</label>
           <select id="citta" name="citta" required>
             <option value="">Seleziona prima una provincia</option>
           </select>
@@ -112,7 +113,7 @@
         💶 Costo menù: <strong>16€ cad.</strong><br>
         🍺 Birra artigianale 0,4l: <strong>4€ cad.</strong><br>
       </div>
-      <div class="grid-3">
+      <div class="grid-4">
         <div>
           <label for="menu1">Menù Pizza &#127829;</label>
           <select id="menu1" name="menu1" required ></select>
@@ -120,6 +121,10 @@
         <div>
           <label for="menu2">Menù Panino &#127789;</label>
           <select id="menu2" name="menu2" required ></select>
+        </div>
+        <div>
+          <label for="menu3">Menù Solo Ingresso &#129380;</label>
+          <select id="menu3" name="menu3" required ></select>
         </div>
         <div>
           <label for="birre">Birre &#127866;</label>
