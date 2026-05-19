@@ -20,15 +20,13 @@ const AppConfig = (() => {
  * Il formato dei dati restituiti è:
         {
             "disp": {
-                "partecipanti": 20,
-                "soloIngressi": 5,
+                "partecipanti": 15,
                 "menu1": 10,
                 "menu2": 5
             },
             "prezzi": {
                 "menu1": 16,
                 "menu2": 16,
-                "soloIngresso": 10,
                 "birra": 4
             },
             "maintenance": {
@@ -80,10 +78,9 @@ async function buildForm(limit) {
   const dispParticipants = Number(limit.disp.partecipanti);
   const dispMenu1 = Number(limit.disp.menu1);
   const dispMenu2 = Number(limit.disp.menu2);
-  const dispMenu3 = Number(limit.disp.soloIngressi);
 
   //check di conguenza tra partecipanti e menu disponibili
-  const totalMenu = dispMenu1 + dispMenu2 + dispMenu3;
+  const totalMenu = dispMenu1 + dispMenu2;
   if ( totalMenu !== dispParticipants) {
     console.warn(`Attenzione: il totale dei menu disponibili (${totalMenu}) è maggiore del numero di partecipanti (${dispParticipants}). Questo potrebbe causare problemi nella gestione delle iscrizioni.`);
     throw new Error(`Incongruenza nei dati: partecipanti [${dispParticipants}] vs totale menu disponibili [${totalMenu}]. Controlla i dati restituiti dall'API.`);
@@ -130,10 +127,6 @@ async function buildForm(limit) {
   const maxMenu2 = Math.min(10, dispMenu2);
   const selectMenu2 = document.getElementById('menu2');
   populateOptions(selectMenu2, Array.from({ length: maxMenu2+1 }, (_, i) => i));
-
-  const maxMenu3 = Math.min(10, dispMenu3);
-  const selectMenu3 = document.getElementById('menu3');
-  populateOptions(selectMenu3, Array.from({ length: maxMenu3+1 }, (_, i) => i));
 
   const selectBirre = document.getElementById('birre');
   populateOptions(selectBirre, Array.from({ length: 11 }, (_, i) => i));

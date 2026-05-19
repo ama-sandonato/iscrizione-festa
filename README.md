@@ -1,2 +1,1 @@
-https://webappgsd.grupposandonato.it/ghengine/places/provinces
-https://webappgsd.grupposandonato.it/ghengine/places/provinces/${prov_code}/towns
+Applicazione per la prenotazione web alla Festa AMA di inizio anno
