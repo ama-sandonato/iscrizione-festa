@@ -34,6 +34,9 @@ window.addEventListener('DOMContentLoaded', async () => {
   //inizializzo i limiti di iscrizione/prenotazione
   try {
     limit = await loadLimit();
+    if (!limit) {
+      throw new Error("Limiti non disponibili");
+    }
 
     //prepara la form tenendo conto dei limiti ricevuti
     await buildForm(limit);
@@ -41,7 +44,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   catch (err) {
     console.error("Errore durante il caricamento dei limiti:", err);
     overlay.style.display = 'none';
-    mostraErrore();
+    mostraErrore(err);
     return; //esce così da tutto il processo di inizializzazione, lasciando solo il messaggio di errore visibile
   }
 
@@ -236,7 +239,7 @@ form.addEventListener('submit', async (e) => {
     mostraRisultato(res);
   })
   .catch(err => {
-    mostraErrore();
+    mostraErrore(err);
   })
   .finally( e => {
     overlay.style.display = 'none';
@@ -267,14 +270,22 @@ function mostraRisultato(res) {
           .addEventListener('click', () => { location.reload(); });
 }
 
-function mostraErrore() {
+
+function mostraErrore(err) {
   //nascondo i vari step precedenti
   step1.style.display = 'none';
   step2.style.display = 'none';
   stepRiepilogo.style.display = 'none';
 
   //aggiorno il messaggio
-  msg.innerHTML = 'Si è verificato un errore.<br>Controlla la connessione e riprova.<br><br>'  + '<button type="button" id="btnHome" class="btn-secondary">RIPROVA</button>';
+  if ( err && err.message ) {
+    msg.innerHTML = `<em>${err.message}</em><br><br>`;
+  } else {
+    //messaggio di errore generico
+    msg.innerHTML = 'Si è verificato un errore.<br>Controlla la connessione e riprova.<br><br>';
+  }
+
+  msg.innerHTML += '<button type="button" id="btnHome" class="btn-secondary">RIPROVA</button>';
   msg.className = 'error';
   msg.style.display = 'flex';
 

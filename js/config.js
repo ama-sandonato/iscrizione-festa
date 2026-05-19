@@ -30,6 +30,10 @@ const AppConfig = (() => {
                 "menu2": 16,
                 "soloIngresso": 10,
                 "birra": 4
+            },
+            "maintenance": {
+              "enabled": false,
+              "message": "Il sistema è in manutenzione. Riprova più tardi."
             }
         }
  * @returns {Promise<Object>} dati dei limiti
@@ -46,7 +50,6 @@ async function loadLimit() {
     });
 
     if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
-
     data = await res.json();
 
     if (AppConfig.debugMode) {
@@ -59,9 +62,17 @@ async function loadLimit() {
     }
     throw err; // ← rilancia l'errore così chi chiama sa che è fallita
   }
-  finally {
-    return data; // ← ora chi chiama la funzione riceve i dati
+
+  if (data.maintenance.enabled) {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('overrideMaintenance') && urlParams.get('overrideMaintenance') === 'true') {
+      console.warn("Accesso in modalità override alla manutenzione.");
+    } else {
+      throw new Error(`${data.maintenance.message}`);
+    }
   }
+
+  return data; // ← ora chi chiama la funzione riceve i dati
 }
 
 
