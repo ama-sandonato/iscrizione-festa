@@ -10,6 +10,35 @@ const AppConfig = (() => {
 })();
 
 
+/**
+ * Restituisce i limiti di partecipazione e disponibilità per la festa.
+ * I dati vengono caricati da un endpoint API (definito in AppConfig.apiUrl) tramite una richiesta POST con un payload JSON che specifica l'azione "getLimits".
+ * 
+ * Cosa FONDAMENTALE: nelle sezione "disp" il campo "partecipanti" DEVE essere SEMPRE UGUALE alla somma di "soloIngressi", "menu1" e "menu2". 
+ * Se questo non è vero, il sistema potrebbe comportarsi in modo imprevedibile (es. permettere più partecipanti di quelli disponibili). 
+ * 
+ * Il formato dei dati restituiti è:
+        {
+            "disp": {
+                "partecipanti": 20,
+                "soloIngressi": 5,
+                "menu1": 10,
+                "menu2": 5
+            },
+            "prezzi": {
+                "menu1": 16,
+                "menu2": 16,
+                "soloIngresso": 10,
+                "birra": 4
+            },
+            "maintenance": {
+              "enabled": false,
+              "message": "Il sistema è in manutenzione. Riprova più tardi."
+            }
+        }
+ * @returns {Promise<Object>} dati dei limiti
+ * @throws {Error} se il caricamento fallisce
+ */
 async function loadLimit() {
 
   let data;
@@ -21,7 +50,6 @@ async function loadLimit() {
     });
 
     if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
-
     data = await res.json();
 
     if (AppConfig.debugMode) {
@@ -34,32 +62,53 @@ async function loadLimit() {
     }
     throw err; // ← rilancia l'errore così chi chiama sa che è fallita
   }
-  finally {
-    return data; // ← ora chi chiama la funzione riceve i dati
+
+  if (data.maintenance.enabled) {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('overrideMaintenance') && urlParams.get('overrideMaintenance') === 'true') {
+      console.warn("Accesso in modalità override alla manutenzione.");
+    } else {
+      throw new Error(`${data.maintenance.message}`);
+    }
   }
+
+  return data; // ← ora chi chiama la funzione riceve i dati
 }
 
 
 async function buildForm(limit) {
   const dispParticipants = Number(limit.disp.partecipanti);
-  const dispNoMenu = Number(limit.disp.soloIngressi);
   const dispMenu1 = Number(limit.disp.menu1);
   const dispMenu2 = Number(limit.disp.menu2);
+  const dispMenu3 = Number(limit.disp.soloIngressi);
+
+  //check di conguenza tra partecipanti e menu disponibili
+  const totalMenu = dispMenu1 + dispMenu2 + dispMenu3;
+  if ( totalMenu !== dispParticipants) {
+    console.warn(`Attenzione: il totale dei menu disponibili (${totalMenu}) è maggiore del numero di partecipanti (${dispParticipants}). Questo potrebbe causare problemi nella gestione delle iscrizioni.`);
+    throw new Error(`Incongruenza nei dati: partecipanti [${dispParticipants}] vs totale menu disponibili [${totalMenu}]. Controlla i dati restituiti dall'API.`);
+  }
 
   //se dispParticipants == 0 ==> CHIUDO LA FORM
   if ( dispParticipants === 0 ) {
     //nascondo i vari step precedenti
     step1.style.display = 'none';
     step2.style.display = 'none';
+    stepRiepilogo.style.display = 'none';
 
     //aggiorno il messaggio
-    msg.innerHTML = '⛔ Siamo spiacenti, le iscrizioni sono chiuse.<br>Il numero massimo di partecipanti è stato raggiunto.';
+    msg.innerHTML = `
+      ⛔ Siamo spiacenti, le iscrizioni sono chiuse.<br>
+      Il numero massimo di partecipanti è stato raggiunto.<br><br>
+      Ti invitiamo a controllare nuovamente tra qualche giorno, nel caso in cui si liberasse qualche posto!`;
     msg.className = 'error';
     msg.style.display = 'flex';
+    return;
   } else {
     //partecipanti > 0, prendo il min tra 10 e i 2/3 per gli adulti, e 1/3 dei bambini
     const maxAdulti = Math.min(10, Math.round(dispParticipants * 0.66));
-    const maxMinori = Math.min(10, dispParticipants - maxAdulti);
+    const maxMinori = Math.min(6, dispParticipants - maxAdulti);
+    const maxInfanti = 6; //fisso a 6, ma in realtà non c'è un limite preciso, dipende da quanti adulti ci sono (es. se ci sono 2 adulti, potrei avere al massimo 4 infanti, se ci sono 3 adulti potrei avere al massimo
     if( AppConfig.debugMode) {
       console.debug(`Caricati i limiti di partecipanti: adulti[${maxAdulti}], minori[${maxMinori}]`);
     }
@@ -71,7 +120,7 @@ async function buildForm(limit) {
     
     populateOptions(selectAdulti, Array.from({ length: maxAdulti }, (_, i) => i + 1));
     populateOptions(selectMinori, Array.from({ length: maxMinori+1 }, (_, i) => i));
-    populateOptions(selectInfanti, Array.from({ length: 6 }, (_, i) => i));
+    populateOptions(selectInfanti, Array.from({ length: maxInfanti+1 }, (_, i) => i));
   }
 
   const maxMenu1 = Math.min(10, dispMenu1);
@@ -81,6 +130,10 @@ async function buildForm(limit) {
   const maxMenu2 = Math.min(10, dispMenu2);
   const selectMenu2 = document.getElementById('menu2');
   populateOptions(selectMenu2, Array.from({ length: maxMenu2+1 }, (_, i) => i));
+
+  const maxMenu3 = Math.min(10, dispMenu3);
+  const selectMenu3 = document.getElementById('menu3');
+  populateOptions(selectMenu3, Array.from({ length: maxMenu3+1 }, (_, i) => i));
 
   const selectBirre = document.getElementById('birre');
   populateOptions(selectBirre, Array.from({ length: 11 }, (_, i) => i));
