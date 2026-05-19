@@ -30,14 +30,14 @@ function checkFormValidity_Step2() {
     return valid;
 }
 
-function checkFormCongruence(adulti, minori, menu_1, menu_2, menu_3) {
+function checkFormCongruence(adulti, minori, menu_1, menu_2) {
 
     const partecimantiTotali = adulti + minori;
-    const totaleMenu = menu_1 + menu_2 + menu_3;
-    const soloIngressi = menu_3; //partecimantiTotali - (totaleMenu);
+    const totaleMenu = menu_1 + menu_2;
+    
     if ( AppConfig.debugMode ) {
       console.log("[checkFormCongruence] - Controllo disponibilità menu:", {
-        menu_1, menu_2, menu_3, soloIngressi, partecimantiTotali, totaleMenu, limit
+        menu_1, menu_2, partecimantiTotali, totaleMenu, limit
       });
     }
   
@@ -59,13 +59,6 @@ function checkFormCongruence(adulti, minori, menu_1, menu_2, menu_3) {
     
     if ( menu_2 > limit.disp.menu2 ) {
         openConfirmModal(`Il numero dei Menu "Hot Dog" selezionati supera la disponibilità: (${limit.disp.menu2} disponibili).`);
-        return false;
-    }
-
-    //verifico se gli ingressi senza menu hanno disponibilità nei limiti
-    if (soloIngressi > limit.disp.soloIngressi) {
-        openConfirmModal(`Il numero di partecipanti senza menu (${soloIngressi}) supera la disponibilità (${limit.disp.soloIngressi} disponibili)`);
-        //alert(`Il numero di partecipanti senza menu supera la disponibilità (${limit.disp.soloIngressi} disponibili).`);
         return false;
     }
 

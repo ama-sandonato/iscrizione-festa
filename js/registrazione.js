@@ -92,16 +92,15 @@ btnNext.addEventListener('click', () => {
   const infanti = Number(document.getElementById('infanti').value);
   const menu_1 = Number(document.getElementById('menu1').value);
   const menu_2 = Number(document.getElementById('menu2').value);
-  const menu_3 = Number(document.getElementById('menu3').value);
   const birre  = Number(document.getElementById('birre').value);
 
 
   //verifico la congruenza tra numero di partecipanti e menu selezionati (es. non posso avere 5 menu se ho solo 4 partecipanti)
-  valid = checkFormCongruence(adulti, minori, menu_1, menu_2, menu_3);
+  valid = checkFormCongruence(adulti, minori, menu_1, menu_2);
   if (!valid) return;
 
   // tutte le validazioni ok → mostra riepilogo
-  buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, menu_3, birre);
+  buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, birre);
 
   step1.style.display         = 'none';
   step2.style.display         = 'none';
@@ -113,6 +112,7 @@ btnNext.addEventListener('click', () => {
 function _buildStep2() {
   const adulti = Number(document.getElementById('adulti').value);
   const minori = Number(document.getElementById('minori').value);
+  const infanti = Number(document.getElementById('infanti').value);
 
   // svuota eventuali partecipanti precedenti
   while (partecipantiDiv.firstChild) {
@@ -126,11 +126,11 @@ function _buildStep2() {
       <h4>Adulto ${i+1}</h4>
       <div class="grid">
         <div>
-          <label>Nome *</label>
+          <label for="nome-adulto-${i+1}">Nome *</label>
           <input type="text" name="nome-adulto-${i+1}" required>
         </div>
         <div>
-          <label>Cognome *</label>
+          <label for="cognome-adulto-${i+1}">Cognome *</label>
           <input type="text" name="cognome-adulto-${i+1}" required>
         </div>
       </div>
@@ -146,12 +146,32 @@ function _buildStep2() {
       <h4>Bambino (minore) ${i}</h4>
       <div class="grid">
         <div>
-          <label>Nome *</label>
+          <label for="nome-bambino-${i}">Nome *</label>
           <input type="text" name="nome-bambino-${i}" required>
         </div>
         <div>
-          <label>Cognome *</label>
+          <label for="cognome-bambino-${i}">Cognome *</label>
           <input type="text" name="cognome-bambino-${i}" required>
+        </div>
+      </div>
+    `;
+    partecipantiDiv.appendChild(p);
+    partecipantiDiv.style.display = 'flex';
+  }
+
+  for (let i = 1; i <= infanti; i++) {
+    const p = document.createElement('div');
+    p.className = 'partecipante infante';
+    p.innerHTML = `
+      <h4>Infante (0-3 anni) ${i}</h4>
+      <div class="grid">
+        <div>
+          <label for="nome-infante-${i}">Nome *</label>
+          <input type="text" name="nome-infante-${i}" required>
+        </div>
+        <div>
+          <label for="cognome-infante-${i}">Cognome *</label>
+          <input type="text" name="cognome-infante-${i}" required>
         </div>
       </div>
     `;
@@ -190,27 +210,35 @@ form.addEventListener('submit', async (e) => {
   const data = Object.fromEntries(formData.entries());
   
   // Convertiamo i numeri
-  ['adulti','minori', 'infanti', 'menu1','menu2', 'menu3', 'birre'].forEach(k => {
+  ['adulti','minori', 'infanti', 'menu1','menu2', 'birre'].forEach(k => {
     if(data[k]) data[k] = Number(data[k]);
   });
 
   // Raccolgo i partecipanti extra in un array
   const adulti = Number(document.getElementById('adulti').value);
   const minori = Number(document.getElementById('minori').value);
-  
+  const infanti = Number(document.getElementById('infanti').value);
+
   data.partecipanti = [];
   for (let i = 1; i < adulti; i++) {
     data.partecipanti.push({
       nome: formData.get(`nome-adulto-${i+1}`),
       cognome: formData.get(`cognome-adulto-${i+1}`),
-      adulto: "si"
+      eta: "adulto"
     });
   }
   for (let i = 1; i <= minori; i++) {
     data.partecipanti.push({
       nome: formData.get(`nome-bambino-${i}`),
       cognome: formData.get(`cognome-bambino-${i}`),
-      adulto: "no"
+      eta: "bambino"
+    });
+  }
+  for (let i = 1; i <= infanti; i++) {
+    data.partecipanti.push({
+      nome: formData.get(`nome-infante-${i}`),
+      cognome: formData.get(`cognome-infante-${i}`),
+      eta: "infante"
     });
   }
 
@@ -261,6 +289,7 @@ function mostraRisultato(res) {
   msg.innerHTML = res.messaggio + '<button type="button" id="btnHome" class="btn-secondary">NUOVA PRENOTAZIONE</button>';
   msg.className = 'success';
   msg.style.display = 'flex';
+  msg.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   //reset della form
   form.reset();
@@ -288,6 +317,7 @@ function mostraErrore(err) {
   msg.innerHTML += '<button type="button" id="btnHome" class="btn-secondary">RIPROVA</button>';
   msg.className = 'error';
   msg.style.display = 'flex';
+  msg.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     //rivado in home sul click
   document.getElementById('btnHome')
@@ -298,15 +328,13 @@ function mostraErrore(err) {
 // =====================
 // RIEPILOGO
 // =====================
-function buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, menu_3, birre) {
+function buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, birre) {
   const prezzi        = limit.prezzi;
-  const soloIngressi = menu_3; // vecchia implementazione: (adulti + minori) - (menu_1 + menu_2);
 
   const costoMenu1        = menu_1 * prezzi.menu1;
   const costoMenu2        = menu_2 * prezzi.menu2;
-  const costoSoloIngressi = soloIngressi * prezzi.soloIngresso;
   const costoBirre        = birre * prezzi.birra;
-  const totale            = costoMenu1 + costoMenu2 + costoSoloIngressi + costoBirre;
+  const totale            = costoMenu1 + costoMenu2 + costoBirre;
 
   const fmt = (n) => `€ ${Number(n).toFixed(2)}`;
 
@@ -343,11 +371,6 @@ function buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, menu_3, birre) 
       <div class="riepilogo-riga">
         <span>Menù Hot Dog 🌭 × ${menu_2}</span>
         <span>${fmt(costoMenu2)}</span>
-      </div>` : ''}
-      ${soloIngressi > 0 ? `
-      <div class="riepilogo-riga">
-        <span>Solo ingresso 🎟️ × ${soloIngressi}</span>
-        <span>${fmt(costoSoloIngressi)}</span>
       </div>` : ''}
       ${birre > 0 ? `
       <div class="riepilogo-riga">
