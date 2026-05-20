@@ -1,7 +1,7 @@
 function checkFormValidity_Step1() {
 
   // Validiamo solo i campi visibili dello Step 1
-  const inputsStep1 = step1.querySelectorAll('input', 'select');
+  const inputsStep1 = step1.querySelectorAll('input, select');
   let valid = true;
   for (const input of inputsStep1) {
     if (!input.checkValidity()) {
@@ -17,7 +17,7 @@ function checkFormValidity_Step1() {
 
 function checkFormValidity_Step2() {
     // Validiamo solo i campi visibili dello Step 2
-    const inputsStep2 = step2.querySelectorAll('input', 'select');
+    const inputsStep2 = step2.querySelectorAll('input, select');
     let valid = true;
     for (const input of inputsStep2) {
       if (!input.checkValidity()) {
