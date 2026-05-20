@@ -143,7 +143,7 @@ function _buildStep2() {
     const p = document.createElement('div');
     p.className = 'partecipante bambino';
     p.innerHTML = `
-      <h4>Bambino (minore) ${i}</h4>
+      <h4>Bambino (4-17 anni) ${i}</h4>
       <div class="grid">
         <div>
           <label for="nome-bambino-${i}">Nome *</label>
@@ -163,7 +163,7 @@ function _buildStep2() {
     const p = document.createElement('div');
     p.className = 'partecipante infante';
     p.innerHTML = `
-      <h4>Infante (0-3 anni) ${i}</h4>
+      <h4>Piccolo (0-3 anni) ${i}</h4>
       <div class="grid">
         <div>
           <label for="nome-infante-${i}">Nome *</label>
@@ -349,19 +349,19 @@ function buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, birre) {
       </div>` : ''}
       ${minori > 0 ? `
       <div class="riepilogo-riga">
-        <span>Minori (3-18 anni)</span>
+        <span>Bambini 4-17 anni</span>
         <span>${minori}</span>
       </div>` : ''}
       ${infanti > 0 ? `
       <div class="riepilogo-riga">
-        <span>Bambini 0-3 anni <span class="riepilogo-gratis">gratuito</span></span>
+        <span>Piccoli 0-3 anni<span class="riepilogo-gratis">gratuito</span></span>
         <span>${infanti}</span>
       </div>` : ''}
     </div>
 
     <!-- MENU E INGRESSI -->
     <div class="riepilogo-sezione">
-      <div class="riepilogo-sezione-titolo">🍽️ Menù e Ingressi</div>
+      <div class="riepilogo-sezione-titolo">🍽️ Menù</div>
       ${menu_1 > 0 ? `
       <div class="riepilogo-riga">
         <span>Menù Pizza 🍕 × ${menu_1}</span>
