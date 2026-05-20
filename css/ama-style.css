@@ -240,7 +240,26 @@
     border-right: 6px solid var(--red);
   }
 
-  label, input, select, .spacing, .disclaimer, .check-wrap {
+  .check-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .check-wrap input[type="checkbox"] {
+      width: auto;  /* fondamentale: toglie il width: 100% ereditato da input */
+      flex-shrink: 0;
+  }
+
+  .check-wrap label {
+      display: inline;  /* sovrascrive il display: block della regola generale su label */
+      width: auto;
+      margin: 0;
+  }
+
+  label, input, select, .spacing, .disclaimer {
     width: 90%; /* Non occupano più il 100%, lasciando spazio ai lati */
     max-width: 800px; /* Limite massimo per non farli diventare troppo larghi su desktop */
   }

@@ -64,7 +64,7 @@ function checkFormCongruence(adulti, minori, menu_1, menu_2) {
 
     //verifico che il numero totale di menu selezionati non superi il numero totale di partecipanti
     if (totaleMenu !== partecimantiTotali) {
-        openConfirmModal(`Il numero totale di menu selezionati non può essere diverso dal numero totale di partecipanti.`);
+        openConfirmModal(`Il numero di menù selezionati deve corrispondere al totale partecipanti di età 4+`);
         return false;
     }
 
