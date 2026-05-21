@@ -96,7 +96,7 @@ btnNext.addEventListener('click', () => {
 
 
   //verifico la congruenza tra numero di partecipanti e menu selezionati (es. non posso avere 5 menu se ho solo 4 partecipanti)
-  valid = checkFormCongruence(adulti, minori, menu_1, menu_2);
+  valid = checkFormCongruence(adulti, minori, infanti, menu_1, menu_2);
   if (!valid) return;
 
   // tutte le validazioni ok → mostra riepilogo

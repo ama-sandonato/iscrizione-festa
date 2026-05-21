@@ -30,18 +30,13 @@ function checkFormValidity_Step2() {
     return valid;
 }
 
-function checkFormCongruence(adulti, minori, menu_1, menu_2) {
+function checkFormCongruence(adulti, minori, infanti, menu_1, menu_2) {
 
-    const partecimantiTotali = adulti + minori;
+    const minPartecipanti = adulti + minori;
+    const maxPartecipanti = minPartecipanti + infanti;
     const totaleMenu = menu_1 + menu_2;
     
-    if ( AppConfig.debugMode ) {
-      console.log("[checkFormCongruence] - Controllo disponibilità menu:", {
-        menu_1, menu_2, partecimantiTotali, totaleMenu, limit
-      });
-    }
-  
-    //qui per sicurezza dovrei ricaricare i limiti (in caso siano cambiati da quando è stata caricata la pagina), ma per ora mi affido a quelli caricati all'inizio
+    //qui per sicurezza ricarico i limiti (in caso siano cambiati da quando è stata caricata la pagina)
     loadLimit()
     .then(newLimit => {
         limit = newLimit;
@@ -49,6 +44,7 @@ function checkFormCongruence(adulti, minori, menu_1, menu_2) {
     .catch(err => {
         console.error("Errore ricaricamento limiti:", err);
         openConfirmModal("Si è verificato un errore imprevisto durante la verifica dei limiti di disponibilità. Per favore riprova più tardi.");
+        return false;
     });
 
     //per prima cosa verifico che ogni singolo menu non superi i limiti imposti
@@ -63,8 +59,13 @@ function checkFormCongruence(adulti, minori, menu_1, menu_2) {
     }
 
     //verifico che il numero totale di menu selezionati non superi il numero totale di partecipanti
-    if (totaleMenu !== partecimantiTotali) {
-        openConfirmModal(`Il numero di menù selezionati deve corrispondere al totale partecipanti di età 4+`);
+    if (totaleMenu < minPartecipanti ) {
+      openConfirmModal(`Il numero di menù selezionati deve essere non inferiore al totale partecipanti di età 4+`);
+      return false;
+    } 
+      
+    if ( totaleMenu > maxPartecipanti ) {
+        openConfirmModal(`Il numero di menù selezionati non deve superare il totale dei partecipanti`);
         return false;
     }
 
