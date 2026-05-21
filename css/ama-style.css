@@ -315,6 +315,21 @@
     margin-top: 20px;
   }
 
+  .button-row {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .button-row button {
+    flex: 1;
+    width: auto;
+    margin-top: 0;
+  }
+
   .btn-secondary {
     background: rgba(0, 31, 63, 0.1) !important; /* Blu molto leggero */
     color: var(--deep-blue) !important;

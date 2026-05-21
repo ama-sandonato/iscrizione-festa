@@ -131,7 +131,7 @@
           <select id="menu1" name="menu1" required ></select>
         </div>
         <div>
-          <label for="menu2">Menù Panino &#127789;</label>
+          <label for="menu2">Menù Hot-Dog &#127789;</label>
           <select id="menu2" name="menu2" required ></select>
         </div>
         <div>
@@ -161,8 +161,10 @@
         Una volta confermato, procederai con l'inserimento dei nominativi dei partecipanti.
       </div>
 
-      <button type="button" id="btnRiepilogoProsegui">Prosegui ➜</button>
-      <button type="button" id="btnRiepilogoIndietro" class="btn-secondary">← Indietro</button>
+      <div class="button-row">
+        <button type="button" id="btnRiepilogoIndietro">Indietro</button>
+        <button type="button" id="btnRiepilogoProsegui">Prosegui</button>
+      </div>
 
     </div>
 
@@ -172,7 +174,6 @@
           <strong>FORNISCI I DETTAGLI DEI PARTECIPANTI</strong><br>
           Inserisci nome e cognome di tutti i partecipanti alla festa tranne il tuo che hai già inserito nello step precedente.
         </div>
-  
       </div>
       <div class="spacing disclaimer">
         <h3>Condizioni Generali</h3>
@@ -192,8 +193,10 @@
         <label for="disclaimer">Dichiaro di aver letto le condizioni generali e ne accetto integralmente i termini *</label>
       </div>
 
-      <button type="submit" id="btnSubmit">Invia registrazione</button>
-      <button type="button" id="btnBack" class="btn-secondary">Indietro</button>
+      <div class="button-row">
+        <button type="button" id="btnBack">Indietro</button>
+        <button type="submit" id="btnSubmit">Registrati</button>
+      </div>
     </div>
 
     <div id="msg" style="display: none;"></div>
