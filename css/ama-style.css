@@ -330,17 +330,15 @@
     margin-top: 0;
   }
 
-  .btn-secondary {
-    background: rgba(0, 31, 63, 0.1) !important; /* Blu molto leggero */
+  .btn-back {
+    background: rgba(90, 90, 90, 0.2) !important; /* Blu molto leggero */
     color: var(--deep-blue) !important;
-    box-shadow: none !important;
-    font-size: 14px !important;
-    text-transform: none !important;
+    box-shadow: 0 4px 0 rgba(40, 40, 40, 0.2);
   }
 
-  .btn-secondary:hover {
-    background: rgba(0, 31, 63, 0.2) !important;
-    transform: none !important;
+  .btn-back:hover {
+    background: rgba(90, 90, 90, 0.5) !important;
+    box-shadow: 0 6px 0 rgba(40, 40, 40, 0.5);
   }
 
   .partecipanti {
