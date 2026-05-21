@@ -30,9 +30,9 @@ function checkFormValidity_Step2() {
     return valid;
 }
 
-function checkFormCongruence(adulti, minori, infanti, menu_1, menu_2) {
+function checkFormCongruence(adulti, bambini, infanti, menu_1, menu_2) {
 
-    const minPartecipanti = adulti + minori;
+    const minPartecipanti = adulti + bambini;
     const maxPartecipanti = minPartecipanti + infanti;
     const totaleMenu = menu_1 + menu_2;
     
