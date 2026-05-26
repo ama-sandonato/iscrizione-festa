@@ -18,10 +18,10 @@
   </div>
   <div class="hero-header"></div>
   <form id="regForm" novalidate>
-    <img src="./images/header-full.png " alt="Le Mille e Una Notte 2026">
+    <img src="./images/header-modulo-iscrizione.png" alt="Le Mille e Una Notte 2026">
     <div id="step1">
       <div class="spacing deep-blue">
-        <strong>Compila il breve form e prenota il tuo ingresso</strong> all'evento organizzato da A.M.A. Associazione Amici Maria Ausiliatrice
+        <strong>Compila questo breve modulo per iscriverti</strong> all'evento organizzato da A.M.A. Associazione Amici Maria Ausiliatrice
         per festeggiare insieme l'inizio di un nuovo anno scolastico! 📚✨<br>
         <br>
         🗓️ Sabato 19 settembre<br>
@@ -32,8 +32,8 @@
         Non mancare! 💛<br>
       </div>
       <div class="spacing gold">
-        <strong>FORNISCI I DATI DEL TITOLARE DELLA PRENOTAZIONE</strong><br>
-        Raccoglieremo l'anagrafica del genitore che effettuerà la prenotazione per registrare gli ingressi 
+        <strong>FORNISCI I DATI DEL TITOLARE DELLA ISCRIZIONE</strong><br>
+        Raccoglieremo l'anagrafica del genitore che effettuerà l'iscrizione per registrare gli ingressi 
         e completare l'iscrizione all'associazione A.M.A. 😊
       </div>
       <div class="grid">
@@ -131,7 +131,7 @@
           <select id="menu1" name="menu1" required ></select>
         </div>
         <div>
-          <label for="menu2">Menù Panino &#127789;</label>
+          <label for="menu2">Menù Hot-Dog &#127789;</label>
           <select id="menu2" name="menu2" required ></select>
         </div>
         <div>
@@ -161,8 +161,10 @@
         Una volta confermato, procederai con l'inserimento dei nominativi dei partecipanti.
       </div>
 
-      <button type="button" id="btnRiepilogoProsegui">Prosegui ➜</button>
-      <button type="button" id="btnRiepilogoIndietro" class="btn-secondary">← Indietro</button>
+      <div class="button-row">
+        <button type="button" id="btnRiepilogoIndietro" class="btn-back">Indietro</button>
+        <button type="button" id="btnRiepilogoProsegui">Prosegui</button>
+      </div>
 
     </div>
 
@@ -172,7 +174,6 @@
           <strong>FORNISCI I DETTAGLI DEI PARTECIPANTI</strong><br>
           Inserisci nome e cognome di tutti i partecipanti alla festa tranne il tuo che hai già inserito nello step precedente.
         </div>
-  
       </div>
       <div class="spacing disclaimer">
         <h3>Condizioni Generali</h3>
@@ -192,8 +193,10 @@
         <label for="disclaimer">Dichiaro di aver letto le condizioni generali e ne accetto integralmente i termini *</label>
       </div>
 
-      <button type="submit" id="btnSubmit">Invia registrazione</button>
-      <button type="button" id="btnBack" class="btn-secondary">Indietro</button>
+      <div class="button-row">
+        <button type="button" id="btnBack" class="btn-back">Indietro</button>
+        <button type="submit" id="btnSubmit">Registrati</button>
+      </div>
     </div>
 
     <div id="msg" style="display: none;"></div>
