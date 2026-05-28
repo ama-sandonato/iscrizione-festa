@@ -13,14 +13,10 @@ const AppConfig = (() => {
 /**
  * Restituisce i limiti di partecipazione e disponibilità per la festa.
  * I dati vengono caricati da un endpoint API (definito in AppConfig.apiUrl) tramite una richiesta POST con un payload JSON che specifica l'azione "getLimits".
- * 
- * Cosa FONDAMENTALE: nelle sezione "disp" il campo "partecipanti" DEVE essere SEMPRE UGUALE alla somma di "soloIngressi", "menu1" e "menu2". 
- * Se questo non è vero, il sistema potrebbe comportarsi in modo imprevedibile (es. permettere più partecipanti di quelli disponibili). 
- * 
+ *
  * Il formato dei dati restituiti è:
         {
             "disp": {
-                "partecipanti": 15,
                 "menu1": 10,
                 "menu2": 5
             },
