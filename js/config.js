@@ -13,14 +13,10 @@ const AppConfig = (() => {
 /**
  * Restituisce i limiti di partecipazione e disponibilità per la festa.
  * I dati vengono caricati da un endpoint API (definito in AppConfig.apiUrl) tramite una richiesta POST con un payload JSON che specifica l'azione "getLimits".
- * 
- * Cosa FONDAMENTALE: nelle sezione "disp" il campo "partecipanti" DEVE essere SEMPRE UGUALE alla somma di "soloIngressi", "menu1" e "menu2". 
- * Se questo non è vero, il sistema potrebbe comportarsi in modo imprevedibile (es. permettere più partecipanti di quelli disponibili). 
- * 
+ *
  * Il formato dei dati restituiti è:
         {
             "disp": {
-                "partecipanti": 15,
                 "menu1": 10,
                 "menu2": 5
             },
@@ -75,16 +71,16 @@ async function loadLimit() {
 
 
 async function buildForm(limit) {
-  const dispParticipants = Number(limit.disp.partecipanti);
   const dispMenu1 = Number(limit.disp.menu1);
   const dispMenu2 = Number(limit.disp.menu2);
+  const dispParticipants = dispMenu1 + dispMenu2;
 
   //check di conguenza tra partecipanti e menu disponibili
-  const totalMenu = dispMenu1 + dispMenu2;
-  if ( totalMenu !== dispParticipants) {
-    console.warn(`Attenzione: il totale dei menu disponibili (${totalMenu}) è maggiore del numero di partecipanti (${dispParticipants}). Questo potrebbe causare problemi nella gestione delle iscrizioni.`);
-    throw new Error(`Incongruenza nei dati: partecipanti [${dispParticipants}] vs totale menu disponibili [${totalMenu}]. Controlla i dati restituiti dall'API.`);
-  }
+  // const totalMenu = dispMenu1 + dispMenu2;
+  // if ( totalMenu < dispParticipants) {
+  //   console.warn(`Attenzione: il totale dei menu disponibili (${totalMenu}) è maggiore del numero di partecipanti (${dispParticipants}). Questo potrebbe causare problemi nella gestione delle iscrizioni.`);
+  //   throw new Error(`Incongruenza nei dati: partecipanti [${dispParticipants}] vs totale menu disponibili [${totalMenu}]. Controlla i dati restituiti dall'API.`);
+  // }
 
   //se dispParticipants == 0 ==> CHIUDO LA FORM
   if ( dispParticipants === 0 ) {
