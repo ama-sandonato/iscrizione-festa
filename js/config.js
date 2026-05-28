@@ -75,16 +75,16 @@ async function loadLimit() {
 
 
 async function buildForm(limit) {
-  const dispParticipants = Number(limit.disp.partecipanti);
   const dispMenu1 = Number(limit.disp.menu1);
   const dispMenu2 = Number(limit.disp.menu2);
+  const dispParticipants = dispMenu1 + dispMenu2;
 
   //check di conguenza tra partecipanti e menu disponibili
-  const totalMenu = dispMenu1 + dispMenu2;
-  if ( totalMenu !== dispParticipants) {
-    console.warn(`Attenzione: il totale dei menu disponibili (${totalMenu}) è maggiore del numero di partecipanti (${dispParticipants}). Questo potrebbe causare problemi nella gestione delle iscrizioni.`);
-    throw new Error(`Incongruenza nei dati: partecipanti [${dispParticipants}] vs totale menu disponibili [${totalMenu}]. Controlla i dati restituiti dall'API.`);
-  }
+  // const totalMenu = dispMenu1 + dispMenu2;
+  // if ( totalMenu < dispParticipants) {
+  //   console.warn(`Attenzione: il totale dei menu disponibili (${totalMenu}) è maggiore del numero di partecipanti (${dispParticipants}). Questo potrebbe causare problemi nella gestione delle iscrizioni.`);
+  //   throw new Error(`Incongruenza nei dati: partecipanti [${dispParticipants}] vs totale menu disponibili [${totalMenu}]. Controlla i dati restituiti dall'API.`);
+  // }
 
   //se dispParticipants == 0 ==> CHIUDO LA FORM
   if ( dispParticipants === 0 ) {
