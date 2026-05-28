@@ -354,7 +354,7 @@ function buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, birre) {
       </div>` : ''}
       ${infanti > 0 ? `
       <div class="riepilogo-riga">
-        <span>Piccoli 0-3 anni<span class="riepilogo-gratis">gratuito</span></span>
+        <span>Piccoli 0-3 anni</span>
         <span>${infanti}</span>
       </div>` : ''}
     </div>
