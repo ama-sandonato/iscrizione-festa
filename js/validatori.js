@@ -54,7 +54,7 @@ function checkFormCongruence(adulti, bambini, infanti, menu_1, menu_2) {
     }
     
     if ( menu_2 > limit.disp.menu2 ) {
-        openConfirmModal(`Il numero dei Menu "Hot Dog" selezionati supera la disponibilità: (${limit.disp.menu2} disponibili).`);
+        openConfirmModal(`Il numero dei Menu "Focaccia farcita" selezionati supera la disponibilità: (${limit.disp.menu2} disponibili).`);
         return false;
     }
 

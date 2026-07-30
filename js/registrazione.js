@@ -369,7 +369,7 @@ function buildRiepilogo(adulti, minori, infanti, menu_1, menu_2, birre) {
       </div>` : ''}
       ${menu_2 > 0 ? `
       <div class="riepilogo-riga">
-        <span>Menù Hot Dog 🌭 × ${menu_2}</span>
+        <span>Menù Focaccia farcita 🥪 × ${menu_2}</span>
         <span>${fmt(costoMenu2)}</span>
       </div>` : ''}
       ${birre > 0 ? `
