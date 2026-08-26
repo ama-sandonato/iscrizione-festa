@@ -179,6 +179,18 @@ function _buildStep2() {
     partecipantiDiv.style.display = 'flex';
   }
 
+  // il campo "frequenta la SMA" ha senso solo se ci sono bambini/infanti nell'iscrizione
+  const smaWrapper = document.getElementById('sma-wrapper');
+  const smaSelect  = document.getElementById('frequentaSma');
+  if (minori > 0 || infanti > 0) {
+    smaWrapper.style.display = 'block';
+    smaSelect.required = true;
+  } else {
+    smaWrapper.style.display = 'none';
+    smaSelect.required = false;
+    smaSelect.value = '';
+  }
+
   step2.style.display = 'flex';
   step2.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
