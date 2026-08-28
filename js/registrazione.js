@@ -414,3 +414,45 @@ function openConfirmModal(testo) {
 function closeConfirmModal() {
   document.getElementById('confirmModal').style.display = 'none';
 }
+
+// =====================
+// MODALE CONDIZIONI GENERALI
+// =====================
+function openDisclaimerModal() {
+  const body = document.getElementById('disclaimerModalBody');
+  const btn  = document.getElementById('btnAccettaDisclaimer');
+
+  document.getElementById('disclaimerModal').style.display = 'flex';
+  body.scrollTop = 0;
+  btn.disabled = true;
+
+  // aspetta il reflow (display:flex) prima di misurare scrollHeight/clientHeight
+  requestAnimationFrame(_checkDisclaimerScroll);
+}
+
+function closeDisclaimerModal() {
+  document.getElementById('disclaimerModal').style.display = 'none';
+}
+
+function _checkDisclaimerScroll() {
+  const body = document.getElementById('disclaimerModalBody');
+  const btn  = document.getElementById('btnAccettaDisclaimer');
+  const scrolledToBottom = body.scrollTop + body.clientHeight >= body.scrollHeight - 4;
+  if (scrolledToBottom) btn.disabled = false;
+}
+
+document.getElementById('disclaimerModalBody').addEventListener('scroll', _checkDisclaimerScroll);
+
+// il checkbox si spunta solo tramite accettaDisclaimer(): blocco il toggle manuale,
+// sia da click diretto sia da click sulla <label for="disclaimer"> associata
+// (il click sulla label attiva comunque l'input anche se l'input ha pointer-events:none)
+document.getElementById('disclaimer').addEventListener('click', (e) => e.preventDefault());
+
+function accettaDisclaimer() {
+  const btn = document.getElementById('btnAccettaDisclaimer');
+  if (btn.disabled) return;
+
+  document.getElementById('disclaimer').checked = true;
+  document.getElementById('btnApriDisclaimer').textContent = '✅ Condizioni Generali accettate (rileggi)';
+  closeDisclaimerModal();
+}

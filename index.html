@@ -121,7 +121,7 @@
         🥪 <strong>Menù Focaccia farcita:</strong> assapora una gustosa focaccia XL ham and cheese.<br>
         <br><br>
         💶 Per ogni menù è richiesta un'offerta minima di <strong>16,00€ cad.</strong> (bevanda analcolica inclusa).<br>
-        🍺 E per i grandi che amano i sapori autentici, c'è la birra artigianale del birrificio La Bruciata di Civesio (offerta minima <strong>4,00€ cad.</strong>).
+        🍺 E per i grandi che amano i sapori autentici, c'è la birra artigianale del birrificio La Bruciata di Civesio (prevendita <strong>4,00€ cad.</strong>, anziché 5,00€).
       </div>
       <div class="grid-3">
         <div>
@@ -175,7 +175,7 @@
       </div>
       <div class="spacing gold">
         Il trattamento dei dati personali forniti in questo modulo avviene nel rispetto della normativa vigente in materia di protezione dei dati personali.
-        Per maggiori informazioni consulta l'<a href="https://www.mariausiliatrice.it/privacy/" target="_blank" rel="noopener">Informativa sulla Privacy</a> della Scuola Maria Ausiliatrice.
+        Per maggiori informazioni consulta l'<a href="https://www.mariausiliatrice.it/privacy/" target="_blank" rel="noopener" class="link-disclaimer" style="margin-top: 0;">Informativa sulla Privacy</a> della Scuola Maria Ausiliatrice.
       </div>
 
       <div id="sma-wrapper" class="spacing gold" style="display: none;">
@@ -187,22 +187,55 @@
         </select>
       </div>
 
-      <div class="spacing disclaimer">
-        <h3>Condizioni Generali</h3>
-        L'associazione <strong>A.M.A.</strong> quale ente organizzatore dell'evento 
-        e la scuola <strong>Maria Ausiliatrice</strong> quale proprietaria degli immobili e delle pertinenze nei quali la festa si svolge 
-        non hanno e non assumono alcun onere di vigilanza nei confronti dei soggetti minori partecipanti, siano essi allievi o non allievi della scuola.<br>
-        Nessun onere in tal senso sussiste neppure in capo ai soggetti incaricati di svolgere attività ludico - ricreative nell'ambito della festa.<br>
-        Ogni onere di cura e vigilanza sui minori partecipanti resta integralmente ed esclusivamente a carico del genitore, 
-        del tutore o del diverso soggetto maggiorenne accompagnatore individuato dal genitore o da chi ne fa le veci.<br> 
-        Il <strong>genitore</strong> o il <strong>tutore</strong> liberano pertanto espressamente sin da ora <strong>A.M.A.</strong>, 
-        la scuola <strong>Maria Ausiliatrice</strong> e tutti i rispettivi addetti da ogni responsabilità per i danni arrecati 
-        a cose e persone dal minore nonché per i danni subiti dal medesimo ex art. 2048 CC nell'ambito della festa di cui trattasi.
+      <div class="spacing gold">
+        <strong>CONDIZIONI GENERALI</strong><br>
+        Prima di completare l'iscrizione devi leggere per intero e accettare le condizioni generali.<br>
+        <a href="#" id="btnApriDisclaimer" class="link-disclaimer" onclick="openDisclaimerModal(); return false;">📄 Leggi le Condizioni Generali</a>
       </div>
 
       <div class="check-wrap">
-        <input type="checkbox" id="disclaimer" name="disclaimer" required>
+        <input type="checkbox" id="disclaimer" name="disclaimer" required tabindex="-1">
         <label for="disclaimer">Dichiaro di aver letto le condizioni generali e ne accetto integralmente i termini *</label>
+      </div>
+
+      <!-- Modale Condizioni Generali -->
+      <div id="disclaimerModal" class="modal-disclaimer">
+        <div class="modal-disclaimer-maindiv">
+          <h3>Condizioni Generali</h3>
+          <div id="disclaimerModalBody" class="modal-disclaimer-body">
+            <p>
+              Il soggetto che effettua l'iscrizione per sé e per i minori da lui iscritti deve essere maggiorenne,
+              deve essere presente per tutta la durata della festa, ed è l'esclusivo responsabile dei minori accompagnati,
+              su cui detiene ed assume ogni onere di cura e vigilanza.
+            </p>
+            <p>
+              In caso il soggetto iscrivente sia impossibilitato a partecipare alla festa, egli si obbliga ad individuare
+              e delegare autonomamente ed espressamente un soggetto terzo maggiorenne che lo sostituisca,
+              e che sia pertanto presente per tutta la durata della festa nonché che assuma l'onere di cura e vigilanza dei minori iscritti.
+            </p>
+            <p>
+              Ogni responsabilità sui minori partecipanti per danni subiti o arrecati da essi, di qualsiasi natura, resta
+              integralmente ed esclusivamente a carico dei rispettivi genitori e/o del loro tutore,
+              nonché del diverso soggetto maggiorenne accompagnatore eventualmente individuato dal genitore o da chi ne fa le veci in fase di iscrizione.
+            </p>
+            <p>
+              Quest'ultimo e in ogni caso, se soggetti da lui diversi, i genitori dei minori iscritti e/o i loro
+              tutori, liberano espressamente sin da ora A.M.A., e la scuola
+              Maria Ausiliatrice e tutti i rispettivi addetti da ogni responsabilità per i danni arrecati
+              a cose e persone dal minore nonché per i danni subiti dal medesimo nell'ambito della festa di cui trattasi.
+            </p>
+            <p>
+              L'associazione A.M.A. quale ente organizzatore dell'evento e la scuola Maria Ausiliatrice
+              quale proprietaria degli immobili e delle pertinenze nei quali la festa si svolge non hanno e non assumono alcun onere
+              di vigilanza nei confronti dei soggetti minori partecipanti, siano essi allievi o non allievi della scuola.
+              Nessun onere in tal senso sussiste neppure in capo ai soggetti incaricati di svolgere attività ludico-ricreative nell'ambito della festa.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-annulla" onclick="closeDisclaimerModal()">Chiudi</button>
+            <button type="button" id="btnAccettaDisclaimer" class="btn-accetta" disabled onclick="accettaDisclaimer()">Accetta</button>
+          </div>
+        </div>
       </div>
 
       <div class="button-row">

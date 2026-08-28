@@ -425,6 +425,118 @@
   margin-top: 24px;
 }
 
+/* MODALE CONDIZIONI GENERALI */
+.modal-disclaimer {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(8,38,82,0.45);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeIn 0.2s ease;
+  overflow-y: auto;
+  padding: 20px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.modal-disclaimer-maindiv {
+  background: var(--cream);
+  border-radius: 14px;
+  width: 640px;
+  max-width: 100%;
+  max-height: 80vh;
+  box-shadow: 0 8px 40px rgba(8,38,82,0.25);
+  border-top: 4px solid var(--primary-orange);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.modal-disclaimer-maindiv h3 {
+  color: var(--deep-blue);
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 22px 24px 0;
+  margin: 0 0 8px 0;
+  flex-shrink: 0;
+}
+
+.modal-disclaimer-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 24px 16px;
+  color: var(--deep-blue);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.modal-disclaimer-body p {
+  margin: 0 0 12px 0;
+}
+
+.modal-disclaimer-maindiv .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid rgba(8,38,82,0.12);
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.modal-disclaimer-maindiv .modal-footer button {
+  width: auto;
+  padding: 10px 22px;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.modal-disclaimer-maindiv .btn-annulla {
+  background: transparent;
+  color: var(--deep-blue);
+  box-shadow: none;
+  border: 1px solid rgba(8,38,82,0.25);
+}
+
+.modal-disclaimer-maindiv .btn-annulla:hover {
+  background: rgba(8,38,82,0.06);
+  transform: none;
+  box-shadow: none;
+}
+
+#btnAccettaDisclaimer:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#disclaimer {
+  pointer-events: none;
+}
+
+.link-disclaimer {
+  display: inline-block;
+  margin-top: 6px;
+  color: var(--primary-orange);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-disclaimer:hover {
+  color: var(--gold);
+}
+
 
 /* ─── RIEPILOGO ───────────────────────────────────────────── */
 .riepilogo-box {
