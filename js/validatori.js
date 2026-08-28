@@ -1,3 +1,27 @@
+/**
+ * Verifica la disponibilità di un menu tenendo conto della tolleranza di overbooking:
+ * concessa una tantum, entro il limite di "tolleranza" unità, quando la disponibilità
+ * residua non basta. Se la disponibilità è già negativa la tolleranza è già stata
+ * usata da qualcun altro e il menu è definitivamente chiuso.
+ *
+ * @returns {string|null} Messaggio di errore da mostrare, oppure null se la richiesta è consentita
+ */
+function _checkMenuTolerance(richiesto, disponibile, tolleranza, nomeMenu) {
+    if (richiesto <= disponibile) return null;
+
+    if (disponibile < 0) {
+        return `Il menu "${nomeMenu}" è esaurito. Non è più disponibile.`;
+    }
+
+    const sforamento = richiesto - disponibile;
+    if (sforamento > tolleranza) {
+        return `Il numero dei Menu "${nomeMenu}" selezionati supera anche la disponibilità straordinaria: (${disponibile} disponibili, massimo ${tolleranza} extra).`;
+    }
+
+    return null;
+}
+
+
 function checkFormValidity_Step1() {
 
   // Validiamo solo i campi visibili dello Step 1
@@ -47,14 +71,16 @@ function checkFormCongruence(adulti, bambini, infanti, menu_1, menu_2) {
         return false;
     });
 
-    //per prima cosa verifico che ogni singolo menu non superi i limiti imposti
-    if ( menu_1 > limit.disp.menu1 ) {
-        openConfirmModal(`Il numero dei Menu "pizza" selezionati supera la disponibilità: (${limit.disp.menu1} disponibili).`);
+    //per prima cosa verifico che ogni singolo menu non superi i limiti imposti (con tolleranza di overbooking)
+    const erroreMenu1 = _checkMenuTolerance(menu_1, limit.disp.menu1, Number(limit.overbooking?.menu1 || 0), 'pizza');
+    if (erroreMenu1) {
+        openConfirmModal(erroreMenu1);
         return false;
     }
-    
-    if ( menu_2 > limit.disp.menu2 ) {
-        openConfirmModal(`Il numero dei Menu "Focaccia farcita" selezionati supera la disponibilità: (${limit.disp.menu2} disponibili).`);
+
+    const erroreMenu2 = _checkMenuTolerance(menu_2, limit.disp.menu2, Number(limit.overbooking?.menu2 || 0), 'Focaccia farcita');
+    if (erroreMenu2) {
+        openConfirmModal(erroreMenu2);
         return false;
     }
 
