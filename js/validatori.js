@@ -60,12 +60,12 @@ function checkFormCongruence(adulti, bambini, infanti, menu_1, menu_2) {
 
     //verifico che il numero totale di menu selezionati non superi il numero totale di partecipanti
     if (totaleMenu < minPartecipanti ) {
-      openConfirmModal(`Il numero minimo di menù acquistabili deve coincidere con il totale dei partecipanti 4+ indicati (adulti + bambini da 4 a 17 anni).`);
+      openConfirmModal(`Il numero minimo di menù selezionabili deve coincidere con il totale dei partecipanti 4+ indicati (adulti + bambini da 4 a 17 anni).`);
       return false;
-    } 
-      
+    }
+
     if ( totaleMenu > maxPartecipanti ) {
-        openConfirmModal(`Il numero massimo di menù acquistabili non può superare il totale dei partecipanti indicati (adulti + bambini 4-17 anni + bambini 0-3 anni).`);
+        openConfirmModal(`Il numero massimo di menù selezionabili non può superare il totale dei partecipanti indicati (adulti + bambini 4-17 anni + bambini 0-3 anni).`);
         return false;
     }
 
