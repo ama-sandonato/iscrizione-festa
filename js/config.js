@@ -100,12 +100,14 @@ async function buildForm(limit) {
     step2.style.display = 'none';
     stepRiepilogo.style.display = 'none';
 
-    //aggiorno il messaggio
-    msg.innerHTML = `
+    //aggiorno il messaggio (in un div interno: #msg è un contenitore flex per la centratura,
+    //non deve contenere direttamente testo/HTML grezzo altrimenti il browser lo spezzetta in
+    //blocchi anonimi centrati singolarmente)
+    msg.innerHTML = `<div class="error">
       ⛔ Siamo spiacenti, le iscrizioni sono chiuse.<br>
       Il numero massimo di partecipanti è stato raggiunto.<br><br>
-      Ti invitiamo a controllare nuovamente tra qualche giorno, nel caso in cui si liberasse qualche posto!`;
-    msg.className = 'error';
+      Ti invitiamo a controllare nuovamente tra qualche giorno, nel caso in cui si liberasse qualche posto!
+    </div>`;
     msg.style.display = 'flex';
     return;
   }

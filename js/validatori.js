@@ -1,4 +1,74 @@
 /**
+ * Verifica che i due campi email (email e conferma email) coincidano.
+ */
+function checkEmailConferma(email, emailConferma) {
+    if (email.trim().toLowerCase() !== emailConferma.trim().toLowerCase()) {
+        openConfirmModal(`Gli indirizzi email inseriti non coincidono. Controlla di aver scritto correttamente la tua email in entrambi i campi.`);
+        return false;
+    }
+
+    return true;
+}
+
+
+/**
+ * Estrae l'età dal codice fiscale italiano (posizioni 7-11: anno, mese, giorno di nascita).
+ * Non valida il carattere di controllo finale (non serve, del formato ci pensa già la regex
+ * sul campo CF): questa funzione stima solo la data di nascita per calcolare l'età.
+ *
+ * @returns {number|null} età in anni, o null se il CF non è nel formato atteso
+ */
+function _getEtaDaCodiceFiscale(cf) {
+    if (!cf || cf.length < 11) return null;
+
+    const cfUpper = cf.toUpperCase();
+    const meseChar = cfUpper.charAt(8);
+    const mesiMap = { A:0, B:1, C:2, D:3, E:4, H:5, L:6, M:7, P:8, R:9, S:10, T:11 };
+    const mese = mesiMap[meseChar];
+    if (mese === undefined) return null;
+
+    let giorno = parseInt(cfUpper.substring(9, 11), 10);
+    if (isNaN(giorno)) return null;
+    if (giorno > 40) giorno -= 40; // donna
+
+    let anno = parseInt(cfUpper.substring(6, 8), 10);
+    if (isNaN(anno)) return null;
+
+    const oggi = new Date();
+    const annoCorrenteBreve = oggi.getFullYear() % 100;
+    anno += (anno > annoCorrenteBreve) ? 1900 : 2000;
+
+    const dataNascita = new Date(anno, mese, giorno);
+    if (isNaN(dataNascita.getTime())) return null;
+
+    let eta = oggi.getFullYear() - dataNascita.getFullYear();
+    const scartoMesi = oggi.getMonth() - dataNascita.getMonth();
+    if (scartoMesi < 0 || (scartoMesi === 0 && oggi.getDate() < dataNascita.getDate())) {
+        eta--;
+    }
+
+    return eta;
+}
+
+
+/**
+ * Verifica che il titolare dell'iscrizione (dedotto dal CF) sia maggiorenne.
+ * Se il CF non è nel formato riconosciuto, non blocca: ci pensa già la regex sul campo.
+ */
+function checkMaggiorenne(cf) {
+    const eta = _getEtaDaCodiceFiscale(cf);
+    if (eta === null) return true;
+
+    if (eta < 18) {
+        openConfirmModal(`Il titolare dell'iscrizione deve essere maggiorenne. Verifica il codice fiscale inserito.`);
+        return false;
+    }
+
+    return true;
+}
+
+
+/**
  * Verifica la disponibilità di un menu tenendo conto della tolleranza di overbooking:
  * concessa una tantum, entro il limite di "tolleranza" unità, quando la disponibilità
  * residua non basta. Se la disponibilità è già negativa la tolleranza è già stata

@@ -18,6 +18,16 @@ const btnRiepilogoIndietro = document.getElementById('btnRiepilogoIndietro');
 
 let limit = undefined;
 
+//blocco copia-incolla/taglia/drag&drop sui due campi email, per ridurre il rischio di errori
+//di battitura copiati da entrambi i campi; l'autocompletamento del browser resta invariato
+//(non passa dagli eventi paste/cut/drop)
+['email', 'emailConferma'].forEach(id => {
+  const campo = document.getElementById(id);
+  ['paste', 'cut', 'drop'].forEach(evento => {
+    campo.addEventListener(evento, e => e.preventDefault());
+  });
+});
+
 /**
  * Listener per l'inizializzazione del "mondo" ^_^
  * 
@@ -84,7 +94,14 @@ btnNext.addEventListener('click', () => {
   //Verifico che i campi obbligatori dello step 1 siano stati compilati correttamente (validazione HTML5)
   let valid = checkFormValidity_Step1();
   if (!valid) return;
-  
+
+  //il titolare dell'iscrizione deve essere maggiorenne (dedotto dal codice fiscale)
+  valid = checkMaggiorenne(document.getElementById('cf').value);
+  if (!valid) return;
+
+  //i due campi email devono coincidere
+  valid = checkEmailConferma(document.getElementById('email').value, document.getElementById('emailConferma').value);
+  if (!valid) return;
 
   //verifica numero partecipanti <=> menu
   const adulti = Number(document.getElementById('adulti').value);
@@ -297,9 +314,10 @@ function mostraRisultato(res) {
   step2.style.display = 'none';
   stepRiepilogo.style.display = 'none';
 
-  //aggiorno il messaggio
-  msg.innerHTML = res.messaggio + '<button type="button" id="btnHome" class="btn-secondary">NUOVA PRENOTAZIONE</button>';
-  msg.className = 'success';
+  //aggiorno il messaggio (in un div interno: #msg è un contenitore flex per la centratura,
+  //non deve contenere direttamente testo/HTML grezzo altrimenti il browser lo spezzetta in
+  //blocchi anonimi centrati singolarmente)
+  msg.innerHTML = `<div class="success">${res.messaggio}</div><button type="button" id="btnHome" class="btn-secondary">NUOVA PRENOTAZIONE</button>`;
   msg.style.display = 'flex';
   msg.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -318,16 +336,9 @@ function mostraErrore(err) {
   step2.style.display = 'none';
   stepRiepilogo.style.display = 'none';
 
-  //aggiorno il messaggio
-  if ( err && err.message ) {
-    msg.innerHTML = `<em>${err.message}</em><br><br>`;
-  } else {
-    //messaggio di errore generico
-    msg.innerHTML = 'Si è verificato un errore.<br>Controlla la connessione e riprova.<br><br>';
-  }
-
-  msg.innerHTML += '<button type="button" id="btnHome" class="btn-secondary">RIPROVA</button>';
-  msg.className = 'error';
+  //aggiorno il messaggio (in un div interno, stesso motivo di mostraRisultato())
+  const testoErrore = (err && err.message) ? err.message : 'Si è verificato un errore.<br>Controlla la connessione e riprova.';
+  msg.innerHTML = `<div class="error">${testoErrore}</div><button type="button" id="btnHome" class="btn-secondary">RIPROVA</button>`;
   msg.style.display = 'flex';
   msg.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
