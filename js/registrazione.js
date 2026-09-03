@@ -445,6 +445,17 @@ function closeDisclaimerModal() {
   document.getElementById('disclaimerModal').style.display = 'none';
 }
 
+// =====================
+// MODALE APPROFONDIMENTO CONTRIBUTO
+// =====================
+function openInfoContributoModal() {
+  document.getElementById('infoContributoModal').style.display = 'flex';
+}
+
+function closeInfoContributoModal() {
+  document.getElementById('infoContributoModal').style.display = 'none';
+}
+
 function _checkDisclaimerScroll() {
   const body = document.getElementById('disclaimerModalBody');
   const btn  = document.getElementById('btnAccettaDisclaimer');
