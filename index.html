@@ -116,8 +116,9 @@
         Per partecipare alla festa è previsto un contributo solidale minimo di 16€ a persona che ci permetterà non solo di trascorrere insieme una serata speciale, 
         ma anche di sostenere concretamente l'iniziativa benefica della scuola. 
         Proprio per la sua finalità solidale, il contributo rimane invariato anche per chi, per scelta personale o per particolari esigenze alimentari, 
-        preferisse non usufruire del cibo previsto nei menù proposti. Ogni menù include inoltre la quota associativa annuale ad A.M.A.<br>
-        <br>
+        preferisse non usufruire del cibo previsto nei menù proposti. Ogni menù include inoltre la quota associativa annuale ad A.M.A.
+        <a href="#" class="link-disclaimer" onclick="openInfoContributoModal(); return false;" style="margin-top: 0; font-size: inherit; font-weight: inherit;">Scopri di più...</a>
+        <br><br>
         <strong>LE NOSTRE PROPOSTE:</strong><br>
         🍕 <strong>Menù Pizza:</strong> gustati un succulento trancio di pizza margherita.<br>
         🥪 <strong>Menù Focaccia farcita:</strong> assapora una gustosa focaccia XL ham and cheese.<br>
@@ -246,6 +247,37 @@
       <div class="modal-footer">
         <button type="button" class="btn-annulla" onclick="closeDisclaimerModal()">Chiudi</button>
         <button type="button" id="btnAccettaDisclaimer" class="btn-accetta" disabled onclick="accettaDisclaimer()">Accetta</button>
+      </div>
+    </div>
+  </div>
+  <!-- Modale approfondimento contributo/quota associativa -->
+  <div id="infoContributoModal" class="modal-disclaimer">
+    <div class="modal-disclaimer-maindiv">
+      <h3>Il contributo e la quota associativa</h3>
+      <div class="modal-disclaimer-body">
+        <p>
+          Il contributo minimo di 16 Euro a partecipante è richiesto a titolo di offerta; esso integra una donazione
+          che verrà destinata a sostegno delle iniziative benefiche a favore della scuola.
+        </p>
+        <p>
+          Per il solo adulto che provvede all'iscrizione, parte di tale importo, pari a 1 Euro, viene imputata a
+          titolo di quota associativa annuale ad AMA (prima iscrizione o rinnovo per chi è già socio) con validità
+          sino al 31 agosto 2027, senza alcun obbligo di rinnovo per l'anno successivo.
+        </p>
+        <p>
+          Solo per facilitare la procedura di iscrizione e prenotazione il versamento di 16 Euro viene collegato
+          alla prenotazione del cibo prescelto. Il versamento del contributo dà dunque diritto alla prenotazione e
+          consumazione di un menu come indicato nel form sottostante, ma non costituisce in alcun modo corrispettivo
+          per l'acquisto del cibo e delle bevande scelte. Esso, pertanto, non potrà essere restituito in caso di
+          mancata partecipazione alla festa o nel caso in cui quest'ultima non dovesse svolgersi per cause
+          imprevedibili e/o di forza maggiore. Anche il contributo ulteriore collegato alle birre inserite nel forum
+          di prenotazione ha natura di donazione e pertanto non potrà essere restituito. Il contributo ulteriore
+          pagato per il cibo e le bevande che dovessero essere prenotate nel forum o consumate la sera stessa, in
+          aggiunta a quelli già prenotati, avrà la stessa natura e verrà devoluto a favore dell'associazione AMA.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-annulla" onclick="closeInfoContributoModal()">Chiudi</button>
       </div>
     </div>
   </div>
