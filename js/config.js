@@ -100,14 +100,19 @@ async function buildForm(limit) {
     step2.style.display = 'none';
     stepRiepilogo.style.display = 'none';
 
+    //in prevendita (flag/messaggio gestiti da Script Properties lato BE, senza deploy) il
+    //raggiungimento dei limiti ridotti è una sospensione temporanea, non una chiusura definitiva:
+    //messaggio diverso, stesso meccanismo di chiusura form
+    const messaggioChiusura = limit.prevendita?.enabled
+      ? limit.prevendita.message
+      : `Siamo spiacenti, le iscrizioni sono chiuse.<br>
+      Il numero massimo di partecipanti è stato raggiunto.<br><br>
+      Ti invitiamo a controllare nuovamente tra qualche giorno, nel caso in cui si liberasse qualche posto!`;
+
     //aggiorno il messaggio (in un div interno: #msg è un contenitore flex per la centratura,
     //non deve contenere direttamente testo/HTML grezzo altrimenti il browser lo spezzetta in
     //blocchi anonimi centrati singolarmente)
-    msg.innerHTML = `<div class="error">
-      ⛔ Siamo spiacenti, le iscrizioni sono chiuse.<br>
-      Il numero massimo di partecipanti è stato raggiunto.<br><br>
-      Ti invitiamo a controllare nuovamente tra qualche giorno, nel caso in cui si liberasse qualche posto!
-    </div>`;
+    msg.innerHTML = `<div class="error">⛔ ${messaggioChiusura}</div>`;
     msg.style.display = 'flex';
     return;
   }
