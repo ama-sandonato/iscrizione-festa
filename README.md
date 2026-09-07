@@ -30,4 +30,4 @@ LE NOSTRE PROPOSTE:
 
 💶 Per ogni menù è richiesta un’offerta minima di 16,00€ cad. (bevanda analcolica inclusa)  
 
-🍺 E per i grandi che amano i sapori autentici, c’è la birra artigianale del birrificio La Bruciata di Civesio (prevendita 4,00€ cad., anziché 5,00€)
+🍺 E per i grandi che amano i sapori autentici, c’è la birra artigianale del birrificio La Bruciata di Carpiano (prevendita 4,00€ cad., anziché 5,00€)
