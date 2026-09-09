@@ -93,8 +93,14 @@ async function buildForm(limit) {
   const effettivoMenu2 = menu2Chiuso ? 0 : dispMenu2 + overbookingMenu2;
   const dispParticipants = effettivoMenu1 + effettivoMenu2;
 
-  //se ENTRAMBI i menu sono chiusi ==> CHIUDO TUTTA LA FORM
-  if ( menu1Chiuso && menu2Chiuso ) {
+  //normalmente serve che ENTRAMBI i menu siano chiusi per chiudere tutta la form; in
+  //prevendita invece basta che se ne esaurisca UNO solo (fase riservata, niente overbooking
+  //incrociato: se un menu finisce prima, si chiude subito senza aspettare anche l'altro)
+  const chiudiForm = limit.prevendita?.enabled
+    ? (menu1Chiuso || menu2Chiuso)
+    : (menu1Chiuso && menu2Chiuso);
+
+  if ( chiudiForm ) {
     //nascondo i vari step precedenti
     step1.style.display = 'none';
     step2.style.display = 'none';
