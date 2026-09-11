@@ -81,10 +81,13 @@ async function buildForm(limit) {
   const overbookingMenu1 = Number(limit.overbooking?.menu1 || 0);
   const overbookingMenu2 = Number(limit.overbooking?.menu2 || 0);
 
-  //un menu è "chiuso" quando la disponibilità è negativa: significa che qualcuno
-  //ha già usufruito della tolleranza di overbooking, quindi non se ne concede altra
-  const menu1Chiuso = dispMenu1 < 0;
-  const menu2Chiuso = dispMenu2 < 0;
+  //un menu è "chiuso" in due casi: la disponibilità è negativa (qualcuno ha già usufruito
+  //della tolleranza di overbooking, quindi non se ne concede altra), OPPURE la disponibilità
+  //è a zero ma non c'è nessuna tolleranza residua da offrire (es. overbooking impostato a 0) —
+  //senza questo secondo caso, con disp=0 e overbooking=0 il menu risultava ancora "aperto"
+  //(0 < 0 è falso) e la form mostrava le singole tendine "esaurito" invece di chiudersi del tutto
+  const menu1Chiuso = dispMenu1 < 0 || (dispMenu1 + overbookingMenu1) <= 0;
+  const menu2Chiuso = dispMenu2 < 0 || (dispMenu2 + overbookingMenu2) <= 0;
 
   //capacità "effettiva" di ciascun menu, tolleranza di overbooking inclusa (0 se il menu è chiuso):
   //serve a dimensionare le tendine adulti/bambini così da poter effettivamente selezionare
