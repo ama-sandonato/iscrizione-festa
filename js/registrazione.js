@@ -309,6 +309,15 @@ function mostraRisultato(res) {
     console.log("[mostraRisultato]", "Ricevuta risposta dal server ->", JSON.stringify(res));
   }
 
+  //il backend può rispondere KO (es. menu esaurito, minorenne) con HTTP 200 e un body JSON
+  //regolare: fetch non lo considera un errore di rete, quindi arriva comunque qui e non a
+  //mostraErrore(). Senza questo controllo il messaggio di errore finiva in un riquadro verde
+  //"successo", con reset del form, facendo credere all'utente che l'iscrizione fosse riuscita.
+  if (res.esito !== 'OK') {
+    mostraErrore({ message: res.messaggio });
+    return;
+  }
+
   //nascondo i vari step precedenti
   step1.style.display = 'none';
   step2.style.display = 'none';
