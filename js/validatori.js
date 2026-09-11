@@ -77,6 +77,9 @@ function checkMaggiorenne(cf) {
  * @returns {string|null} Messaggio di errore da mostrare, oppure null se la richiesta è consentita
  */
 function _checkMenuTolerance(richiesto, disponibile, tolleranza, nomeMenu) {
+    //nessuna richiesta per questo menu: irrilevante che sia esaurito o in overbooking
+    if (richiesto <= 0) return null;
+
     if (richiesto <= disponibile) return null;
 
     if (disponibile < 0) {
