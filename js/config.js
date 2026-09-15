@@ -37,6 +37,16 @@ const AppConfig = (() => {
  * @returns {Promise<Object>} dati dei limiti
  * @throws {Error} se il caricamento fallisce
  */
+/**
+ * Token di bypass della manutenzione, letto dalla URL (?bypassToken=...). Il valore vero e
+ * proprio vive SOLO nelle Script Properties di GAS (mai in questo codice, pubblico su GitHub
+ * Pages): qui ci si limita a inoltrarlo, senza mai conoscere/verificare se è corretto — è il
+ * server (getLimits, registraNuovoIscritto) a fare l'unico confronto che conta.
+ */
+function getBypassToken() {
+  return new URLSearchParams(window.location.search).get('bypassToken') || undefined;
+}
+
 async function loadLimit() {
 
   let data;
@@ -44,7 +54,7 @@ async function loadLimit() {
     const res  = await fetch(AppConfig.apiUrl, {
       method : 'POST',
       headers: { "Content-Type": "text/plain" },
-      body   : JSON.stringify({ action: "getLimits" })
+      body   : JSON.stringify({ action: "getLimits", formData: { overrideToken: getBypassToken() } })
     });
 
     if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
@@ -53,7 +63,7 @@ async function loadLimit() {
     if (AppConfig.debugMode) {
       console.debug("Caricamento limiti OK:", JSON.stringify(data, null, 2));
     }
-  } 
+  }
   catch (err) {
     if (AppConfig.debugMode) {
       console.debug("Caricamento limiti FALLITO:", err);
@@ -61,15 +71,12 @@ async function loadLimit() {
     throw err; // ← rilancia l'errore così chi chiama sa che è fallita
   }
 
+  //il verdetto finale (bypass valido o no) lo ha già dato il server: qui ci si limita a
+  //rispettarlo, nessun confronto/segreto lato client
   if (data.maintenance.enabled) {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('overrideMaintenance') && urlParams.get('overrideMaintenance') === 'true') {
-      console.warn("Accesso in modalità override alla manutenzione.");
-    } else {
-      const err = new Error(`${data.maintenance.message}`);
-      err.maintenance = true; // ← distingue questo errore dagli altri: niente "RIPROVA", ritentare non serve
-      throw err;
-    }
+    const err = new Error(`${data.maintenance.message}`);
+    err.maintenance = true; // ← distingue questo errore dagli altri: niente "RIPROVA", ritentare non serve
+    throw err;
   }
 
   return data; // ← ora chi chiama la funzione riceve i dati
