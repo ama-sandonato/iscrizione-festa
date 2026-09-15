@@ -347,13 +347,18 @@ function mostraErrore(err) {
 
   //aggiorno il messaggio (in un div interno, stesso motivo di mostraRisultato())
   const testoErrore = (err && err.message) ? err.message : 'Si è verificato un errore.<br>Controlla la connessione e riprova.';
-  msg.innerHTML = `<div class="error">${testoErrore}</div><button type="button" id="btnHome" class="btn-secondary">RIPROVA</button>`;
+  //in manutenzione niente bottone "RIPROVA": ritentare non serve, il sistema resta bloccato
+  //finché la manutenzione non viene disattivata lato config (vedi err.maintenance in config.js)
+  const bottoneRiprova = (err && err.maintenance)
+    ? ''
+    : '<button type="button" id="btnHome" class="btn-secondary">RIPROVA</button>';
+  msg.innerHTML = `<div class="error">${testoErrore}</div>${bottoneRiprova}`;
   msg.style.display = 'flex';
   msg.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-    //rivado in home sul click
-  document.getElementById('btnHome')
-          .addEventListener('click', () => { location.reload(); });
+  //rivado in home sul click, solo se il bottone esiste
+  const btnHome = document.getElementById('btnHome');
+  if (btnHome) btnHome.addEventListener('click', () => { location.reload(); });
 }
 
 
