@@ -66,7 +66,9 @@ async function loadLimit() {
     if (urlParams.has('overrideMaintenance') && urlParams.get('overrideMaintenance') === 'true') {
       console.warn("Accesso in modalità override alla manutenzione.");
     } else {
-      throw new Error(`${data.maintenance.message}`);
+      const err = new Error(`${data.maintenance.message}`);
+      err.maintenance = true; // ← distingue questo errore dagli altri: niente "RIPROVA", ritentare non serve
+      throw err;
     }
   }
 
