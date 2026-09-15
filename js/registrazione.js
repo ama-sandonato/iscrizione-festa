@@ -237,7 +237,8 @@ form.addEventListener('submit', async (e) => {
 
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
-  
+  data.overrideToken = getBypassToken();
+
   // Convertiamo i numeri
   ['adulti','minori', 'infanti', 'menu1','menu2', 'birre'].forEach(k => {
     if(data[k]) data[k] = Number(data[k]);
